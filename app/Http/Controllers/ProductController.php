@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use DB;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +14,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('/products/index');
+        $all = DB::table('products')->get();
+        return view('/products/index')->with('products', $all);
     }
 
     /**
@@ -34,7 +36,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $sku = $_POST['sku'];
+        $inventory = $_POST['inventory'];
+        $product = \App\Product::create(['sku'=>$sku,'inventory'=>$inventory]);
     }
 
     /**
@@ -66,9 +70,20 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id=null)
     {
-        //
+        $inventory = $_POST['inventory'];
+        $sku = $_POST['sku'];
+        $update = DB::table('products')->where('sku','=',$sku)->update(['inventory' =>$inventory]);
+        if ($update)
+        {
+            return redirect('/products')->with('success', "$sku updated successfully!");
+        }
+        else
+        {
+            echo 'problem';
+        }
+
     }
 
     /**

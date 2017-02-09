@@ -1,0 +1,43 @@
+.product_table td
+{
+	width:100px;
+}
+#sku
+{
+	text-align:left;
+}
+.product_table td 
+{
+	text-align:right;
+}
+.product_table
+{
+	margin-top:20px;
+}
+.inventory_change
+{
+	width:50px;
+	display:inline-block;
+	float:left;
+	margin-left:5px;
+}
+.product_table .inventory_change_cell
+{
+	width:170px;
+}
+.inventory_change_cell button
+{
+	margin-top:2px;
+}
+.submit_change
+{
+	width:50px;
+	font-size:10px;
+	display:inline-block;
+	float:left;
+}
+.clear
+{
+	float:none;
+	clear:both;
+}
