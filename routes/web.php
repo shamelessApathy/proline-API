@@ -20,9 +20,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/products', 'ProductController@index');
-Route::get('/products/add', function(){
-	return view('products/add');
-});
-Route::post('/products/store', 'ProductController@store');
-Route::post('/products/update', 'ProductController@update');
+//Route::get('/products', 'ProductController@index');
+//Route::get('/products/add', function(){
+//	return view('products/add');
+//});
+//Route::post('/products/store', 'ProductController@store');
+//Route::post('/products/update', 'ProductController@update');
+Route::get('products/{id}', 'ProductController@show');
+Route::resource('products', 'ProductController');

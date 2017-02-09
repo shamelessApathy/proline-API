@@ -5,7 +5,7 @@
 <h1>Product Index</h1>
 <div class='row'>
 	<ul>
-		<li><a href='/products/add'>Add Products</a></li>
+		<li><a href='/products/create'>Add Products</a></li>
 		<li>Request Info from Vendors</li>
 	</ul>
 </div>
@@ -20,7 +20,7 @@
 @if ($products->count())
    @foreach ($products as $product)
        <tr>
-           <td id="sku">{{ $product->sku }}</td>
+           <td id="sku"><a href="/products/<?php echo $product->id;?>">{{ $product->sku }}</a></td>
 
            <td>
                <a class="inventory" href="#">{{ $product->inventory }}</a>

@@ -18,6 +18,7 @@ class ProductController extends Controller
         return view('/products/index')->with('products', $all);
     }
 
+
     /**
      * Show the form for creating a new resource.
      *
@@ -25,7 +26,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('/products/add');
     }
 
     /**
@@ -49,7 +50,8 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        $data['product'] = \App\Product::find($id);
+        return view('/products/show', $data);
     }
 
     /**
