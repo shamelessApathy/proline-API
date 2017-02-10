@@ -26,7 +26,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('/products/add');
+        return view('products/create');
     }
 
     /**
@@ -39,7 +39,21 @@ class ProductController extends Controller
     {
         $sku = $_POST['sku'];
         $inventory = $_POST['inventory'];
-        $product = \App\Product::create(['sku'=>$sku,'inventory'=>$inventory]);
+        $name = $_POST['name'];
+        $image_path = $_POST['image_path'];
+        $spec_sheet_path = $_POST['spec_sheet_path'];
+        $category = (int) $_POST['category'];
+        if (isset($_POST['optional_attributes']))
+        {
+            $optional_attributes = 1;
+        }
+        else
+        {
+            $optional_attributes = 0;
+        }
+        $product = \App\Product::create(['sku'=>$sku,'inventory'=>$inventory, 'name' => $name, 'image_path'=>$image_path, 'spec_sheet_path'=>$spec_sheet_path, 'category_id' => $category]);
+        return redirect('/home')->with('success', "You've saved the product!");
+
     }
 
     /**

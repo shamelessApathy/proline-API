@@ -26,5 +26,7 @@ Route::get('/home', 'HomeController@index');
 //});
 //Route::post('/products/store', 'ProductController@store');
 //Route::post('/products/update', 'ProductController@update');
+Route::get('/products/create', 'ProductController@create');
 Route::get('products/{id}', 'ProductController@show');
+Route::post('products/store', 'ProductController@store');
 Route::resource('products', 'ProductController');

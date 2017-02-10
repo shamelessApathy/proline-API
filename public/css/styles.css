@@ -41,3 +41,20 @@
 	float:none;
 	clear:both;
 }
+.sidebar
+{
+	width:200px;
+	height:1000px;
+	position:absolute;
+	left:25px;
+	top:75px;
+	z-index:2;
+}
+.current_info
+{
+	border-color:#d3e0e9;
+	width:100%;
+	border:1px solid;
+	height:200px;
+	background-color:#fff;
+}

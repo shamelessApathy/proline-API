@@ -79,8 +79,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Proline API
                 </div>
+                <p>Powered by Laravel</p>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
