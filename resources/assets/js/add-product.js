@@ -13,7 +13,7 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('add_product', require('./components/add_product.vue'));
+Vue.component('add-product', require('./components/add-product.vue'));
 
 const app = new Vue({
     el: '#product'
