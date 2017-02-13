@@ -39,3 +39,5 @@
 </div>
 </div>
 @endsection
+<?php $path = base_path(); ?>
+<script src="/js/add_product.js"></script>

@@ -20,6 +20,7 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+    <script src='/js/jquery.js' type='text/js' rel='javascript'></script>
 </head>
 <body>
     <div id="app">
