@@ -64,20 +64,26 @@ class Test extends Controller
         $seller_id = 'A4MXUMMLKCFTL';
         $Marketplace_ID = 'ATVPDKIKX0DER';
         $dev_num = '9614-6978-4316';
+        $timestamp = date('Y-m-d\TH:i:s.Z\Z', time());
         $dev_key = 'AKIAIBSPIEV5NG42J6ZA';
         $secret = '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';
-        $url = 'https://mws.amazonservices.com';
-        $hash = hash('hmacsha256',$secret);
-        $hash64 = base64_encode($hash);
-        $timestamp = date('Y-m-d\TH:i:s.Z\Z', time());
-        $data = array('AWSAccessKeyId'=>$dev_key,'Action'=>'RequestReport','ReportType'=>'InventoryReport', 'SellerId'=>$seller_id, 'SignatureMethod'=>'HmacSHA256','SignatureVersion'=>'2','Signature'=>$hash64, 'Timestamp'=>$timestamp);
-
+        $query_str = "AWSAccessKeyId=$dev_key
+                        &Action=RequestReport
+                        &ReportType=InventoryReport
+                        &SellerId=$seller_id
+                        &SignatureMethod=HmacSHA256&SignatureVersion=2
+                        &Timestamp=$timestamp";
+        $signed_str = hash_hmac('sha256',$query_str,$secret);
+        $signed_str = base64_encode($signed_str);
+        $signed_str = substr($signed_str, 0 ,-2);
+        $data = array('AWSAccessKeyId'=>$dev_key,'Action'=>'RequestReport','ReportType'=>'InventoryReport','SellerId'=>$seller_id,'SignatureMethod'=>'HmacSHA256','SignatureVersion'=>'2','Timestamp'=>$timestamp, 'Signature'=>"$signed_str"); 
+        $sendthis = http_build_query($data);
+        var_dump($sendthis);
+        $url = 'https://mws.amazonservices.com/Reports/2009-01-01';
 
 // what post fields?
 
-
 // build the urlencoded data
-$postvars = http_build_query($data);
 
 // open connection
 $ch = curl_init();
@@ -85,7 +91,7 @@ $ch = curl_init();
 // set the url, number of POST vars, POST data
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POST, count($data));
-curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $sendthis);
 
 // execute post
 $result = curl_exec($ch);

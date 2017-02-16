@@ -46,6 +46,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         <li><a href='/products'>Products</a></li>
+                        <li><a href='/amazon'>Amazon</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

@@ -15,3 +15,14 @@
     "vue": "^2.1.10"
   }
 }
+{
+   "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/CPIGroup/phpAmazonMWS.git"
+        }
+    ],
+      "require": {
+        "phpAmazonMWS": "1.3"
+    }
+ }

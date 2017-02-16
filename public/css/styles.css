@@ -58,3 +58,20 @@
 	height:200px;
 	background-color:#fff;
 }
+/* Amazon API start's here Might reuse console */
+
+.console
+{
+	width:100%;
+	height:600px;
+	background-color:rgba(222,232,249,0.5);
+	position:relative;
+}
+.console-input
+{
+	width:100%;
+	height:50px;
+	background-color:rgba(235, 238, 244, 0.5);
+	position:absolute;
+	bottom:0;
+}

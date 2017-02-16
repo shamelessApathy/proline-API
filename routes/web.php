@@ -19,7 +19,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-
+Route::get('/amazon', function(){
+	return view('amazon');
+});
+Route::get('/amazon/service_test', "AmazonController@service_test");
 //Route::get('/products', 'ProductController@index');
 //Route::get('/products/add', function(){
 //	return view('products/add');
