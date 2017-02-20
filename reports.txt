@@ -1,0 +1,4 @@
+Feed Processing Summary:
+	Number of records processed		64
+	Number of records successful		64
+

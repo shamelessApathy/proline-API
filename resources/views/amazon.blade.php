@@ -4,12 +4,22 @@
 <h1>This is the amazon page</h1>
 
 
-<a href='/amazon/service_test'><button>Service Test</button></a>
+<a href='/amazon/get_order_list'><button>Orders</button></a>
+<a href='/amazon/get_report_list'><button>Reports</button></a>
 
 
-
-
-<div class='console'><textarea name='console-input' class='console-input'></textarea></div>
+<form action='/amazon/get_report' method="POST">
+{{ csrf_field() }}
+<input type='text' placeholder='Report ID' name='report-id'>
+<button type='submit'>Get Report</button>
+</form>
+<div class='console'>
+<?php 
+if (isset($status))
+{
+	echo $status;
+}
+?><textarea name='console-input' class='console-input'></textarea></div>
 </div>
 
 @endsection

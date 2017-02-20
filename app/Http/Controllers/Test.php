@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class Test extends Controller
 {
+    public function page()
+    {
+        echo "getting here, test page!";
+    }
     /**
      * Display a listing of the resource.
      *
