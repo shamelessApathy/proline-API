@@ -4,8 +4,8 @@
 <h1>This is the amazon page</h1>
 
 
-<a href='/amazon/get_order_list'><button>Orders</button></a>
-<a href='/amazon/get_report_list'><button>Reports</button></a>
+<a href="{{ URL::to('/amazon/get_order_list')}}"><button>Orders</button></a>
+<a href="{{ URL::to('/amazon/get_report_list')}}"><button>Reports</button></a>
 
 
 <form action='/amazon/get_report' method="POST">

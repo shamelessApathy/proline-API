@@ -11,8 +11,8 @@
     <title>{{ config('app.name', 'Proline API') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -20,7 +20,7 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
-    <script src='/js/jquery.js' type='text/js' rel='javascript'></script>
+   <script src="{{asset('js/jquery.js')}}" type='text/js' rel='javascript'></script>
 </head>
 <body>
     <div id="app">
@@ -45,8 +45,8 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href='/products'>Products</a></li>
-                        <li><a href='/amazon'>Amazon</a></li>
+                        <li><a href="{{ URL::to('products')}}">Products</a></li>
+                        <li><a href="{{ URL::to('amazon')}}">Amazon</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -85,6 +85,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>

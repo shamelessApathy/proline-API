@@ -37,12 +37,69 @@ class AmazonController extends Controller
     public function get_order_list()
     {
         //6c9fb023-71d4-42cc-b3f6-9a9d9639c60d
-       $amz = new \AmazonOrderList();
-       $amz->fetchOrders();
-       $list = $amz->getList();
-       $response = $amz->getLastResponse();
+       // $amz = new \AmazonOrderList();
+       // $amz->fetchOrders();
+       // $list = $amz->getList();
+       // $response = $amz->getLastResponse();
+        // Arun Code to fetch the past 24 hrs orders. 
+        $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
+        $amz->setLimits('Modified', "- 24 hours");
+        $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
+       // $amz->setOrderStatusFilter(
+          //  array("Unshipped", "PartiallyShipped", "Canceled", "Unfulfillable")
+          //  ); //no shipped or pending
+        $amz->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+        $amz->fetchOrders();
+        $list = $amz->getList();
+        $response = $amz->getLastResponse();
+        //return $amz->getList();
+
+       // echo "<pre>"; print_r($amz->getList());
+      // die();
         return view('orders', ['response' => $response, 'list'=>$list]);
     }
+
+    public function ExportOrdersData(){
+
+        header("Content-type: text/csv");  
+        header("Cache-Control: no-store, no-cache");  
+        header('Content-Disposition: attachment; filename="AmazonOrders.csv"');  
+        $outstream = fopen("php://output",'w');
+        
+        $amz = new \AmazonOrderList("PROLINE"); 
+        $amz->setLimits('Modified', "- 24 hours");
+        $amz->setFulfillmentChannelFilter("MFN");
+        $amz->setUseToken();
+        $amz->fetchOrders();
+        $list = $amz->getList();
+        $response = $amz->getLastResponse();
+        $order_data[] = array('Amazon OrderID','Purchase Date','Order Status','Shipping Address','Order Total','Payment Method','Marketplace Id','Buyer Name','Email','Order Type' );
+        foreach ($list as $order) {
+            $address            = $order->getShippingAddress();
+            $amount             = $order->getOrderTotal();
+            $amazon_id          = $order->getAmazonOrderId();
+            $purchase_data      = $order->getPurchaseDate();
+            $order_status       = $order->getOrderStatus();
+            $shipping_address   = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
+            $total              = $amount['Amount']." ".$amount['CurrencyCode'];
+            $payment_method     = $order->getPaymentMethod();
+            $market_id          = $order->getMarketplaceId();
+            $buyer_name         = $order->getBuyerName();
+            $email              = $order->getBuyerEmail();
+            $order_type         = $order->getOrderType();
+            $order_data[] = array($amazon_id,$purchase_data,$order_status,$shipping_address,$total,$payment_method,$market_id,$buyer_name,$email,$order_type);
+        }
+
+        foreach( $order_data as $row )  
+        {  
+            fputcsv($outstream, $row, ',', '"');  
+        }  
+          
+        fclose($outstream);
+
+        // return view('orders', ['response' => $response, 'list'=>$list]);
+    }
+
     public function get_status()
     {
         $reportRequestId = '50351017214';
