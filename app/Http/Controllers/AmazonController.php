@@ -99,59 +99,35 @@ class AmazonController extends Controller
 
         // return view('orders', ['response' => $response, 'list'=>$list]);
     }
-
-    public function get_status()
+    public function render_view()
     {
-        $reportRequestId = '50351017214';
-        $amz = new \AmazonReportList();
-        //$amz->setRequestIds();
-        $list = $amz->fetchReportList();
-        //$status = $amz->getStatus();
-        $reportId = $amz->getList();
-        //echo "<h3>Status of: $reportRequestId</h3><p>$status</p>";
-        //echo "<h3>Report Id:</h3><p>$reportId</p>";
-        var_dump($reportId);
-    }
-    public function helper_request() 
-    {
-        try {
-            $amz = new \AmazonReportRequest(); // Instantiates ReportRequest class
-            $amz->setReportType('_GET_FLAT_FILE_ACTIONABLE_ORDER_DATA_');
-            $amz->requestReport(); // Run function that makes the report request
-            $data = $amz->getResponse(); //
-            //return $amz->getList();
-            return $data;
-        } catch (Exception $ex) {
-            echo 'There was a problem with the Amazon library. Error: '.$ex->getMessage();
-    }
-}
+        $response = array( "Binding"=> "Tools & Home Improvement", "Brand" => "ProLine Range Hoods", "Color" => "Stainless Steel", "Feature" => array( "Under Cabinet Range Hood","CFM: 2000",'Dimensions: 60" Width, 18" Height, 24" Depth' ), "ItemDimensions"=>array( "Height"=> "18.00", "Length"=> "24.00", "Width"=> "60.00", "Weight"=> "135.00" ), "Label"=> "Proline Range Hoods", "ListPrice"=> array( "Amount"=> "2649.95", "CurrencyCode"=>"USD" ), "Manufacturer"=> "Proline Range Hoods", "Model"=> "PLJW 101.60", "NumberOfItems"=> "1", "PackageDimensions"=> array( "Height"=>"24.00", "Length"=> "64.00", "Width"=> "28.00", "Weight"=> "146.00"), "PackageQuantity" => "1", "PartNumber"=>  "PLJW101.60", "ProductGroup"=> "Home Improvement", "ProductTypeName"=>"MAJOR_HOME_APPLIANCES", "Publisher"=> "Proline Range Hoods", "ReleaseDate"=> "2017-01-27", "Size"=> '60"', "SmallImage"=> array( "URL"=>  "http://ecx.images-amazon.com/images/I/41u1Yjiu5qL._SL75_.jpg", "Height"=> "75", "Width"=>"75"), "Studio"=> "Proline Range Hoods", "Title"=> "Proline Wall / Undercabinet Range Hood PLJW 101.60 2000 CFM, 60");
 
+        return view('product_info', ['response' =>$response]);
+    }
     /**
-    * Invokes the the library for MWS
-    *
-    *
+    * 
+    * Creates a product_info request for MWS
+    * @param ASIN # included in GET url var
+    * @return View of product info results from MWS
     */
-    public function request_report()
+
+    public function product_info($asin)
     {
-        $list= $this->helper_request();
-        var_dump($list);
-        /*if ($list) {
-    echo 'My Store Orders<hr>';
-    foreach ($list as $order) {
-        //these are AmazonOrder objects
-        echo '<b>Order Number:</b> '.$order->getAmazonOrderId();
-        echo '<br><b>Purchase Date:</b> '.$order->getPurchaseDate();
-        echo '<br><b>Status:</b> '.$order->getOrderStatus();
-        echo '<br><b>Customer:</b> '.$order->getBuyerName();
-        $address=$order->getShippingAddress(); //address is an array
-        echo '<br><b>City:</b> '.$address['City'];
-        echo '<br><br>';
+        $amz = new \AmazonProductList();
+        $amz->setIdType("ASIN");
+        $amz->setProductIds($asin); 
+        $amz->fetchProductList();   
+        //$product = $amz->getProduct();
+        //$response = $amz->getLastResponse();
+        $response = $amz->getProduct();
+        $response = $response[0]->getAttributeSets();
+        return view('product_info', ['response' => $response]);
     }
-    }*/
-    }
+
     /**
      * Display a listing of the resource.
-     *
+     * 
      * @return \Illuminate\Http\Response
      */
     public function index()

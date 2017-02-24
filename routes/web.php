@@ -28,6 +28,8 @@ Route::get('/amazon/get_report_list', "AmazonController@get_report_list");
 Route::post('/amazon/get_report', "AmazonController@get_report");
 Route::get('/amazon/request_report', "AmazonController@request_report");
 Route::get('/amazon/get_status', "AmazonController@get_status");
+Route::get('/amazon/product_info/{asin}', "AmazonController@product_info");
+Route::get('/amazon/render_view', "AmazonController@render_view");
 //Route::get('/products', 'ProductController@index');
 //Route::get('/products/add', function(){
 //	return view('products/add');
