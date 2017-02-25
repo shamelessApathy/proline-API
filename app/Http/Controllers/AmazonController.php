@@ -34,31 +34,75 @@ class AmazonController extends Controller
         $list = $amz->getList();
         return view('orders', ['list'=>$list]);
     }
+
+    /*** Get Orders List ****/
     public function get_order_list()
     {
-        //6c9fb023-71d4-42cc-b3f6-9a9d9639c60d
-       // $amz = new \AmazonOrderList();
-       // $amz->fetchOrders();
-       // $list = $amz->getList();
-       // $response = $amz->getLastResponse();
-        // Arun Code to fetch the past 24 hrs orders. 
         $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
         $amz->setLimits('Modified', "- 24 hours");
         $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
-       // $amz->setOrderStatusFilter(
-          //  array("Unshipped", "PartiallyShipped", "Canceled", "Unfulfillable")
-          //  ); //no shipped or pending
+        $amz->setOrderStatusFilter(
+           array("Shipped")
+           ); //no shipped or pending
         $amz->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
         $amz->fetchOrders();
-        $list = $amz->getList();
+        $list_amz = $amz->getList();
+        // Extracting Orders item sku  //
+        // echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
+        foreach ($list_amz as $order) {
+            $address            = $order->getShippingAddress();
+            $amount             = $order->getOrderTotal();
+            $amazon_id          = $order->getAmazonOrderId();
+            $purchase_data      = $order->getPurchaseDate();
+            $order_status       = $order->getOrderStatus();
+            $shipping_address   = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
+            $total              = $amount['Amount']." ".$amount['CurrencyCode'];
+            $payment_method     = $order->getPaymentMethod();
+            $market_id          = $order->getMarketplaceId();
+            $buyer_name         = $order->getBuyerName();
+            $email              = $order->getBuyerEmail();
+            $order_type         = $order->getOrderType();
+            
+            /*** Extracting Item sku **/
+            $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
+            $amz_item->setOrderId($amazon_id);
+     
+            $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+            $amz_item->fetchItems();
+            $amz_item = $amz_item->getItems();
+            // $response = $amz_item->getLastResponse();
+            // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
+
+
+            foreach ($amz_item as $item) {
+               
+                $list_data['AmazonOrderID']      = $amazon_id;
+                $list_data['ItemSku']            = $item['SellerSKU'];
+                $list_data['ProductName']        = $item['Title'];
+                $list_data['QuantityOrdered']    = $item['QuantityOrdered'];
+                $list_data['QuantityShipped']    = $item['QuantityShipped'];
+                $list_data['PurchaseDate']       = $purchase_data;
+                $list_data['OrderStatus']        = $order_status;
+                $list_data['ShippingAddress']    = $shipping_address;
+                $list_data['OrderTotal']         = $total;
+                $list_data['PaymentMethod']      = $payment_method;
+                $list_data['MarketplaceId']      = $market_id;
+                $list_data['BuyerName']          = $buyer_name;
+                $list_data['Email']              = $email;
+                $list_data['OrderType']          = $order_type;
+                $list[] = $list_data;
+            }
+
+        }       
+        
         $response = $amz->getLastResponse();
         //return $amz->getList();
-
-       // echo "<pre>"; print_r($amz->getList());
-      // die();
+        // echo "<pre>"; print_r($list);
+        // die();
         return view('orders', ['response' => $response, 'list'=>$list]);
     }
 
+    /**** Order Details Export Funtion ****/
     public function ExportOrdersData(){
 
         header("Content-type: text/csv");  
@@ -69,11 +113,14 @@ class AmazonController extends Controller
         $amz = new \AmazonOrderList("PROLINE"); 
         $amz->setLimits('Modified', "- 24 hours");
         $amz->setFulfillmentChannelFilter("MFN");
+        $amz->setOrderStatusFilter(
+           array("Shipped")
+           ); //no shipped or pending
         $amz->setUseToken();
         $amz->fetchOrders();
         $list = $amz->getList();
         $response = $amz->getLastResponse();
-        $order_data[] = array('Amazon OrderID','Purchase Date','Order Status','Shipping Address','Order Total','Payment Method','Marketplace Id','Buyer Name','Email','Order Type' );
+        $order_data[] = array('Amazon OrderID','Item Sku','Product Name','Quantity Ordered','Quantity Shipped','Purchase Date','Order Status','Shipping Address','Order Total','Payment Method','Marketplace Id','Buyer Name','Email','Order Type' );
         foreach ($list as $order) {
             $address            = $order->getShippingAddress();
             $amount             = $order->getOrderTotal();
@@ -87,7 +134,23 @@ class AmazonController extends Controller
             $buyer_name         = $order->getBuyerName();
             $email              = $order->getBuyerEmail();
             $order_type         = $order->getOrderType();
-            $order_data[] = array($amazon_id,$purchase_data,$order_status,$shipping_address,$total,$payment_method,$market_id,$buyer_name,$email,$order_type);
+
+            /*** Extracting Item sku **/
+            $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
+            $amz_item->setOrderId($amazon_id);
+     
+            $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+            $amz_item->fetchItems();
+            $amz_item = $amz_item->getItems();
+            // $response = $amz_item->getLastResponse();
+            // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
+            foreach ($amz_item as $item) {
+                $Sku                = $item['SellerSKU'];
+                $proNmae            = $item['Title'];
+                $QuantityOrdered    = $item['QuantityOrdered'];
+                $QuantityShipped    = $item['QuantityShipped'];
+                $order_data[] = array($amazon_id,$Sku,$proNmae,$QuantityOrdered,$QuantityShipped,$purchase_data,$order_status,$shipping_address,$total,$payment_method,$market_id,$buyer_name,$email,$order_type);
+            }
         }
 
         foreach( $order_data as $row )  

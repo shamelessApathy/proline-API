@@ -7,6 +7,10 @@
             <tr>
             	<th>Id</th>
                 <th>Amazon OrderID</th>
+                <th>Item Sku</th>
+                <th>Product Name</th>
+                <th>Quantity Ordered</th>
+                <th>Quantity Shipped</th>
                 <th>Purchase Date</th>
                 <th class="hidden-480">Order Status</th>
                 <th>Shipping Address </th>
@@ -19,25 +23,25 @@
             </tr>
         </thead>
         <tbody>
+
         <?php $i = 1; ?>
-			@foreach ($list as $list_data)
-				<?php $address=$list_data->getShippingAddress(); ?>
-				<?php $amount=$list_data->getOrderTotal(); ?>
+			@foreach ($list as $listValue)
 				<tr>
 					<td>{{ $i }}</td>
-					<td>{{ $list_data->getAmazonOrderId() }}</td>
-					<td>{{ $list_data->getPurchaseDate() }}</td>
-					<td>{{ $list_data->getOrderStatus() }}</td>
-					<td> {{ $address['Name'] }}</br>
-						{{ $address['AddressLine1'] }},{{ $address['City'] }},{{ $address['StateOrRegion'] }} </br>
-						{{ $address['PostalCode'] }} {{ $address['CountryCode'] }} </br>
-						{{ $address['Phone'] }} </td>
-					<td>{{ $amount['Amount'] }} {{ $amount['CurrencyCode'] }} </td>
-					<td>{{ $list_data->getPaymentMethod() }}</td>
-					<td>{{ $list_data->getMarketplaceId() }}</td>
-					<td>{{ $list_data->getBuyerName() }}</td>
-					<td>{{ $list_data->getBuyerEmail() }}</td>
-					<td>{{ $list_data->getOrderType() }}</td>
+					<td>{{ $listValue['AmazonOrderID'] }}</td>
+					<td>{{ $listValue['ItemSku'] }}</td>
+					<td>{{ $listValue['ProductName'] }}</td>
+					<td>{{ $listValue['QuantityOrdered'] }}</td>
+					<td>{{ $listValue['QuantityShipped'] }}</td>
+					<td>{{ $listValue['PurchaseDate'] }}</td>
+					<td>{{ $listValue['OrderStatus'] }}</td>
+					<td>{{ $listValue['ShippingAddress'] }}</td>
+					<td>{{ $listValue['OrderTotal'] }}</td>
+					<td>{{ $listValue['PaymentMethod'] }}</td>
+					<td>{{ $listValue['MarketplaceId'] }}</td>
+					<td>{{ $listValue['BuyerName'] }}</td>
+					<td>{{ $listValue['Email'] }}</td>
+					<td>{{ $listValue['OrderType'] }}</td>
 				</tr>
 			<?php $i++; ?>  
 			@endforeach
