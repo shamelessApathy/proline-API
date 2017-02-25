@@ -20,7 +20,8 @@
 @if ($products->count())
    @foreach ($products as $product)
        <tr>
-           <td id="sku"><a href="/products/<?php echo $product->id;?>">{{ $product->sku }}</a></td>
+
+           <td id="sku"><a href="/amazon/product_info/<?php echo $product->asin; ?>"><i class='fa fa-info-circle'></i></a>  <a href="/products/<?php echo $product->id;?>">{{ $product->sku }}</a></td>
 
            <td>
                <a class="inventory" href="#">{{ $product->inventory }}</a>
