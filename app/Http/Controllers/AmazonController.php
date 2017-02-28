@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\AmazonOrders;
+use Illuminate\Support\Facades\DB;
 class AmazonController extends Controller
 { 
 
@@ -196,9 +197,10 @@ class AmazonController extends Controller
                 $email              = $order->getBuyerEmail();
                 $order_type         = $order->getOrderType();
                 
-                $entry = AmazonOrders::where('amazonOrderId',$amazon_id)->get();
-                
-                if(empty($entry)){
+                $entry = DB::table('amazon_orders')->where('amazonOrderId',$amazon_id)->get();
+                $result = $entry->count();
+               // echo $result;
+                if(empty($result)){
                     /*** Extracting Item sku **/
                     $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
                     $amz_item->setOrderId($amazon_id);
