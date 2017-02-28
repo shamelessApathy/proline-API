@@ -179,7 +179,7 @@ class AmazonController extends Controller
         // Extracting Orders item sku  //
         // $list;
         // echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
-
+        $message = "";
 
         if($list_amz){
             foreach ($list_amz as $order) {
