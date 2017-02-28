@@ -197,8 +197,8 @@ class AmazonController extends Controller
                 $order_type         = $order->getOrderType();
                 
                 $entry = AmazonOrders::where('amazonOrderId',$amazon_id)->get();
-
-                if(!empty($entry)){
+                
+                if(empty($entry)){
                     /*** Extracting Item sku **/
                     $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
                     $amz_item->setOrderId($amazon_id);
