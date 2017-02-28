@@ -39,7 +39,7 @@ class AmazonController extends Controller
     public function get_order_list()
     {
         $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
-        $amz->setLimits('Modified', "- 24 hours");
+        $amz->setLimits('Modified', "- 100 hours");
         $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
         $amz->setOrderStatusFilter(
            array("Shipped")
@@ -48,6 +48,7 @@ class AmazonController extends Controller
         $amz->fetchOrders();
         $list_amz = $amz->getList();
         // Extracting Orders item sku  //
+        // $list;
         // echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
         foreach ($list_amz as $order) {
             $address            = $order->getShippingAddress();
@@ -111,7 +112,7 @@ class AmazonController extends Controller
         $outstream = fopen("php://output",'w');
         
         $amz = new \AmazonOrderList("PROLINE"); 
-        $amz->setLimits('Modified', "- 24 hours");
+        $amz->setLimits('Modified', "- 100 hours");
         $amz->setFulfillmentChannelFilter("MFN");
         $amz->setOrderStatusFilter(
            array("Shipped")
@@ -162,6 +163,12 @@ class AmazonController extends Controller
 
         // return view('orders', ['response' => $response, 'list'=>$list]);
     }
+
+    /**** Funtion to Update the Inventory ****/
+    public function UpdateInventory(){
+
+    }
+
     public function render_view()
     {
         $response = array( "Binding"=> "Tools & Home Improvement", "Brand" => "ProLine Range Hoods", "Color" => "Stainless Steel", "Feature" => array( "Under Cabinet Range Hood","CFM: 2000",'Dimensions: 60" Width, 18" Height, 24" Depth' ), "ItemDimensions"=>array( "Height"=> "18.00", "Length"=> "24.00", "Width"=> "60.00", "Weight"=> "135.00" ), "Label"=> "Proline Range Hoods", "ListPrice"=> array( "Amount"=> "2649.95", "CurrencyCode"=>"USD" ), "Manufacturer"=> "Proline Range Hoods", "Model"=> "PLJW 101.60", "NumberOfItems"=> "1", "PackageDimensions"=> array( "Height"=>"24.00", "Length"=> "64.00", "Width"=> "28.00", "Weight"=> "146.00"), "PackageQuantity" => "1", "PartNumber"=>  "PLJW101.60", "ProductGroup"=> "Home Improvement", "ProductTypeName"=>"MAJOR_HOME_APPLIANCES", "Publisher"=> "Proline Range Hoods", "ReleaseDate"=> "2017-01-27", "Size"=> '60"', "SmallImage"=> array( "URL"=>  "http://ecx.images-amazon.com/images/I/41u1Yjiu5qL._SL75_.jpg", "Height"=> "75", "Width"=>"75"), "Studio"=> "Proline Range Hoods", "Title"=> "Proline Wall / Undercabinet Range Hood PLJW 101.60 2000 CFM, 60");
