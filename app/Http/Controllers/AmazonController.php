@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\AmazonOrders;
 class AmazonController extends Controller
 { 
 
@@ -100,7 +100,8 @@ class AmazonController extends Controller
         //return $amz->getList();
         // echo "<pre>"; print_r($list);
         // die();
-        return view('orders', ['response' => $response, 'list'=>$list]);
+        $message="";
+        return view('orders', ['message'=>$message,'response' => $response, 'list'=>$list]);
     }
 
     /**** Order Details Export Funtion ****/
@@ -166,7 +167,90 @@ class AmazonController extends Controller
 
     /**** Funtion to Update the Inventory ****/
     public function SaveOrders(){
+        $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
+        $amz->setLimits('Modified', "- 17 hours");
+        $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
+        $amz->setOrderStatusFilter(
+           array("Shipped")
+           ); //no shipped or pending
+        $amz->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+        $amz->fetchOrders();
+        $list_amz = $amz->getList();
+        // Extracting Orders item sku  //
+        // $list;
+        // echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
 
+
+        if($list_amz){
+            foreach ($list_amz as $order) {
+                $address            = $order->getShippingAddress();
+                $amount             = $order->getOrderTotal();
+                $amazon_id          = $order->getAmazonOrderId();
+                $purchase_data      = $order->getPurchaseDate();
+                $order_status       = $order->getOrderStatus();
+                $shipping_address   = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
+                $total              = $amount['Amount']." ".$amount['CurrencyCode'];
+                $payment_method     = $order->getPaymentMethod();
+                $market_id          = $order->getMarketplaceId();
+                $buyer_name         = $order->getBuyerName();
+                $email              = $order->getBuyerEmail();
+                $order_type         = $order->getOrderType();
+                
+                $entry = AmazonOrders::where('amazonOrderId',$amazon_id)->get();
+                if(!($entry)){
+                    /*** Extracting Item sku **/
+                    $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
+                    $amz_item->setOrderId($amazon_id);
+             
+                    $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+                    $amz_item->fetchItems();
+                    $amz_item = $amz_item->getItems();
+                    // $response = $amz_item->getLastResponse();
+                    // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
+
+
+                    foreach ($amz_item as $item) {
+                       
+                        $ItemSku            = $item['SellerSKU'];
+                        $ProductName        = $item['Title'];
+                        $QuantityOrdered    = $item['QuantityOrdered'];
+                        $QuantityShipped    = $item['QuantityShipped'];
+                        $ASIN               = $item['ASIN'];
+
+                        $newOrder = new AmazonOrders;
+                        $newOrder->amazonOrderId    = $amazon_id;
+                        $newOrder->buyerName        = $buyer_name;
+                        $newOrder->email            = $email;
+                        $newOrder->purchaseDate     = $purchase_data;
+                        $newOrder->orderStatus      = $order_status;
+                        $newOrder->totalAmount      = $total;
+                        $newOrder->paymentMethod    = $payment_method;
+                        $newOrder->shippingAddress  = $shipping_address;
+                        $newOrder->marketID         = $market_id;
+                        $newOrder->orderType        = $order_type;
+                        $newOrder->itemSku          = $ItemSku;
+                        $newOrder->productTitle     = $ProductName;
+                        $newOrder->ASIN             = $ASIN;
+                        $newOrder->QuantityOrdered  = $QuantityOrdered;
+                        $newOrder->QuantityShipped  = $QuantityShipped;
+                        if($newOrder->save()){
+                            $message = "Orders are saved successfully!";
+                        }else { 
+                            $message = "There is issue with saving orders";
+                        }
+                    }
+                }else{
+                    $message ="Duplicate entry";
+                }
+
+            }       
+        }
+        $response = $amz->getLastResponse();
+        //return $amz->getList();
+        // echo "<pre>"; print_r($list);
+        // die();
+
+        return view('order-save', ['message'=>$message,'response' => $response]);
     }
 
     public function render_view()

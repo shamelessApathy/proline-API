@@ -24,6 +24,7 @@ Route::get('/amazon', function(){
 });
 Route::get('/amazon/get_order_list', "AmazonController@get_order_list");
 Route::get('/amazon/export_order_list', "AmazonController@ExportOrdersData");
+Route::get('/amazon/save_orders', "AmazonController@SaveOrders");
 Route::get('/amazon/get_report_list', "AmazonController@get_report_list");
 Route::post('/amazon/get_report', "AmazonController@get_report");
 Route::get('/amazon/request_report', "AmazonController@request_report");
