@@ -165,7 +165,7 @@ class AmazonController extends Controller
     }
 
     /**** Funtion to Update the Inventory ****/
-    public function UpdateInventory(){
+    public function SaveOrders(){
 
     }
 
