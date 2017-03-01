@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\AmazonOrders;
+use App\AmazonProductList;
 use Illuminate\Support\Facades\DB;
 class AmazonController extends Controller
 { 
@@ -271,15 +272,15 @@ class AmazonController extends Controller
 
     public function product_info($asin)
     {
-        $amz = new \AmazonProductList();
-        $amz->setIdType("ASIN");
-        $amz->setProductIds($asin); 
-        $amz->fetchProductList();   
+       // $amz = new \AmazonProductList();
+      //  $amz->setIdType("ASIN");
+       // $amz->setProductIds($asin); 
+       // $amz->fetchProductList();   
         //$product = $amz->getProduct();
         //$response = $amz->getLastResponse();
-        $response = $amz->getProduct();
-        $response = $response[0]->getAttributeSets();
-        return view('product_info', ['response' => $response]);
+       // $response = $amz->getProduct();
+        //$response = $response[0]->getAttributeSets();
+        return view('product_info');
     }
 
     /**
