@@ -1,0 +1,6 @@
+[Info][2017/03/01 21:17:12 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/03/01 21:54:34 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/03/01 21:55:45 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/03/01 21:58:59 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/03/01 21:59:20 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/03/01 21:59:51 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
