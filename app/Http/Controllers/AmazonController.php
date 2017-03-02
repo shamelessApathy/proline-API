@@ -169,7 +169,7 @@ class AmazonController extends Controller
     /**** Funtion to Update the Inventory ****/
     public function SaveOrders(){
         $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
-        $amz->setLimits('Modified', "- 18 hours");
+        $amz->setLimits('Modified', "- 48 hours");
         $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
         $amz->setOrderStatusFilter(
            array("Shipped")
@@ -179,7 +179,7 @@ class AmazonController extends Controller
         $list_amz = $amz->getList();
         // Extracting Orders item sku  //
         // $list;
-        // echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
+         echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
         $message = "";
 
         if($list_amz){
