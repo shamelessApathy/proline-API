@@ -435,8 +435,6 @@ class AmazonProductInfo extends AmazonProductsCore{
         $this->parseXML($xml);
         
     }
-
-
     
     /**
      * Sets up options for using <i>fetchCategories</i>.

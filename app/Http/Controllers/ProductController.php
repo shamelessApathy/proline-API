@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use DB;
-
+use App\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -14,8 +14,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $all = DB::table('products')->get();
-        return view('/products/index')->with('products', $all);
+        $all = Product::all();
+        return view('products.index')->with('products', $all);
     }
 
 
@@ -64,8 +64,8 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        $data['product'] = \App\Product::find($id);
-        return view('/products/show', $data);
+        $data['product'] = Product::find($id);
+        return view('products.show', $data);
     }
 
     /**
@@ -100,6 +100,11 @@ class ProductController extends Controller
             echo 'problem';
         }
 
+    }
+
+    public function AmazonProductInfo($asin){
+        $data = Product::where('asin', $asin)->first();;
+        return view('products.show', ['product'=>$data]);
     }
 
     /**

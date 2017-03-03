@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\AmazonOrders;
-use App\AmazonProductList;
+use App\Product;
 use Illuminate\Support\Facades\DB;
 class AmazonController extends Controller
 { 
@@ -41,7 +41,7 @@ class AmazonController extends Controller
     public function get_order_list()
     {
         $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
-        $amz->setLimits('Modified', "- 100 hours");
+        $amz->setLimits('Modified', "- 200 hours");
         $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
         $amz->setOrderStatusFilter(
            array("Shipped")
@@ -180,7 +180,7 @@ class AmazonController extends Controller
         $list_amz = $amz->getList();
         // Extracting Orders item sku  //
         // $list;
-         echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
+        // echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
         $message = "";
 
         if($list_amz){

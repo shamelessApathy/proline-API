@@ -16,12 +16,12 @@
 		<th style='text-align:right;'>Inventory</th>
 	</tr>
 
-
+<?php // echo "<pre>"; print_r($products); ?>
 @if ($products->count())
    @foreach ($products as $product)
        <tr>
 
-           <td style='width:110px;'id="sku"><a href="/amazon/product_info/<?php echo $product->asin; ?>"><i class='fa fa-amazon'></i></a>  <a href="/products/<?php echo $product->id;?>">{{ $product->sku }}</a></td>
+           <td style='width:110px;'id="sku"><a href="{{ route('product-info', ['id' => $product->asin]) }}"><i class='fa fa-amazon'></i></a>  <a href="{{ route('product-data', ['id' => $product->id]) }}">{{ $product->sku }}</a></td>
 
            <td>
                <a class="inventory" href="#">{{ $product->inventory }}</a>
