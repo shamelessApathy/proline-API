@@ -242,13 +242,50 @@ class AmazonController extends Controller
                         }else { 
                             $message = "There is issue with saving orders";
                         }
+                        $product = Product::where('asin', $ASIN)->first();
+                        if($product){
+                            if($product->inventory >= 1){
+                                $product->inventory = $product->inventory -$QuantityShipped ;
+                                $product->save();
+                            }
+                           // die();
+                        }
+                        //die();
+
                     }
                 }else{
                     $message ="Duplicate entry";
                 }
 
-            }       
+            }      
         }
+
+          /**** Generate feed ****/
+         $product_feed = Product::all();
+         //$products_data[] = array();
+         foreach ($product_feed as $data) {
+            $sku                    = $data->sku;
+            $price                  = "";
+            $minimum_seller_price   = "";
+            $maximun_seller_price   = "";
+            $quantity               = $data->inventory;
+            $products_data['sku']                   = $sku;
+            $products_data['price']                 = $price;
+            $products_data['minimum_seller_price']  = $minimum_seller_price;
+            $products_data['maximun_seller_price']  = $maximun_seller_price;
+            $products_data['quantity'] = $quantity;
+            $feed_data[] = $products_data;
+         }
+         $feed = "sku,price,minimum-seller-price,maximun-seller-price,Quantity \n";
+        // echo "<pre>";print_r($feed_data); 
+        foreach ($feed_data as $record){
+            $feed.= $record['sku'].','.$record['price'].','.$record['minimum_seller_price'].','.$record['maximun_seller_price'].','.$record['quantity']."\n"; //Append data to csv
+        }
+        $csv_handler = fopen (public_path().'/csvfile-'.date("Y-m-d").'-'.date("h:i:sa").'.csv','w');            
+
+        fwrite ($csv_handler,$feed);
+        fclose ($csv_handler);
+
         $response = $amz->getLastResponse();
         //return $amz->getList();
         // echo "<pre>"; print_r($list);

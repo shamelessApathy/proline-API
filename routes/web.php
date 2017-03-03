@@ -43,3 +43,4 @@ Route::get('products/{id}', 'ProductController@show')->name('product-data');
 Route::post('products/store', 'ProductController@store');
 Route::get('test/send', 'Test@send');
 Route::get('products', 'ProductController@index')->name('product');
+Route::get('product-feed', 'ProductController@ProductFeed')->name('product-feed');

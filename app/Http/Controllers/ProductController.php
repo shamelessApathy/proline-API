@@ -103,7 +103,7 @@ class ProductController extends Controller
     }
 
     public function AmazonProductInfo($asin){
-        $data = Product::where('asin', $asin)->first();;
+        $data = Product::where('asin', $asin)->first();
         return view('products.show', ['product'=>$data]);
     }
 
