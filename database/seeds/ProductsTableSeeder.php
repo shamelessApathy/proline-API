@@ -241,19 +241,25 @@ class ProductsTableSeeder extends Seeder
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Range Hoods PLJW 130.36 900 CFM Wall Chimney Range Hood, 36"',
-            'sku'             => 'PLJW130.36',
+            'sku'             => 'PLJW 130.36',
+            'walmart'             => 'PLJW 130.36',
+            'walmartID'             => '170152970',
             'asin'            => 'B01EV9PEWE',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Range Hoods PLJW 130.42 1200 CFM Wall Chimney Range Hood, 42"',
             'sku'             => 'PLJW130.42',
+            'walmart'         => 'PLJW 130.42',
+            'walmartID'         => '172996833',
             'asin'            => 'B01EV9PFWS',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Range Hoods PLJW 130.48 1200 CFM Wall Chimney Range Hood, 48"',
             'sku'             => 'PLJW130.48',
+            'walmart'         => 'PLJW 130.48',
+            'walmartID'         => '199890550',
             'asin'            => 'B01J4EDDI8',
             'inventory'       => 1
         ]);
@@ -261,6 +267,8 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 109.30 1000 CFM, 30"',
             'sku'             => 'PLJW109.30',
+            'walmart'         => 'PLJW 109.30',
+            'walmartID'         => '180812455',
             'asin'            => 'B012HKPNOS',
             'inventory'       => 1
         ]);
@@ -268,6 +276,8 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 109.36 1000 CFM, 36"',
             'sku'             => 'PLJW109.36',
+            'walmart'         => 'PLJW 109.36',
+            'walmartID'         => '107966876',
             'asin'            => 'B00DH0KKC8',
             'inventory'       => 0
         ]);
@@ -280,18 +290,24 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => 'Proline Range Hoods PLJW 109.48-2 2000 CFM Wall/Undercabinet Range Hood, 48"',
             'sku'             => 'PLJW109.48',
+            'walmart'         => 'PLJW 109.48',
+            'walmartID'         => '177655211',
             'asin'            => 'B012HKYKE2',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 109.54 2000 CFM, 54"',
             'sku'             => 'PLJW109.54',
+            'walmart'         => 'PLJW 109.54',
+            'walmartID'         => '143491520',
             'asin'            => 'B012HKPSSY',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 109.60 2000 CFM, 60"',
             'sku'             => 'PLJW109.60',
+            'walmart'         => 'PLJW 109.60',
+            'walmartID'         => '113630821',
             'asin'            => 'B012HKPWFS',
             'inventory'       => 1
         ]);
@@ -300,6 +316,8 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 121.30 900 CFM, 30"',
             'sku'             => 'PLJW121.30',
+            'walmart'         => 'PLJW 121.30',
+            'walmartID'         => '164938666',
             'asin'            => 'B015HS4SQG',
             'inventory'       => 0
         ]);
@@ -313,6 +331,8 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => 'Proline Range Hoods PLJW 121.42 900 CFM Wall/Undercabinet Range Hood, 42"',
             'sku'             => 'PLJW121.42',
+            'walmart'         => 'PLJW 121.42',
+            'walmartID'         => '157312339',
             'asin'            => 'B012HKPKR8',
             'inventory'       => 0
         ]);
@@ -354,6 +374,8 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 120.30 900 CFM, 30"',
             'sku'             => 'PLJW120.30',
+            'walmart'         => 'PLJW 120.30',
+            'walmartID'         => '194142809',
             'asin'            => 'B015GA6ZZM',
             'inventory'       => 0
         ]);
@@ -366,12 +388,16 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 120.42 900 CFM, 42"',
             'sku'             => 'PLJW120.42',
+            'walmart'             => 'PLJW120.42',
+            'walmartID'             => '148500113',
             'asin'            => 'B012HKPF82',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 120.48 900 CFM, 48"',
             'sku'             => 'PLJW120.48',
+            'walmart'         => 'PLJW 120.48',
+            'walmartID'         => '121744654',
             'asin'            => 'B012HKPHZI',
             'inventory'       => 1
         ]);
@@ -379,24 +405,32 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => '30" 900 CFM Ducted Wall Mount Range Hood',
             'sku'             => 'PLJW129.30',
+            'walmart'             => 'PLJW 129.30',
+            'walmartID'             => '177704777',
             'asin'            => 'B015JT8X3C',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Professional Wall Range Hood PLJW 129.36 900 CFM, 36"',
-            'sku'             => 'PLJW129.36',
+            'sku'             => 'PLJW 129.36',
+            'walmart'             => 'PLJW 129.36',
+            'walmartID'             => '188395069',
             'asin'            => 'B015JT8YEA',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Wall Mount Range Hood PLJW 129.42 1800 CFM, 42"',
             'sku'             => 'PLJW129.42',
+            'walmart'         => 'PLJW 129.42',
+            'walmartID'         => '189151296',
             'asin'            => 'B015JT8ZV2',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => '48" 1200 CFM Ducted Wall Mounted Range Hood',
             'sku'             => 'PLJW129.48',
+            'walmart'         => 'PLJW 129.48',
+            'walmartID'         => '125496420',
             'asin'            => 'B01KGETW1M',
             'inventory'       => 1
         ]);
@@ -404,12 +438,16 @@ class ProductsTableSeeder extends Seeder
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30"',
             'sku'             => 'PLJW185.30',
+            'walmart'         => 'PLJW 185.30',
+            'walmartID'         => '198599594',
             'asin'            => 'B015GEQOTU',
             'inventory'       => 1
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36"',
             'sku'             => 'PLJW185.36',
+            'walmart'             => 'PLJW 185.36',
+            'walmartID'             => '130901267',
             'asin'            => 'B015GEQPVW',
             'inventory'       => 1
         ]);
@@ -445,6 +483,69 @@ class ProductsTableSeeder extends Seeder
             'asin'            => 'B01MDU51YI',
             'inventory'       => 1
         ]);
+                 // PLJW 109.42
+         DB::table('products')->insert([
+            'name'            => 'Proline Range Hoods PLJW 109.42',
+            'sku'             => 'PLJW109.42',
+            'walmart'            => 'PLJW 109.42',
+            'walmartID'            => '178769662',
+            'inventory'       => 1
+        ]);
+                  // PLJW 120.42
+         DB::table('products')->insert([
+            'name'            => 'Proline Range Hoods PLJW 120.42',
+            'sku'             => 'PLJW120.42',
+            'walmart'         => 'PLJW 120.42',
+            'inventory'       => 1
+        ]);
+                  // PLJW 120.36
+         DB::table('products')->insert([
+            'name'            => 'Proline Range Hoods PLJW 120.36',
+            'sku'             => 'PLJW120.36',
+            'walmart'         => 'PLJW 120.36',
+            'walmartID'         => '188254586',
+            'inventory'       => 1
+        ]);
+                  // PLJW 121.36
+         DB::table('products')->insert([
+            'name'            => 'Proline Range Hoods PLJW 121.36',
+            'sku'             => 'PLJW121.36',
+            'walmart'         => 'PLJW 121.36',
+            'walmartID'         => '111677905',
+            'inventory'       => 1
+        ]);
+         // PLJW 121.48
+         DB::table('products')->insert([
+            'name'            => 'Proline Range Hoods PLJW 121.48',
+            'sku'             => 'PLJW121.48',
+            'walmart'         => 'PLJW 121.48',
+            'walmartID'         => '150843751',
+            'inventory'       => 1
+        ]);
 
+         // PLJW 129e.36
+         DB::table('products')->insert([
+            'name'            => 'Proline Wall Mount Range Hood PLJW 129e.36',
+            'sku'             => 'PLJW129e.36',
+            'walmart'         => 'PLJW 129e.36',
+            'walmartID'         => '164838084',
+            'inventory'       => 1
+        ]);
+         // PLJW 129e.30
+         DB::table('products')->insert([
+            'name'            => 'Proline Wall Mount Range Hood PLJW 129e.30',
+            'sku'             => 'PLJW129e.30',
+            'walmart'         => 'PLJW 129e.30',
+            'walmartID'         => '148075004',
+            'inventory'       => 1
+        ]);
+         // PLJW 130.30
+         DB::table('products')->insert([
+            'name'            => 'Proline Wall Mount Range Hood PLJW 130.30',
+            'sku'             => 'PLJW130.30',
+            'walmart'         => 'PLJW 130.30',
+            'walmartID'         => '119061593',
+            'inventory'       => 1
+        ]);
     }
 }
