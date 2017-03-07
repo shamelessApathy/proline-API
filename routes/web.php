@@ -44,3 +44,6 @@ Route::post('products/store', 'ProductController@store');
 Route::get('test/send', 'Test@send');
 Route::get('products', 'ProductController@index')->name('product');
 Route::get('product-feed', 'ProductController@ProductFeed')->name('product-feed');
+
+// Walmart lib test stuff
+Route::get('/walmart/test', 'WalmartController@test');
