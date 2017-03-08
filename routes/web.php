@@ -44,6 +44,12 @@ Route::post('products/store', 'ProductController@store');
 Route::get('test/send', 'Test@send');
 Route::get('products', 'ProductController@index')->name('product');
 Route::get('product-feed', 'ProductController@ProductFeed')->name('product-feed');
+<<<<<<< HEAD
 /**** Walmart ******/
 Route::get('walmart/products','WalmartController@index')->name('walmart');
 Route::get('walmart/product-info{id}','WalmartController@GetProductInfo')->name('walmart-product-info');
+=======
+
+// Walmart lib test stuff
+Route::get('/walmart/test', 'WalmartController@test');
+>>>>>>> 84cbbe28b5bccd1266cee65619436939929209fb

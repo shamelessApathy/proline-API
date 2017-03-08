@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use \App\Libraries\Walmart\WalmartApi;
 use Illuminate\Http\Request;
 use Walmart\Item;
 use Walmart\Order;
@@ -115,5 +115,24 @@ class WalmartController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+    *
+    * Public test function to see if WalmartAPI library is accessible
+    *
+    */
+    public function test()
+    {
+       $lib = new WalmartApi;
+       // make signature file and then parse results to array
+        $stuff = $lib->test();
+        // make curl call
+        $results = $lib->get($stuff);
+        var_dump($results);
+        // I installed default Java newest version on machine
+        // I used the digitalsignature.jar file got from here :https://developer.walmartapis.com/#jar-executable-recommended
+
+        // Keey geting this error : string(402) "UNAUTHORIZED.GMP_GATEWAY_APIUNAUTHORIZEDUnauthorizedUnauthorizedERRORDATA"
     }
 }
