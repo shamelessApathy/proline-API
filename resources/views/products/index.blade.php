@@ -21,7 +21,8 @@
    @foreach ($products as $product)
        <tr>
 
-           <td style='width:110px;'id="sku"><a href="{{ route('product-info', ['id' => $product->asin]) }}"><i class='fa fa-amazon'></i></a>  <a href="{{ route('product-data', ['id' => $product->id]) }}">{{ $product->sku }}</a></td>
+           <td style='width:130px;'id="sku"><a href="{{ route('product-info', ['id' => $product->asin]) }}">
+           <i class='fa fa-amazon'></i></a> @if($product->walmartID)<div class="wallmt"><a href=""><img src="{{asset('images/wallmart.jpg')}}"/> </a></div>@endif <a href="{{ route('product-data', ['id' => $product->id]) }}">{{ $product->sku }}</a></td>
 
            <td>
                <a class="inventory" href="#">{{ $product->inventory }}</a>
