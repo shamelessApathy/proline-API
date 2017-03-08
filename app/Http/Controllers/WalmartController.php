@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use \App\Libraries\Walmart\WalmartApi;
 use Illuminate\Http\Request;
+use Walmart\Item;
+use Walmart\Order; 
 
 class WalmartController extends Controller
 {
@@ -89,15 +90,25 @@ class WalmartController extends Controller
     */
     public function test()
     {
-       $lib = new WalmartApi;
-       // make signature file and then parse results to array
-        $stuff = $lib->test();
-        // make curl call
-        $results = $lib->get($stuff);
-        var_dump($results);
-        // I installed default Java newest version on machine
-        // I used the digitalsignature.jar file got from here :https://developer.walmartapis.com/#jar-executable-recommended
-
-        // Keey geting this error : string(402) "UNAUTHORIZED.GMP_GATEWAY_APIUNAUTHORIZEDUnauthorizedUnauthorizedERRORDATA"
+        $client = new Item(
+            [
+                'consumerId' => getenv('WALMART_API_KEY'),
+                'privateKey' => getenv('WALMART_SECRET_KEY'),
+            ]//,
+        //Item::ENV_MOCK 
+        );
+        $items = $client->list(['limit'=>5]);
+        var_dump($items);
     }
+    public function order_list()
+    {
+        $client = new Order([
+            'consumerId' => getenv('WALMART_API_KEY'),
+            'privateKey' => getenv('WALMART_SECRET_KEY'),
+            'wmConsumerChannelType' => getenv('WM_CONSUMER_CHANNEL_TYPE')
+        ]);
+
+        $orders = $client->list([]);
+        var_dump($orders);
+    } 
 }

@@ -47,3 +47,4 @@ Route::get('product-feed', 'ProductController@ProductFeed')->name('product-feed'
 
 // Walmart lib test stuff
 Route::get('/walmart/test', 'WalmartController@test');
+Route::get('/walmart/order_list', 'WalmartController@order_list');
