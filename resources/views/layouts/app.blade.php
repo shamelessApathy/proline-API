@@ -49,6 +49,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="{{ URL::to('products')}}">Products</a></li>
                         <li><a href="{{ URL::to('amazon')}}">Amazon</a></li>
+                        <li><a href="{{ route('walmart') }}">Walmart</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
