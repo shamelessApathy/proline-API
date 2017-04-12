@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/amazon', function(){
 	return view('amazon');
 });
-Route::get('/amazon/get_order_list', "AmazonController@get_order_list");
+Route::post('/amazon/get_order_list', "AmazonController@get_order_list")->name('order-list');
 Route::get('/amazon/export_order_list', "AmazonController@ExportOrdersData");
 Route::get('/amazon/save_orders', "AmazonController@SaveOrders");
 Route::get('/amazon/get_report_list', "AmazonController@get_report_list");

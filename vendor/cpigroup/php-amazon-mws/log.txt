@@ -358,3 +358,589 @@
 [Info][2017/03/09 11:49:13 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
 [Info][2017/03/09 11:49:15 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
 [Info][2017/03/09 11:49:16 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 10:51:38 guest@::1 AmazonProductInfo.php:191 sendRequest] Making request to Amazon: GetCompetitivePricingForASIN
+[Info][2017/04/11 11:01:46 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/11 11:01:51 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:01:52 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:01:53 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:01:55 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:01:56 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:01:57 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:01:58 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:00 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:01 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:02 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:03 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:05 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:06 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:07 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:08 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:10 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:11 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:12 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:14 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:15 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:16 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:17 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:18 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:20 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:21 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:22 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:23 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:25 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:26 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:27 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:28 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:29 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:31 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:34 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:36 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:37 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:38 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:39 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:40 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:42 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:43 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:44 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:45 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:47 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:48 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:49 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:50 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:52 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:53 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:55 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:56 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:57 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:02:58 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:00 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:01 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:02 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:03 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:04 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:06 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:07 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:08 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:09 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:11 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:12 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/11 11:03:13 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:46 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 09:57:48 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:49 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:50 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:51 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:52 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:53 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:54 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:55 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:56 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:57 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:57:59 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:00 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:01 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:02 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:03 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:04 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:05 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:06 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:07 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:08 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:09 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:10 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:11 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:12 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:13 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:14 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:15 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:16 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:17 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:18 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:19 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:21 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:22 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:23 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:24 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:25 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:26 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:27 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:28 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:29 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:30 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:31 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:34 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:35 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:36 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:37 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:38 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:39 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:40 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:41 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:42 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:44 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:45 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:46 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 09:58:47 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:36 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 11:11:39 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:40 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:41 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:42 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:43 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:44 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:45 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:46 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:47 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:48 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:49 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:50 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:51 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:52 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:54 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:55 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:56 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:57 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:58 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:11:59 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:00 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:01 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:02 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:03 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:04 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:05 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:06 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:07 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:08 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:09 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:10 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:11 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:12 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:13 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:14 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:15 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:16 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:17 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:19 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:21 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:22 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:23 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:24 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:25 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:26 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:27 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:28 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:29 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:30 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:31 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:34 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:35 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:36 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:37 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:38 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:40 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:41 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:42 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:12:43 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:20 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 11:49:22 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:23 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:24 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:25 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:26 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:27 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:28 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:29 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:30 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:31 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:34 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:35 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:37 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:38 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:39 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:40 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:41 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:42 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:43 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:44 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:45 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:46 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:47 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:48 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:49 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:50 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:51 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:52 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:53 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:54 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:55 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:56 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:58 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:49:59 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:00 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:01 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:02 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:03 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:04 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:05 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:06 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:07 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:08 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:09 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:10 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:11 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:12 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:13 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:14 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:15 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:16 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:17 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:18 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:20 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:50:21 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 11:55:00 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 11:55:06 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 11:55:50 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 11:55:58 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 11:55:58 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Info][2017/04/12 11:56:05 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 11:56:05 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Info][2017/04/12 11:56:12 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 11:56:12 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 11:56:13 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 11:57:20 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 11:57:20 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 11:57:21 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 11:58:11 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 11:58:14 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 11:58:14 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 11:58:15 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 11:58:22 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 11:59:17 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 11:59:17 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 11:59:18 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 11:59:23 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:00:19 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:00:30 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:00:30 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:00:31 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:01:22 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:01:22 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:01:23 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:01:38 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:01:38 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:01:39 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:02:24 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:02:41 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:03:26 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:03:26 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:03:27 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:03:42 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:04:29 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:04:44 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:05:30 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:05:50 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:05:50 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:05:51 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:06:31 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:06:53 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:07:34 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:07:34 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Info][2017/04/12 12:07:36 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:07:36 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:07:37 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:07:56 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:08:39 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:08:44 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Throttle][2017/04/12 12:08:45 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:09:03 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:09:03 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Info][2017/04/12 12:09:09 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:09:09 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:09:10 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:09:39 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:09:46 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:10:11 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:10:41 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:10:47 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:11:13 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:11:43 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:11:43 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:11:44 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Urgent][2017/04/12 12:11:48 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: InvalidParameterValue - Unshipped and PartiallyShipped should be used together when filtering by OrderStatus.  You cannot use one and not the other.
+[Info][2017/04/12 12:11:59 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Throttle][2017/04/12 12:12:00 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:12:14 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:12:46 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Urgent][2017/04/12 12:13:01 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: InvalidParameterValue - Unshipped and PartiallyShipped should be used together when filtering by OrderStatus.  You cannot use one and not the other.
+[Throttle][2017/04/12 12:13:15 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:13:25 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Throttle][2017/04/12 12:13:26 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:13:47 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:14:16 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:14:27 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:14:48 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:15:18 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:15:29 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:15:29 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:15:30 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:15:51 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:15:51 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Info][2017/04/12 12:15:53 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:15:53 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:15:54 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:16:24 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:16:24 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:16:31 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:16:32 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:16:32 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:16:33 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:16:55 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:17:33 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:17:34 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:17:56 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:18:35 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:18:35 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:18:35 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:18:36 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:18:58 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:19:37 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:19:42 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:19:42 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Info][2017/04/12 12:19:48 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:19:48 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:19:49 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:20:00 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:20:00 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:20:01 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:20:38 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:20:50 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:21:03 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:21:40 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:21:52 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:22:04 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:22:41 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:22:52 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:23:06 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:23:06 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:23:07 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:23:42 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:23:59 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:23:59 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:24:00 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:24:08 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:24:45 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:24:45 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:24:45 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:25:01 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:25:10 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:25:47 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:26:02 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:26:11 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:26:48 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:27:03 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:27:14 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:27:14 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:27:15 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:27:49 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:28:04 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:28:16 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:28:50 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:29:05 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:29:19 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:29:19 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:29:20 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:29:51 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:30:07 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:30:20 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Throttle][2017/04/12 12:30:21 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:30:22 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:30:52 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:31:08 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:31:22 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:31:23 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:31:54 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:32:09 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:32:23 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:32:26 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:27 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:28 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:29 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:30 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:31 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:34 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:35 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:36 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:37 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:38 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:39 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:40 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:41 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:42 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:43 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:44 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:45 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:46 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:47 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:48 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:49 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:51 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:52 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:53 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:54 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:32:55 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:32:55 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:32:56 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:33:10 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:33:25 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:33:56 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:34:11 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:34:17 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Throttle][2017/04/12 12:34:19 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:34:26 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:34:57 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:35:12 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:35:20 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:35:32 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:35:58 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:36:14 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:36:21 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:36:33 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:36:59 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Urgent][2017/04/12 12:37:15 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: RequestExpired - Request signature is too far in the past and has expired. Timestamp date: 2017-04-12T12:21:59+0000
+[Info][2017/04/12 12:37:15 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:37:15 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:37:15 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:37:35 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:37:56 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Throttle][2017/04/12 12:37:57 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Urgent][2017/04/12 12:38:01 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: RequestExpired - Request signature is too far in the past and has expired. Timestamp date: 2017-04-12T12:22:45+0000
+[Info][2017/04/12 12:38:01 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:38:01 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Info][2017/04/12 12:38:03 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:38:03 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:38:04 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:38:17 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:38:36 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:38:58 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:39:05 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:39:18 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:39:37 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:39:45 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 12:39:47 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:48 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:49 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:50 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:51 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:52 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:53 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:54 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:55 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:56 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:57 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:58 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:39:59 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:40:00 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:40:01 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:02 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:03 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:04 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:05 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:06 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:40:06 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:40:07 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:08 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:09 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:10 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:11 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:12 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:13 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:14 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:16 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:17 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:40:18 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:40:20 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:40:38 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:41:07 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:41:21 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:41:26 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Throttle][2017/04/12 12:41:27 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:41:36 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 12:41:38 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:39 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:41:39 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:41:40 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:41 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:42 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:43 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:44 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:45 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:46 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:47 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:48 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:49 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:50 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:51 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:52 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:53 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:54 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:55 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:57 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:58 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:41:58 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:00 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:01 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:02 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:03 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:04 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:05 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:06 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:07 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:08 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:42:09 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:42:09 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:10 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:11 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:12 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:13 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:14 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:15 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:16 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:17 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:18 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:19 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:20 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:21 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:42:22 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:42:22 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:23 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 12:42:24 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Throttle][2017/04/12 12:42:28 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Urgent][2017/04/12 12:42:40 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: RequestExpired - Request signature is too far in the past and has expired. Timestamp date: 2017-04-12T12:27:19+0000
+[Info][2017/04/12 12:42:40 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:42:40 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:42:41 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:43:11 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:43:11 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Info][2017/04/12 12:43:14 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:43:14 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:43:15 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:43:23 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:43:43 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:44:18 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:44:24 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:44:45 guest@local AmazonController.php:54 fetchOrders] Recursively fetching more orders
+[Info][2017/04/12 12:44:45 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrdersByNextToken
+[Throttle][2017/04/12 12:44:46 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Info][2017/04/12 12:44:54 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Throttle][2017/04/12 12:44:55 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+[Throttle][2017/04/12 12:45:18 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds

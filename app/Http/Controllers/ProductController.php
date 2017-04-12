@@ -103,6 +103,16 @@ class ProductController extends Controller
     }
 
     public function AmazonProductInfo($asin){
+        echo $asin;
+         $amz = new \AmazonProductInfo("PROLINE"); //store name matches the array key in the config file
+         echo "<pre>"; print_r($amz); echo "</pre>";
+        $list_amz = $amz->setASINs('B06VWHX2H7');
+        
+         // $list_amz = $amz->fetchCompetitivePricing();
+        echo "string";
+        echo "<pre>"; print_r($list_amz); echo "</pre>";
+
+        die();
         $data = Product::where('asin', $asin)->first();
         return view('products.show', ['product'=>$data]);
     }

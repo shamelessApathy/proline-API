@@ -26,6 +26,7 @@
         <tbody>
 
         <?php $i = 1; ?>
+			@if($list)
 			@foreach ($list as $listValue)
 				<tr>
 					<td>{{ $i }}</td>
@@ -46,6 +47,7 @@
 				</tr>
 			<?php $i++; ?>  
 			@endforeach
+			@endif
 		</tbody>
 	</table>
 @endsection

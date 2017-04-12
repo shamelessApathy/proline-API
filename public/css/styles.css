@@ -75,3 +75,9 @@
 	position:absolute;
 	bottom:0;
 }
+.order-list .btn.btn-primary {
+  float: right;
+}
+.form-horizontal.order-list {
+  margin: 30px 0;
+}
