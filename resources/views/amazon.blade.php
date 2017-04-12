@@ -15,11 +15,11 @@
     </div>
       
     <div class="form-group">
-            <label for="shipping" class="col-md-2 control-label">Country</label>
+            <label for="shipping" class="col-md-2 control-label">Shipping Status</label>
 
             <div class="col-md-9">
                 <select id="shipping" name="shipping" class="form-control" required>
-                	<option value="">Select Country...</option>
+                	<option value="">Select Shipping Status...</option>
                     <option value="Shipped">Shipped</option>
                     <option value="Unshipped">Unshipped</option>
                     <option value="PartiallyShipped">PartiallyShipped</option>
