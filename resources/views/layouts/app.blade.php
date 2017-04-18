@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ config('app.locale') }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Proline API') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
-    <link href="{{asset('css/api.css')}}" rel="stylesheet">
-    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
-    <link href="{{asset('css/font-awesome-4.7.0/css/font-awesome.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -22,7 +19,6 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
-   <script src="{{asset('js/jquery.js')}}" type='text/js' rel='javascript'></script>
 </head>
 <body>
     <div id="app">
@@ -40,16 +36,14 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Proline API') }}
+                        {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ URL::to('products')}}">Products</a></li>
-                        <li><a href="{{ URL::to('amazon')}}">Amazon</a></li>
-                        <li><a href="{{ route('walmart') }}">Walmart</a></li>
+                        &nbsp;
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -88,6 +82,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{asset('js/app.js')}}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

@@ -1,12 +1,22 @@
 <?php
 
 namespace App\Http\Controllers;
+//use Auth;
 use DB;
 use App\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    /**
+    *
+    * Construct Function
+    * Passes all requests for this controller through Auth middleware to make sure user is logged in
+    */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
