@@ -3,6 +3,22 @@
 <div class='container'>
 @include('partials.alerts')
 <h1>Product Index</h1>
+<div class='product-search-container'>
+<form name='search' action="/products/search" method='POST'>
+{{ csrf_field() }}
+<label>Search Proucts</label><br>
+<input type='text' name='query'>
+<select name='type'>
+<option>Search by...</option>
+<option name='sku' value='sku'>SKU</option>
+</select><br>
+<label>Factory<sub>optional</sub></label><br>
+<input type='radio' name='factory' value='feishida'>FEISHIDA</option>
+<input type='radio' name='factory' value='jilu'>JILU</option>
+<br>
+<button type='submit'>Search</button>
+</form>
+</div>
 <div class='row'>
 	<ul>
 		<li><a href='/products/create'>Add Products</a></li>

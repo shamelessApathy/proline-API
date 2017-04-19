@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
 <div class='container'>
-<h1>This is the amazon page</h1>
+<img src="images/amazon-logo-preview.png"/>
+<h4>This is the amazon page</h4>
 
 <form class="form-horizontal order-list col-md-8" role="form" method="POST" action="{{ route('order-list') }}">
 	{{ csrf_field() }}
@@ -32,22 +33,7 @@
     	<button type="submit" class="btn btn-primary">Orders</button>                        
     	</div>
 </form>                   
-<div class="col-md-12">
-<a href="{{ URL::to('/amazon/get_report_list')}}"><button>Reports</button></a>
 
+</div>
 
-<form action='/amazon/get_report' method="POST">
-{{ csrf_field() }}
-<input type='text' placeholder='Report ID' name='report-id'>
-<button type='submit'>Get Report</button>
-</form>
-<div class='console'>
-<?php 
-if (isset($status))
-{
-	echo $status;
-}
-?><textarea name='console-input' class='console-input'></textarea></div>
-</div>
-</div>
 @endsection

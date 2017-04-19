@@ -996,3 +996,4 @@
 [Info][2017/04/18 18:34:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
 [Info][2017/04/18 18:34:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
 [Info][2017/04/18 18:34:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:43:30 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList

@@ -56,3 +56,4 @@ Route::get('/walmart/order_list', 'WalmartController@order_list');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::post('/products/search', 'ProductController@search');

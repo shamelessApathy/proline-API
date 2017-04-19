@@ -18,6 +18,16 @@ class ProductController extends Controller
         $this->middleware('auth');
     }
     /**
+    * Search Products Function
+    * @param search query and type of search
+    * @return list of products matching query
+    */
+    public function search()
+    {
+        echo "we're here!<br>";
+        var_dump($_POST);
+    }
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
