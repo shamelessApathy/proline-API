@@ -47,7 +47,8 @@ class AmazonController extends Controller
         $amz = new \AmazonReportList();
         $amz->fetchReportList();
         $list = $amz->getList();
-        return view('orders', ['list'=>$list]);
+        $message="";
+        return view('orders', ['list'=>$list,'message'=>$message]);
     }
 
     /*** Get Orders List ****/

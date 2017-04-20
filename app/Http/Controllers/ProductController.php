@@ -24,9 +24,9 @@ class ProductController extends Controller
     */
     public function search()
     {
-        $query = $_POST['query'] ?? null;
-        $type = $_POST['type'] ?? null;
-        $factory = $_POST['factory'] ?? null;
+        // $query = $_POST['query'] ?? null;
+        // $type = $_POST['type'] ?? null;
+        // $factory = $_POST['factory'] ?? null;
         // checking if the factory is set, if so, form query based on factory
         if (!empty($factory) && !empty($query) && !empty($type))
         {
@@ -141,12 +141,22 @@ class ProductController extends Controller
     public function AmazonProductInfo($asin){
         echo $asin;
          $amz = new \AmazonProductInfo("PROLINE"); //store name matches the array key in the config file
-         echo "<pre>"; print_r($amz); echo "</pre>";
-        $list_amz = $amz->setASINs('B06VWHX2H7');
+       
+        $amz->setASINs('B06VWHX2H7');
+        $amz->FetchCategories();
+        $amz->FetchMyPrice();
+          echo "<pre>"; print_r($amz); echo "</pre>";
+
+         $obj = new \AmazonProductList("PROLINE"); //store name matches the array key in the config file
+         $obj->setIdType('ASIN');
+        $obj->setProductIds('B06VWHX2H7'); //tells the object to automatically use tokens right away
+        $obj->fetchProductList();
+        $obj->GetProduct(); //this is what actually sends the request
+        
         
          // $list_amz = $amz->fetchCompetitivePricing();
         echo "string";
-        echo "<pre>"; print_r($list_amz); echo "</pre>";
+        echo "<pre>"; print_r($obj); echo "</pre>";
 
         die();
         $data = Product::where('asin', $asin)->first();
