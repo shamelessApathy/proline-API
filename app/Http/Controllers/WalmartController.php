@@ -11,6 +11,15 @@ use App\Product;
 class WalmartController extends Controller
 {
     /**
+    *
+    * Construct Function
+    * Passes all requests for this controller through Auth middleware to make sure user is logged in
+    */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response

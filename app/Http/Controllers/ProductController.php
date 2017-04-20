@@ -1,12 +1,48 @@
 <?php
 
 namespace App\Http\Controllers;
+//use Auth;
 use DB;
 use App\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    /**
+    *
+    * Construct Function
+    * Passes all requests for this controller through Auth middleware to make sure user is logged in
+    */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    /**
+    * Search Products Function
+    * @param search query and type of search
+    * @return list of products matching query
+    */
+    public function search()
+    {
+        $query = $_POST['query'] ?? null;
+        $type = $_POST['type'] ?? null;
+        $factory = $_POST['factory'] ?? null;
+        // checking if the factory is set, if so, form query based on factory
+        if (!empty($factory) && !empty($query) && !empty($type))
+        {
+            $results = Product::where('factory', $factory)->where($type, 'like', "%$query%")->get();
+        }
+        else if ($factory !== null)
+        {
+            $results = Product::where('factory', $factory)->get();
+        }
+        else
+        {
+            $results = Product::where("$type",'like', "%$query%")->get();
+        }
+
+        return view('products.index')->with('products',$results);
+    }
     /**
      * Display a listing of the resource.
      *

@@ -81,3 +81,9 @@
 .form-horizontal.order-list {
   margin: 30px 0;
 }
+.product-search-container
+{
+	width:300px;
+	background-color:#e3e3e3;
+	padding:10px;
+}

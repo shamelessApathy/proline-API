@@ -8,9 +8,22 @@ use Illuminate\Support\Facades\DB;
 class AmazonController extends Controller
 { 
 
+    /**
+    *
+    * Construct Function
+    * Passes all requests for this controller through Auth middleware to make sure user is logged in
+    */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function test()
     {
         echo "testing";
+    }
+    public function home()
+    {
+        return view('amazon/amazon');
     }
     public function get_report()
     {

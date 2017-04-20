@@ -1,8 +1,25 @@
 @extends('layouts.app')
 @section('content')
+
 <div class='container'>
 @include('partials.alerts')
 <h1>Product Index</h1>
+<div class='product-search-container'>
+<form name='search' action="/products/search" method='POST'>
+{{ csrf_field() }}
+<label>Search Proucts</label><br>
+<input type='text' name='query'>
+<select name='type'>
+<option>Search by...</option>
+<option name='sku' value='sku'>SKU</option>
+</select><br>
+<label>Factory<sub>optional</sub></label><br>
+<input type='radio' name='factory' value='feishida'>FEISHIDA</option>
+<input type='radio' name='factory' value='jilu'>JILU</option>
+<br>
+<button type='submit'>Search</button>
+</form>
+</div>
 <div class='row'>
 	<ul>
 		<li><a href='/products/create'>Add Products</a></li>
@@ -22,7 +39,7 @@
        <tr>
 
            <td style='width:130px;'id="sku"><a href="{{ route('product-info', ['id' => $product->asin]) }}">
-           <i class='fa fa-amazon'></i></a> @if($product->walmartID)<div class="wallmt"><a href="{{ route('walmart-product-info',['id'=> $product->walmartID]) }}"><img src="{{asset('images/wallmart.jpg')}}"/> </a></div>@endif <a href="{{ route('product-data', ['id' => $product->id]) }}">{{ $product->sku }}</a></td>
+           <i class='fa fa-amazon'></i></a> @if($product->walmartID)<div style='display:inline' class="wallmt"><a href="{{ route('walmart-product-info',['id'=> $product->walmartID]) }}"><img width='15px' src="{{asset('images/wallmart.jpg')}}"/> </a></div>@endif <a href="{{ route('product-data', ['id' => $product->id]) }}">{{ $product->sku }}</a></td>
 
            <td>
                <a class="inventory" href="#">{{ $product->inventory }}</a>

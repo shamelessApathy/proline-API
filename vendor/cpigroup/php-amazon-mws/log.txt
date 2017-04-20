@@ -944,6 +944,7 @@
 [Info][2017/04/12 12:44:54 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
 [Throttle][2017/04/12 12:44:55 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
 [Throttle][2017/04/12 12:45:18 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
+<<<<<<< HEAD
 [Throttle][2017/04/12 12:45:25 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
 [Throttle][2017/04/12 12:45:47 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
 [Throttle][2017/04/12 12:45:56 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 60 seconds
@@ -1213,3 +1214,58 @@
 [Info][2017/04/12 13:20:53 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
 [Info][2017/04/12 13:20:54 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
 [Throttle][2017/04/12 13:20:55 guest@local AmazonCore.php:611 sleep] Request was throttled, Sleeping for 2 seconds
+=======
+[Info][2017/04/12 18:26:31 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/12 18:26:31 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:34 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:34 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:34 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:35 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:35 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:36 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:36 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:36 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:37 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/12 18:26:51 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Urgent][2017/04/12 18:26:52 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: InvalidParameterValue - Unshipped and PartiallyShipped should be used together when filtering by OrderStatus.  You cannot use one and not the other.
+[Info][2017/04/12 18:27:12 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Urgent][2017/04/12 18:27:12 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: InvalidParameterValue - Unshipped and PartiallyShipped should be used together when filtering by OrderStatus.  You cannot use one and not the other.
+[Info][2017/04/12 18:27:22 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Urgent][2017/04/12 18:27:23 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: InvalidParameterValue - Unshipped and PartiallyShipped should be used together when filtering by OrderStatus.  You cannot use one and not the other.
+[Info][2017/04/12 18:51:33 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Urgent][2017/04/12 18:51:33 guest@local AmazonOrderList.php:428 checkResponse] Bad Response! 400 Bad Request: InvalidParameterValue - Unshipped and PartiallyShipped should be used together when filtering by OrderStatus.  You cannot use one and not the other.
+[Info][2017/04/18 18:34:21 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/04/18 18:34:22 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:23 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:23 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:24 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:24 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:24 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:25 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:25 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:26 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:26 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:26 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:27 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:27 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:27 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:28 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:28 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:29 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:29 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:30 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:30 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:30 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:31 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:31 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:32 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:34:33 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/04/18 18:43:30 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+>>>>>>> 31f8542ac13a1984185501701ed35234ac396900

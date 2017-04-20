@@ -17,11 +17,8 @@ Route::get('/', function () {
 
 
 Auth::routes();
-
+Route::get('/amazon', 'AmazonController@home');
 Route::get('/home', 'HomeController@index');
-Route::get('/amazon', function(){
-	return view('amazon');
-});
 Route::post('/amazon/get_order_list', "AmazonController@get_order_list")->name('order-list');
 Route::get('/amazon/export_order_list', "AmazonController@ExportOrdersData");
 Route::get('/amazon/save_orders', "AmazonController@SaveOrders");
@@ -55,3 +52,8 @@ Route::get('/walmart', 'WalmartController@Index');
 Route::get('/walmart/test', 'WalmartController@test');
 Route::get('/walmart/order_list', 'WalmartController@order_list');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+Route::post('/products/search', 'ProductController@search');
