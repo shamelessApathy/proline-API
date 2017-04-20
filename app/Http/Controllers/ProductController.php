@@ -24,8 +24,24 @@ class ProductController extends Controller
     */
     public function search()
     {
-        echo "we're here!<br>";
-        var_dump($_POST);
+        $query = $_POST['query'] ?? null;
+        $type = $_POST['type'] ?? null;
+        $factory = $_POST['factory'] ?? null;
+        // checking if the factory is set, if so, form query based on factory
+        if (!empty($factory) && !empty($query) && !empty($type))
+        {
+            $results = Product::where('factory', $factory)->where($type, 'like', "%$query%")->get();
+        }
+        else if ($factory !== null)
+        {
+            $results = Product::where('factory', $factory)->get();
+        }
+        else
+        {
+            $results = Product::where("$type",'like', "%$query%")->get();
+        }
+
+        return view('products.index')->with('products',$results);
     }
     /**
      * Display a listing of the resource.

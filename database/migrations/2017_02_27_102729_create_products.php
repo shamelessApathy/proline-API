@@ -23,6 +23,7 @@ class CreateProducts extends Migration
             $table->string('image_path')->nullable();
             $table->string('name');
             $table->integer('optional_attributes')->nullable();
+            $table->enum('factory', ['feishida','jilu']);
             $table->integer('inventory');
             $table->timestamps();
         });
