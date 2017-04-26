@@ -17,7 +17,7 @@ class CreateProducts extends Migration
             $table->increments('id');
             $table->string('sku');
             $table->string('asin')->nullable();
-            $table->string('walmart')->nullable();
+            $table->string('walmartSKU')->nullable();
             $table->string('walmartID')->nullable();
             $table->string('spec_sheet_path')->nullable();
             $table->string('image_path')->nullable();

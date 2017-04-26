@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Info][2017/03/03 06:53:00 guest@local AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
 [Info][2017/03/03 06:53:03 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
 [Info][2017/03/03 06:53:04 guest@local AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
@@ -1330,3 +1331,31 @@
 [Info][2017/04/26 12:05:55 guest@::1 AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
 [Info][2017/04/26 12:22:40 guest@::1 AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
 [Info][2017/04/26 12:22:50 guest@::1 AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+=======
+[Info][2017/04/21 16:50:16 guest@local AmazonProductInfo.php:426 sendRequest] Making request to Amazon: GetProductCategoriesForASIN
+[Info][2017/04/21 16:50:16 guest@local AmazonProductInfo.php:366 sendRequest] Making request to Amazon: GetMyPriceForASIN
+[Info][2017/04/21 16:50:16 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:26:21 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:36:32 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:37:17 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:38:02 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:38:12 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:39:15 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:39:42 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:40:12 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:40:38 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:43:14 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:44:13 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:46:36 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:47:09 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:48:20 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:49:16 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:49:45 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:50:10 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:50:36 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 17:51:04 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 18:06:59 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 18:07:33 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 18:08:03 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+[Info][2017/04/21 18:09:01 guest@local AmazonProductList.php:129 sendRequest] Making request to Amazon: GetMatchingProductForId
+>>>>>>> 491c638c2ca452cb30675108ce30ea3f61c346e8

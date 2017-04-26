@@ -1,0 +1,240 @@
+B012HKQ4LOstring
+AmazonProductList Object
+(
+    [i:protected] => 0
+    [productList:protected] => Array
+        (
+            [0] => AmazonProduct Object
+                (
+                    [data:protected] => Array
+                        (
+                            [Identifiers] => Array
+                                (
+                                    [MarketplaceASIN] => Array
+                                        (
+                                            [MarketplaceId] => ATVPDKIKX0DER
+                                            [ASIN] => B012HKQ4LO
+                                        )
+
+                                    [Request] => Array
+                                        (
+                                            [Id] => B012HKQ4LO
+                                            [IdType] => ASIN
+                                            [status] => Success
+                                        )
+
+                                )
+
+                            [AttributeSets] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [Binding] => Tools & Home Improvement
+                                            [Brand] => PROLINE
+                                            [Color] => Stainless Steel
+                                            [Feature] => Array
+                                                (
+                                                    [0] => Under Cabinet Range Hood
+                                                    [1] => CFM: 1000
+                                                    [2] => Dimensions: 30" Width, 18" Height, 24" Depth
+                                                )
+
+                                            [ItemDimensions] => Array
+                                                (
+                                                    [Height] => 18.00
+                                                    [Length] => 24.00
+                                                    [Width] => 30.00
+                                                    [Weight] => 70.00
+                                                )
+
+                                            [Label] => Proline Range Hoods
+                                            [ListPrice] => Array
+                                                (
+                                                    [Amount] => 1599.95
+                                                    [CurrencyCode] => USD
+                                                )
+
+                                            [Manufacturer] => Proline Range Hoods
+                                            [Model] => PLJW 101.30
+                                            [NumberOfItems] => 1
+                                            [PackageDimensions] => Array
+                                                (
+                                                    [Height] => 24.00
+                                                    [Length] => 33.00
+                                                    [Width] => 28.00
+                                                    [Weight] => 76.00
+                                                )
+
+                                            [PackageQuantity] => 1
+                                            [PartNumber] => PLJW 101.30
+                                            [ProductGroup] => Home Improvement
+                                            [ProductTypeName] => MAJOR_HOME_APPLIANCES
+                                            [Publisher] => Proline Range Hoods
+                                            [ReleaseDate] => 2017-01-27
+                                            [Size] => 30"
+                                            [SmallImage] => Array
+                                                (
+                                                    [URL] => http://ecx.images-amazon.com/images/I/41rnyAKo6OL._SL75_.jpg
+                                                    [Height] => 50
+                                                    [Width] => 75
+                                                )
+
+                                            [Studio] => Proline Range Hoods
+                                            [Title] => Proline Wall / Undercabinet Range Hood PLJW 101.30 1000 CFM, 30"
+                                        )
+
+                                )
+
+                            [Relationships] => Array
+                                (
+                                    [VariationParent] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [Identifiers] => Array
+                                                        (
+                                                            [MarketplaceASIN] => Array
+                                                                (
+                                                                    [MarketplaceId] => ATVPDKIKX0DER
+                                                                    [ASIN] => B06WVDCSCH
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                            [SalesRankings] => Array
+                                (
+                                    [SalesRank] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [ProductCategoryId] => home_improvement_display_on_website
+                                                    [Rank] => 1458428
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [ProductCategoryId] => 3741441
+                                                    [Rank] => 2378
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [index:protected] => 0
+                    [urlbase:protected] => https://mws.amazonservices.com/
+                    [urlbranch:protected] => Products/2011-10-01
+                    [throttleLimit:protected] => 20
+                    [throttleTime:protected] => 
+                    [throttleSafe:protected] => 
+                    [throttleGroup:protected] => 
+                    [throttleStop:protected] => 
+                    [storeName:protected] => PROLINE
+                    [options:protected] => Array
+                        (
+                            [SellerId] => A4MXUMMLKCFTL
+                            [AWSAccessKeyId] => AKIAIBSPIEV5NG42J6ZA
+                            [SignatureVersion] => 2
+                            [SignatureMethod] => HmacSHA256
+                            [Version] => 2011-10-01
+                            [MarketplaceId] => ATVPDKIKX0DER
+                        )
+
+                    [config:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../amazon-config.php
+                    [mockMode:protected] => 
+                    [mockFiles:protected] => 
+                    [mockIndex:protected] => 0
+                    [logpath:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/log.txt
+                    [env:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../environment.php
+                    [rawResponses:protected] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [index:protected] => 1
+    [urlbase:protected] => https://mws.amazonservices.com/
+    [urlbranch:protected] => Products/2011-10-01
+    [throttleLimit:protected] => 20
+    [throttleTime:protected] => 5
+    [throttleSafe:protected] => 
+    [throttleGroup:protected] => GetMatchingProductForId
+    [throttleStop:protected] => 
+    [storeName:protected] => PROLINE
+    [options:protected] => Array
+        (
+            [SellerId] => A4MXUMMLKCFTL
+            [AWSAccessKeyId] => AKIAIBSPIEV5NG42J6ZA
+            [SignatureVersion] => 2
+            [SignatureMethod] => HmacSHA256
+            [Version] => 2011-10-01
+            [MarketplaceId] => ATVPDKIKX0DER
+            [Action] => GetMatchingProductForId
+            [IdType] => ASIN
+            [IdList.Id.1] => B012HKQ4LO
+            [Timestamp] => 2017-04-21T17:24:21+0000
+            [Signature] => gmNay1ZWf57ZxpToyV2aS1fLgNNJr/SQ4CPo4kp37Z4=
+        )
+
+    [config:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../amazon-config.php
+    [mockMode:protected] => 
+    [mockFiles:protected] => 
+    [mockIndex:protected] => 0
+    [logpath:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/log.txt
+    [env:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../environment.php
+    [rawResponses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [head] => HTTP/1.1 200 OK
+Server: Server
+Date: Fri, 21 Apr 2017 17:26:22 GMT
+Content-Type: text/xml
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-mws-quota-max: 18000.0
+x-mws-quota-remaining: 18000.0
+x-mws-quota-resetsOn: 2017-04-21T18:16:00.000Z
+x-mws-response-context: pSYrgFOth2ZBtRixkLTTsSwXzUZRgOYPGegEGFAbFb6CdxYnRf/E+cG7efF0WnnGUotYqQ0vRagl m/nyRLujJQ==
+x-mws-response-context: JBzIgE+MyjrcU2dGNaxkls/uIxGR853ADtsnuSeeS5LmGZJ2F1eX30BqP7vf3Z85VQr71t3BxPE=
+x-amz-request-id: 0d3c6b1d-4622-4217-ac51-2fa7aba6bb68
+x-mws-request-id: 0d3c6b1d-4622-4217-ac51-2fa7aba6bb68
+x-mws-timestamp: 2017-04-21T17:26:21.825Z
+Vary: Accept-Encoding,User-Agent
+                    [body] => 
+ATVPDKIKX0DERB012HKQ4LOTools & Home ImprovementPROLINEStainless SteelUnder Cabinet Range HoodCFM: 1000Dimensions: 30" Width, 18" Height, 24" Depth18.0024.0030.0070.00Proline Range Hoods1599.95USDProline Range HoodsPLJW 101.30124.0033.0028.0076.001PLJW 101.30Home ImprovementMAJOR_HOME_APPLIANCESProline Range Hoods2017-01-2730"http://ecx.images-amazon.com/images/I/41rnyAKo6OL._SL75_.jpg5075Proline Range HoodsProline Wall / Undercabinet Range Hood PLJW 101.30 1000 CFM, 30"ATVPDKIKX0DERB06WVDCSCHhome_improvement_display_on_website1458428374144123780d3c6b1d-4622-4217-ac51-2fa7aba6bb68
+                    [code] => 200
+                    [answer] => OK
+                    [ok] => 1
+                    [headarray] => Array
+                        (
+                            [Server] => Server
+                            [Date] => Fri, 21 Apr 2017 17:26:22 GMT
+                            [Content-Type] => text/xml
+                            [Transfer-Encoding] => chunked
+                            [Connection] => keep-alive
+                            [x-mws-quota-max] => 18000.0
+                            [x-mws-quota-remaining] => 18000.0
+                            [x-mws-quota-resetsOn] => 2017-04-21T18:16:00.000Z
+                            [x-mws-response-context] => JBzIgE+MyjrcU2dGNaxkls/uIxGR853ADtsnuSeeS5LmGZJ2F1eX30BqP7vf3Z85VQr71t3BxPE=
+                            [x-amz-request-id] => 0d3c6b1d-4622-4217-ac51-2fa7aba6bb68
+                            [x-mws-request-id] => 0d3c6b1d-4622-4217-ac51-2fa7aba6bb68
+                            [x-mws-timestamp] => 2017-04-21T17:26:21.825Z
+                            [Vary] => Accept-Encoding,User-Agent
+                        )
+
+                )
+
+        )
+
+)

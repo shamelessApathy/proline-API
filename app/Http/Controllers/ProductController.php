@@ -162,6 +162,21 @@ class ProductController extends Controller
         $data = Product::where('asin', $asin)->first();
         return view('products.show', ['product'=>$data]);
     }
+    public function AmazonProductList($asin){
+        echo $asin;
+        $amz = new \AmazonProductList("PROLINE");
+        $amz->setIdType('ASIN');
+        $amz->setProductIds($asin);
+        $amz->fetchProductList();
+        $amz->getProduct();
+        $data = $amz->getData();
+        //echo "string";
+        //echo "<pre>"; print_r($amz); echo "</pre>";
+
+       // die();
+
+        return view('products.show', ['product'=>$amz, 'data'=> $data]);
+    }
 
     /**
      * Remove the specified resource from storage.

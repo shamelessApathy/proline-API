@@ -1,0 +1,425 @@
+B012HKQ70C
+AmazonProductInfo Object
+(
+    [productList:protected] => Array
+        (
+            [0] => AmazonProduct Object
+                (
+                    [data:protected] => Array
+                        (
+                            [Categories] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [ProductCategoryId] => 10304191
+                                            [ProductCategoryName] => Categories
+                                            [Parent] => Array
+                                                (
+                                                    [ProductCategoryId] => 10272111
+                                                    [ProductCategoryName] => Everything Else
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [index:protected] => 0
+                    [urlbase:protected] => https://mws.amazonservices.com/
+                    [urlbranch:protected] => Products/2011-10-01
+                    [throttleLimit:protected] => 20
+                    [throttleTime:protected] => 
+                    [throttleSafe:protected] => 
+                    [throttleGroup:protected] => 
+                    [throttleStop:protected] => 
+                    [storeName:protected] => PROLINE
+                    [options:protected] => Array
+                        (
+                            [SellerId] => A4MXUMMLKCFTL
+                            [AWSAccessKeyId] => AKIAIBSPIEV5NG42J6ZA
+                            [SignatureVersion] => 2
+                            [SignatureMethod] => HmacSHA256
+                            [Version] => 2011-10-01
+                            [MarketplaceId] => ATVPDKIKX0DER
+                        )
+
+                    [config:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../amazon-config.php
+                    [mockMode:protected] => 
+                    [mockFiles:protected] => 
+                    [mockIndex:protected] => 0
+                    [logpath:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/log.txt
+                    [env:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../environment.php
+                    [rawResponses:protected] => Array
+                        (
+                        )
+
+                )
+
+            [1] => AmazonProduct Object
+                (
+                    [data:protected] => Array
+                        (
+                            [Identifiers] => Array
+                                (
+                                    [MarketplaceASIN] => Array
+                                        (
+                                            [MarketplaceId] => ATVPDKIKX0DER
+                                            [ASIN] => B06VWHX2H7
+                                        )
+
+                                )
+
+                        )
+
+                    [index:protected] => 0
+                    [urlbase:protected] => https://mws.amazonservices.com/
+                    [urlbranch:protected] => Products/2011-10-01
+                    [throttleLimit:protected] => 20
+                    [throttleTime:protected] => 
+                    [throttleSafe:protected] => 
+                    [throttleGroup:protected] => 
+                    [throttleStop:protected] => 
+                    [storeName:protected] => PROLINE
+                    [options:protected] => Array
+                        (
+                            [SellerId] => A4MXUMMLKCFTL
+                            [AWSAccessKeyId] => AKIAIBSPIEV5NG42J6ZA
+                            [SignatureVersion] => 2
+                            [SignatureMethod] => HmacSHA256
+                            [Version] => 2011-10-01
+                            [MarketplaceId] => ATVPDKIKX0DER
+                        )
+
+                    [config:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../amazon-config.php
+                    [mockMode:protected] => 
+                    [mockFiles:protected] => 
+                    [mockIndex:protected] => 0
+                    [logpath:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/log.txt
+                    [env:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../environment.php
+                    [rawResponses:protected] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [index:protected] => 2
+    [urlbase:protected] => https://mws.amazonservices.com/
+    [urlbranch:protected] => Products/2011-10-01
+    [throttleLimit:protected] => 20
+    [throttleTime:protected] => 2
+    [throttleSafe:protected] => 
+    [throttleGroup:protected] => GetMyPrice
+    [throttleStop:protected] => 
+    [storeName:protected] => PROLINE
+    [options:protected] => Array
+        (
+            [SellerId] => A4MXUMMLKCFTL
+            [AWSAccessKeyId] => AKIAIBSPIEV5NG42J6ZA
+            [SignatureVersion] => 2
+            [SignatureMethod] => HmacSHA256
+            [Version] => 2011-10-01
+            [MarketplaceId] => ATVPDKIKX0DER
+            [ASINList.ASIN.1] => B06VWHX2H7
+            [Action] => GetMyPriceForASIN
+            [ASIN] => B06VWHX2H7
+            [Timestamp] => 2017-04-21T16:48:16+0000
+            [Signature] => f68h4h9CQqzZqUn8ucj5oWtz4Z7i9Jj7f1D8IC1Jc1w=
+        )
+
+    [config:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../amazon-config.php
+    [mockMode:protected] => 
+    [mockFiles:protected] => 
+    [mockIndex:protected] => 0
+    [logpath:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/log.txt
+    [env:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../environment.php
+    [rawResponses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [head] => HTTP/1.1 200 OK
+Server: Server
+Date: Fri, 21 Apr 2017 16:50:16 GMT
+Content-Type: text/xml
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-mws-quota-max: 720.0
+x-mws-quota-remaining: 720.0
+x-mws-quota-resetsOn: 2017-04-21T17:16:00.000Z
+x-mws-response-context: sDK0VWSWK7jwDVj/7Kx51eiLDvQr4n3GuSBoXG4Veagq/E8VCNdAER5P77LVdrGGpmnidAq4BnTC r/kD+/MC7Q==
+x-mws-response-context: bHlzHUALUVyxFkGKpn9vqTMUnJpv+JmJ8O4ObQZ4zf5pDwEe285WdZUhX8dEldyosMPC2aVPeIY=
+x-amz-request-id: 7230a7f9-cc6c-45a8-9d85-8686f1e7f3e2
+x-mws-request-id: 7230a7f9-cc6c-45a8-9d85-8686f1e7f3e2
+x-mws-timestamp: 2017-04-21T16:50:16.458Z
+Vary: Accept-Encoding,User-Agent
+                    [body] => 
+10304191Categories10272111Everything Else7230a7f9-cc6c-45a8-9d85-8686f1e7f3e2
+                    [code] => 200
+                    [answer] => OK
+                    [ok] => 1
+                    [headarray] => Array
+                        (
+                            [Server] => Server
+                            [Date] => Fri, 21 Apr 2017 16:50:16 GMT
+                            [Content-Type] => text/xml
+                            [Transfer-Encoding] => chunked
+                            [Connection] => keep-alive
+                            [x-mws-quota-max] => 720.0
+                            [x-mws-quota-remaining] => 720.0
+                            [x-mws-quota-resetsOn] => 2017-04-21T17:16:00.000Z
+                            [x-mws-response-context] => bHlzHUALUVyxFkGKpn9vqTMUnJpv+JmJ8O4ObQZ4zf5pDwEe285WdZUhX8dEldyosMPC2aVPeIY=
+                            [x-amz-request-id] => 7230a7f9-cc6c-45a8-9d85-8686f1e7f3e2
+                            [x-mws-request-id] => 7230a7f9-cc6c-45a8-9d85-8686f1e7f3e2
+                            [x-mws-timestamp] => 2017-04-21T16:50:16.458Z
+                            [Vary] => Accept-Encoding,User-Agent
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [head] => HTTP/1.1 200 OK
+Server: Server
+Date: Fri, 21 Apr 2017 16:50:16 GMT
+Content-Type: text/xml
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-mws-quota-max: 36000.0
+x-mws-quota-remaining: 36000.0
+x-mws-quota-resetsOn: 2017-04-21T17:16:00.000Z
+x-mws-response-context: Um/7JYLFOjRRq873Do7yz7hdqlVfXZ+IgUr8qjzF3550NF6u1/8O4QFdUa9J1BPQGQQgaDfF72rN LyE7/k+jsA==
+x-mws-response-context: VHcE49VXXVu+H2lp53PCcM8Oe8A3RKurjatdD7O4z6OYG0DAVic5eRiFQZZ+V3EW3tBfyJZLKZA=
+x-amz-request-id: 91df6530-3f11-4fa2-98ca-1f934dccc239
+x-mws-request-id: 91df6530-3f11-4fa2-98ca-1f934dccc239
+x-mws-timestamp: 2017-04-21T16:50:16.874Z
+Vary: Accept-Encoding,User-Agent
+                    [body] => 
+ATVPDKIKX0DERB06VWHX2H791df6530-3f11-4fa2-98ca-1f934dccc239
+                    [code] => 200
+                    [answer] => OK
+                    [ok] => 1
+                    [headarray] => Array
+                        (
+                            [Server] => Server
+                            [Date] => Fri, 21 Apr 2017 16:50:16 GMT
+                            [Content-Type] => text/xml
+                            [Transfer-Encoding] => chunked
+                            [Connection] => keep-alive
+                            [x-mws-quota-max] => 36000.0
+                            [x-mws-quota-remaining] => 36000.0
+                            [x-mws-quota-resetsOn] => 2017-04-21T17:16:00.000Z
+                            [x-mws-response-context] => VHcE49VXXVu+H2lp53PCcM8Oe8A3RKurjatdD7O4z6OYG0DAVic5eRiFQZZ+V3EW3tBfyJZLKZA=
+                            [x-amz-request-id] => 91df6530-3f11-4fa2-98ca-1f934dccc239
+                            [x-mws-request-id] => 91df6530-3f11-4fa2-98ca-1f934dccc239
+                            [x-mws-timestamp] => 2017-04-21T16:50:16.874Z
+                            [Vary] => Accept-Encoding,User-Agent
+                        )
+
+                )
+
+        )
+
+)
+string
+AmazonProductList Object
+(
+    [i:protected] => 0
+    [productList:protected] => Array
+        (
+            [0] => AmazonProduct Object
+                (
+                    [data:protected] => Array
+                        (
+                            [Identifiers] => Array
+                                (
+                                    [MarketplaceASIN] => Array
+                                        (
+                                            [MarketplaceId] => ATVPDKIKX0DER
+                                            [ASIN] => B06VWHX2H7
+                                        )
+
+                                    [Request] => Array
+                                        (
+                                            [Id] => B06VWHX2H7
+                                            [IdType] => ASIN
+                                            [status] => Success
+                                        )
+
+                                )
+
+                            [AttributeSets] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [Binding] => Tools & Home Improvement
+                                            [Brand] => ProLine Range Hoods
+                                            [Label] => Proline Range Hoods
+                                            [Manufacturer] => Proline Range Hoods
+                                            [Model] => PLFW 129E.30-Parent
+                                            [ProductGroup] => Home Improvement
+                                            [ProductTypeName] => MAJOR_HOME_APPLIANCES
+                                            [Publisher] => Proline Range Hoods
+                                            [SmallImage] => Array
+                                                (
+                                                    [URL] => http://g-ecx.images-amazon.com/images/G/01/x-site/icons/no-img-sm._CB192198896_.gif
+                                                    [Height] => 40
+                                                    [Width] => 60
+                                                )
+
+                                            [Studio] => Proline Range Hoods
+                                            [Title] => Proline Range Hoods PLFW 129E.30 900 CFM Wall Range Hood
+                                        )
+
+                                )
+
+                            [Relationships] => Array
+                                (
+                                    [VariationChild] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [Identifiers] => Array
+                                                        (
+                                                            [MarketplaceASIN] => Array
+                                                                (
+                                                                    [MarketplaceId] => ATVPDKIKX0DER
+                                                                    [ASIN] => B00DH0KF1Y
+                                                                )
+
+                                                        )
+
+                                                    [Size] => 30"
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [Identifiers] => Array
+                                                        (
+                                                            [MarketplaceASIN] => Array
+                                                                (
+                                                                    [MarketplaceId] => ATVPDKIKX0DER
+                                                                    [ASIN] => B00DH0KFSC
+                                                                )
+
+                                                        )
+
+                                                    [Size] => 36"
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [index:protected] => 0
+                    [urlbase:protected] => https://mws.amazonservices.com/
+                    [urlbranch:protected] => Products/2011-10-01
+                    [throttleLimit:protected] => 20
+                    [throttleTime:protected] => 
+                    [throttleSafe:protected] => 
+                    [throttleGroup:protected] => 
+                    [throttleStop:protected] => 
+                    [storeName:protected] => PROLINE
+                    [options:protected] => Array
+                        (
+                            [SellerId] => A4MXUMMLKCFTL
+                            [AWSAccessKeyId] => AKIAIBSPIEV5NG42J6ZA
+                            [SignatureVersion] => 2
+                            [SignatureMethod] => HmacSHA256
+                            [Version] => 2011-10-01
+                            [MarketplaceId] => ATVPDKIKX0DER
+                        )
+
+                    [config:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../amazon-config.php
+                    [mockMode:protected] => 
+                    [mockFiles:protected] => 
+                    [mockIndex:protected] => 0
+                    [logpath:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/log.txt
+                    [env:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../environment.php
+                    [rawResponses:protected] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [index:protected] => 1
+    [urlbase:protected] => https://mws.amazonservices.com/
+    [urlbranch:protected] => Products/2011-10-01
+    [throttleLimit:protected] => 20
+    [throttleTime:protected] => 5
+    [throttleSafe:protected] => 
+    [throttleGroup:protected] => GetMatchingProductForId
+    [throttleStop:protected] => 
+    [storeName:protected] => PROLINE
+    [options:protected] => Array
+        (
+            [SellerId] => A4MXUMMLKCFTL
+            [AWSAccessKeyId] => AKIAIBSPIEV5NG42J6ZA
+            [SignatureVersion] => 2
+            [SignatureMethod] => HmacSHA256
+            [Version] => 2011-10-01
+            [MarketplaceId] => ATVPDKIKX0DER
+            [Action] => GetMatchingProductForId
+            [IdType] => ASIN
+            [IdList.Id.1] => B06VWHX2H7
+            [Timestamp] => 2017-04-21T16:48:16+0000
+            [Signature] => 90zcUNnp6qBmHSgtgcxcskUtk8tAHNdpM4JEElXU/AU=
+        )
+
+    [config:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../amazon-config.php
+    [mockMode:protected] => 
+    [mockFiles:protected] => 
+    [mockIndex:protected] => 0
+    [logpath:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/log.txt
+    [env:protected] => /var/www/API/API/vendor/cpigroup/php-amazon-mws/includes/classes/../../environment.php
+    [rawResponses:protected] => Array
+        (
+            [0] => Array
+                (
+                    [head] => HTTP/1.1 200 OK
+Server: Server
+Date: Fri, 21 Apr 2017 16:50:17 GMT
+Content-Type: text/xml
+Transfer-Encoding: chunked
+Connection: keep-alive
+x-mws-quota-max: 18000.0
+x-mws-quota-remaining: 18000.0
+x-mws-quota-resetsOn: 2017-04-21T17:16:00.000Z
+x-mws-response-context: DUXQJ1CcqvwDoQbCe/P4vuFxOfU4uePqH/swua5kavOlZLqvrte341VbVRaixE2z0nGly3bEvDH+ fbx3zkDCSA==
+x-mws-response-context: FNYPl18fS1UxQqZ4rfqY0JAU5ZQGfb+0p99RaoYUAGMmq7ghjYlVDWdWdslfW+VrRT5LEESJfik=
+x-amz-request-id: 820e0ad8-7329-4fb1-acac-25bd8c1c4c42
+x-mws-request-id: 820e0ad8-7329-4fb1-acac-25bd8c1c4c42
+x-mws-timestamp: 2017-04-21T16:50:17.271Z
+Vary: Accept-Encoding,User-Agent
+                    [body] => 
+ATVPDKIKX0DERB06VWHX2H7Tools & Home ImprovementProLine Range HoodsProline Range HoodsProline Range HoodsPLFW 129E.30-ParentHome ImprovementMAJOR_HOME_APPLIANCESProline Range Hoodshttp://g-ecx.images-amazon.com/images/G/01/x-site/icons/no-img-sm._CB192198896_.gif4060Proline Range HoodsProline Range Hoods PLFW 129E.30 900 CFM Wall Range HoodATVPDKIKX0DERB00DH0KF1Y30"ATVPDKIKX0DERB00DH0KFSC36"820e0ad8-7329-4fb1-acac-25bd8c1c4c42
+                    [code] => 200
+                    [answer] => OK
+                    [ok] => 1
+                    [headarray] => Array
+                        (
+                            [Server] => Server
+                            [Date] => Fri, 21 Apr 2017 16:50:17 GMT
+                            [Content-Type] => text/xml
+                            [Transfer-Encoding] => chunked
+                            [Connection] => keep-alive
+                            [x-mws-quota-max] => 18000.0
+                            [x-mws-quota-remaining] => 18000.0
+                            [x-mws-quota-resetsOn] => 2017-04-21T17:16:00.000Z
+                            [x-mws-response-context] => FNYPl18fS1UxQqZ4rfqY0JAU5ZQGfb+0p99RaoYUAGMmq7ghjYlVDWdWdslfW+VrRT5LEESJfik=
+                            [x-amz-request-id] => 820e0ad8-7329-4fb1-acac-25bd8c1c4c42
+                            [x-mws-request-id] => 820e0ad8-7329-4fb1-acac-25bd8c1c4c42
+                            [x-mws-timestamp] => 2017-04-21T16:50:17.271Z
+                            [Vary] => Accept-Encoding,User-Agent
+                        )
+
+                )
+
+        )
+
+)
