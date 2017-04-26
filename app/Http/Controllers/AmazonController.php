@@ -418,4 +418,107 @@ class AmazonController extends Controller
     {
         //
     }
+
+    /******************* Amazon data list **************/
+    public function AmazonData()
+    {
+
+        return view('amazon.amazon-data');
+    }
+    public function ApiSelection(Request $request){
+        $value  = $request['value'];
+        if($value=='Orders'){
+            $result  = "<option>Pick an operation...</option>";
+            $result .= '<optgroup label="Order Retrieval"></optgroup>';
+            $result .= '<option value="GetServiceStatus">GetServiceStatus</option>';
+            $result .= '<option value="ListOrders">ListOrders</option>';
+            $result .= '<option value="ListOrdersByNextToken">ListOrdersByNextToken</option>';
+            $result .= '<option value="GetOrder">GetOrder</option>';
+            $result .= '<option value="ListOrderItems">ListOrderItems</option>';
+            $result .= '<option value="ListOrderItemsByNextToken">ListOrderItemsByNextToken</option>';
+        }
+        if($value=='Products'){
+            
+            $result  = '<option>Pick an operation...</option>';
+            $result .= '<optgroup label="Products"></optgroup>';
+            $result .= '<option value="GetServiceStatus">GetServiceStatus</option>';
+            $result .= '<option value="ListMatchingProducts">ListMatchingProducts</option>';
+            $result .= '<option value="GetMatchingProduct">GetMatchingProduct</option>';
+            $result .= '<option value="GetMatchingProductForId">GetMatchingProductForId</option>';
+            $result .= '<option value="GetCompetitivePricingForSKU">GetCompetitivePricingForSKU</option>';
+            $result .= '<option value="GetCompetitivePricingForASIN">GetCompetitivePricingForASIN</option>';
+            $result .= '<option value="GetLowestPricedOffersForSKU">GetLowestPricedOffersForSKU</option>';
+            $result .= '<option value="GetLowestPricedOffersForASIN">GetLowestPricedOffersForASIN</option>';
+            $result .= '<option value="GetLowestOfferListingsForSKU">GetLowestOfferListingsForSKU</option>';
+            $result .= '<option value="GetLowestOfferListingsForASIN">GetLowestOfferListingsForASIN</option>';
+            $result .= '<option value="GetMyFeesEstimate">GetMyFeesEstimate</option>';
+            $result .= '<option value="GetMyPriceForSKU">GetMyPriceForSKU</option>';
+            $result .= '<option value="GetMyPriceForASIN">GetMyPriceForASIN</option>';
+            $result .= '<option value="GetProductCategoriesForSKU">GetProductCategoriesForSKU</option>';
+            $result .= '<option value="GetProductCategoriesForASIN">GetProductCategoriesForASIN</option>';
+        }
+
+        return $result;
+    }
+
+    public function ApiOperation(Request $request){
+        $value  = $request['value'];
+        if($value=="ListOrders"){
+            $result='<div class="row top-buffer">
+                    <div class="text_field clearfix">
+                        <span class="col-md-6 col-sm-12 lt_col">CreatedAfter</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input type="text" id="CreatedAfter">
+                        </span>
+                    </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">CreatedBefore</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input type="text" id="CreatedBefore">
+                        </span>
+                    </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">LastUpdatedAfter</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input type="text" id="LastUpdatedAfter">
+                        </span>
+                    </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">LastUpdatedBefore</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input type="text" id="LastUpdatedBefore">
+                        </span>
+                    </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">OrderStatus</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <select id="shipping" name="shipping" class="form-control" required>
+                                <option value="">Select Shipping Status...</option>
+                                <option value="Shipped">Shipped</option>
+                                <option value="Unshipped">Unshipped</option>
+                                <option value="PartiallyShipped">PartiallyShipped</option>
+                                <option value="Canceled">Canceled</option>
+                                <option value="Unfulfillable">Unfulfillable</option>
+                            </select>
+                        </span>
+                    </div>  
+                </div>';
+        }
+        return $result;
+    }
+    public function ListOrders(Request $request){
+         $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
+        $amz->setLimits('Created', "2017-04-03","2017-04-10");
+        $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
+        $amz->setOrderStatusFilter(
+           array('Shipped')
+           ); //no shipped or pending
+        $amz->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+        $amz->fetchOrders();
+        $list_amz = $amz->getList();
+        // Extracting Orders item sku  //
+        // $list;
+         echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
+    }
+
 }

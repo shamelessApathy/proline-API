@@ -57,3 +57,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::post('/products/search', 'ProductController@search');
+
+/************* Routes for Amazon API ************/
+Route::get('amazon-data', 'AmazonController@AmazonData')->name('amazon-data');
+Route::get('amazon-api-selection', 'AmazonController@ApiSelection')->name('amazon-api-selection');
+Route::get('amazon-api-operation', 'AmazonController@ApiOperation')->name('amazon-api-operation');
+Route::get('amazon/amazon-list-orders', 'AmazonController@ListOrders')->name('amazon-list-orders');
