@@ -5,13 +5,14 @@
 	<h1>Amazon MWS</h1>
 	<div class="col-md-12">
 		<div class="col-md-6 col-sm-6">
-			<form class="form-horizontal api-data" role="form" method="POST" action="">
+			<form class="form-horizontal api-data" role="form" method="POST" action="{{ route('api-form-action') }}">
+				{{ csrf_field() }}
 				<h3 class="text-center btn btn-primary btn-block">API Selection</h2>
 				<div class="row top-buffer">
 					<div class="text_field clearfix">
 						<span class="col-md-6 col-sm-12 lt_col">API Section:</span>
 						<span class="col-md-6 col-sm-12 lt_col">
-							<select id="apisection" name="apisection" class="form-control">    
+							<select id="apisection" name="apisection" class="form-control" required>    
                     			<option value="Feeds">Feeds</option>
                     			<option value="Reports">Reports</option>
                     			<option value="FulfillmentByAmazon">Fulfillment</option>
@@ -32,8 +33,8 @@
 					<div class="text_field clearfix">
 						<span class="col-md-6 col-sm-12 lt_col">Operation:</span>
 						<span class="col-md-6 col-sm-12 lt_col">
-							<select id="apicall" name="apicall" class="form-control">
-				                <option>Pick an operation...</option>
+							<select id="apicall" name="apicall" class="form-control" required>
+				                <option value="">Pick an operation...</option>
 				                <optgroup label="Feeds"></optgroup>
 				                <option value="CancelFeedSubmissions">CancelFeedSubmissions</option>
 				                <option value="GetFeedSubmissionList">GetFeedSubmissionList</option>

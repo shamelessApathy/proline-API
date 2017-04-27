@@ -428,7 +428,7 @@ class AmazonController extends Controller
     public function ApiSelection(Request $request){
         $value  = $request['value'];
         if($value=='Orders'){
-            $result  = "<option>Pick an operation...</option>";
+            $result  = "<option value=''>Pick an operation...</option>";
             $result .= '<optgroup label="Order Retrieval"></optgroup>';
             $result .= '<option value="GetServiceStatus">GetServiceStatus</option>';
             $result .= '<option value="ListOrders">ListOrders</option>';
@@ -439,7 +439,7 @@ class AmazonController extends Controller
         }
         if($value=='Products'){
             
-            $result  = '<option>Pick an operation...</option>';
+            $result  = '<option value="">Pick an operation...</option>';
             $result .= '<optgroup label="Products"></optgroup>';
             $result .= '<option value="GetServiceStatus">GetServiceStatus</option>';
             $result .= '<option value="ListMatchingProducts">ListMatchingProducts</option>';
@@ -468,27 +468,37 @@ class AmazonController extends Controller
                     <div class="text_field clearfix">
                         <span class="col-md-6 col-sm-12 lt_col">CreatedAfter</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input type="text" id="CreatedAfter">
+                            <input name="CreatedAfter" type="text" id="CreatedAfter">
                         </span>
                     </div>
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">CreatedBefore</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input type="text" id="CreatedBefore">
+                            <input name="CreatedBefore" type="text" id="CreatedBefore">
                         </span>
                     </div>
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">LastUpdatedAfter</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input type="text" id="LastUpdatedAfter">
+                            <input name="LastUpdatedAfter" type="text" id="LastUpdatedAfter">
                         </span>
                     </div>
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">LastUpdatedBefore</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input type="text" id="LastUpdatedBefore">
+                            <input name="LastUpdatedBefore" type="text" id="LastUpdatedBefore">
                         </span>
                     </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">FulfillmentChannel.Channel.1</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <select id="channel" name="channel" class="form-control" required>
+                                <option value="">Select Channel...</option>
+                                <option value="MFN">MFN</option>
+                                <option value="AFN">AFN</option>
+                            </select>
+                        </span>
+                    </div>  
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">OrderStatus</span>
                         <span class="col-md-6 col-sm-12 lt_col">
@@ -506,19 +516,106 @@ class AmazonController extends Controller
         }
         return $result;
     }
+    public function ApiFormAction(Request $request){
+       // echo "<pre>"; print_r($request->input()); echo "</pre>";
+        $ApiSelection       = $request['apisection'];
+        $ApicallOperation   = $request['apicall'];
+        
+        if( $ApiSelection== 'Orders'){
+            if( $ApicallOperation=='ListOrders' ){
+                return  $this->ListOrders($request);
+            }
+        }
+    }
+
     public function ListOrders(Request $request){
-         $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
-        $amz->setLimits('Created', "2017-04-03","2017-04-10");
-        $amz->setFulfillmentChannelFilter("MFN"); //no Amazon-fulfilled orders
+        $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
+        $CreatedAfter       = $request['CreatedAfter'];
+        $CreatedBefore      = $request['CreatedBefore'];
+        $LastUpdatedAfter   = $request['LastUpdatedAfter'];
+        $LastUpdatedBefore  = $request['LastUpdatedBefore'];
+        $Shipping           = $request['shipping'];
+        $Channel            = $request['channel'];
+        if($CreatedAfter || $CreatedBefore ){
+             $amz->setLimits('Created',$CreatedAfter,$CreatedBefore);
+        }elseif ($LastUpdatedAfter || $LastUpdatedBefore) {
+             $amz->setLimits('Modified', $LastUpdatedAfter,$LastUpdatedBefore);
+        }else{
+              $amz->setLimits('Modified', "- 100 hours");
+        }
+       
+        $amz->setFulfillmentChannelFilter($Channel); //no Amazon-fulfilled orders
         $amz->setOrderStatusFilter(
-           array('Shipped')
+           array($Shipping)
            ); //no shipped or pending
         $amz->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
         $amz->fetchOrders();
         $list_amz = $amz->getList();
         // Extracting Orders item sku  //
         // $list;
-         echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
+         //echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
+        $message="";
+        $url="";
+         if($list_amz){
+            foreach ($list_amz as $order) {
+                $address            = $order->getShippingAddress();
+                $amount             = $order->getOrderTotal();
+                $amazon_id          = $order->getAmazonOrderId();
+                $purchase_data      = $order->getPurchaseDate();
+                $order_status       = $order->getOrderStatus();
+                $shipping_address   = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
+                $total              = $amount['Amount']." ".$amount['CurrencyCode'];
+                $payment_method     = $order->getPaymentMethod();
+                $market_id          = $order->getMarketplaceId();
+                $buyer_name         = $order->getBuyerName();
+                $email              = $order->getBuyerEmail();
+                $order_type         = $order->getOrderType();
+                
+                /*** Extracting Item sku **/
+                $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
+                $amz_item->setOrderId($amazon_id);
+         
+                $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+                $amz_item->fetchItems();
+                $amz_item = $amz_item->getItems();
+                // $response = $amz_item->getLastResponse();
+                // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
+
+
+                foreach ($amz_item as $item) {
+                   
+                    $list_data['AmazonOrderID']      = $amazon_id;
+                    $list_data['ItemSku']            = $item['SellerSKU'];
+                    $list_data['ProductName']        = $item['Title'];
+                    $list_data['QuantityOrdered']    = $item['QuantityOrdered'];
+                    $list_data['QuantityShipped']    = $item['QuantityShipped'];
+                    $list_data['PurchaseDate']       = $purchase_data;
+                    $list_data['OrderStatus']        = $order_status;
+                    $list_data['ShippingAddress']    = $shipping_address;
+                    $list_data['OrderTotal']         = $total;
+                    $list_data['PaymentMethod']      = $payment_method;
+                    $list_data['MarketplaceId']      = $market_id;
+                    $list_data['BuyerName']          = $buyer_name;
+                    $list_data['Email']              = $email;
+                    $list_data['OrderType']          = $order_type;
+                    $list[] = $list_data;
+                }
+
+            }
+        }else{
+            $message="No Order Found Matching to your request";
+            $list= "";
+        }
+        $response = $amz->getLastResponse();
+        //return $amz->getList();
+        // echo "<pre>"; print_r($list);
+        // die();
+        $this->ExportOrders($request);
+        return view('orders', ['message'=>$message,'response' => $response, 'list'=>$list]); 
+    }
+
+    public function ExportOrders(Request $request){
+         //echo "<pre>"; print_r($request->input()); echo "</pre>";
     }
 
 }
