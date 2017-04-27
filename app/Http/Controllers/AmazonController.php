@@ -406,7 +406,7 @@ class AmazonController extends Controller
     public function update(Request $request, $id)
     {
         //
-    }
+    } 
 
     /**
      * Remove the specified resource from storage.
@@ -517,18 +517,22 @@ class AmazonController extends Controller
         return $result;
     }
     public function ApiFormAction(Request $request){
+
        // echo "<pre>"; print_r($request->input()); echo "</pre>";
         $ApiSelection       = $request['apisection'];
         $ApicallOperation   = $request['apicall'];
         
-        if( $ApiSelection== 'Orders'){
-            if( $ApicallOperation=='ListOrders' ){
+        if( $ApiSelection == 'Orders'){
+
+            if( $ApicallOperation == 'ListOrders' ){
+
                 return  $this->ListOrders($request);
             }
         }
     }
 
     public function ListOrders(Request $request){
+
         $amz = new \AmazonOrderList("PROLINE"); //store name matches the array key in the config file
         $CreatedAfter       = $request['CreatedAfter'];
         $CreatedBefore      = $request['CreatedBefore'];
@@ -556,7 +560,8 @@ class AmazonController extends Controller
          //echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
         $message="";
         $url="";
-         if($list_amz){
+        
+        if($list_amz){
             foreach ($list_amz as $order) {
                 $address            = $order->getShippingAddress();
                 $amount             = $order->getOrderTotal();
@@ -578,8 +583,8 @@ class AmazonController extends Controller
                 $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
                 $amz_item->fetchItems();
                 $amz_item = $amz_item->getItems();
-                // $response = $amz_item->getLastResponse();
-                // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
+                //$response = $amz_item->getLastResponse();
+             //   echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
 
 
                 foreach ($amz_item as $item) {
@@ -606,12 +611,12 @@ class AmazonController extends Controller
             $message="No Order Found Matching to your request";
             $list= "";
         }
-        $response = $amz->getLastResponse();
+       // $response = $amz->getLastResponse();
         //return $amz->getList();
         // echo "<pre>"; print_r($list);
         // die();
-        $this->ExportOrders($request);
-        return view('orders', ['message'=>$message,'response' => $response, 'list'=>$list]); 
+       // $this->ExportOrders($request);
+        return view('orders', ['message'=>$message,'list'=>$list]); 
     }
 
     public function ExportOrders(Request $request){

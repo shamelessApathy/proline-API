@@ -1,0 +1,28 @@
+1.) The form for /amazon-data view, the big one you've been working on, sometimes if one of the non-default "API Section:" values is picked, (maybe when you hit the back button from an error'd page, that's where I notice it the most). WHEN that happens, the "Operation:" options field does not get populated with the relevant operations for that "API Section" value. 
+
+	a.) A workaround to this problem is that if "Orders" were selected when i hit the "back" button, but the wrong options for operations (For the Orders API Section) are in the "Operation:" field, I will click on one of the other "API Section" options and then back to the "Orders" API Section value and then javascript will populate the correct Operation options for the Orders API section
+
+	I don't know if there's an easy fix, but for now it's ok, in the future we will need to make it idiot proof because it won't just be us using it.
+
+
+2.) Why do you use the truthy/falsey tests? 
+		Example:
+		if ($var)
+		{
+			// Do stuff
+		}
+
+	Shouldn't it be 
+	if (isset($var))   OR  if (!empty($var))
+
+	I haven't seen the code give an error yet, in this application, but I've driven myself crazy trying to figure out a problem that had to do with truthy/falsey values as opposed to rigid  true/false booleans
+
+
+3.) ListOrders() function, I know you had left off in the middle of it, it just hangs, keeps loading for awhile, eventually it loads a page with stuff  
+Link to screenshot: http://dev.sharefuly.com/image/info?id=168
+
+I see that there is a foreach method being used to go over the $list_amz object, since it wil have a bunch of different orders in it. 
+
+That amz_item->fetchItems() or amz_item->getItems() that's running inside of that foreach, is it making a NEW request to the Amazon API every time with that foreach? 
+
+We will hit our Request Quota very quickly that way. What exactly do we need for info for that? Can we just keep the display table for orders simple, with the info from just the $list_amz object, and then, make each table row a link to another function that will actually retrieve a specific order by its OrderID number, rather than try to cram a bunch of requests and information into one page and unnecessarily hit our Request Quota for the hour.
