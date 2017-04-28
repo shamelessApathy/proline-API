@@ -59,6 +59,7 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                         <li><a href='/products'>Products</a></li>
+                        <li><a href='/amazon-data'>Amazon Data Form</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
