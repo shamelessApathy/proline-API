@@ -34,14 +34,14 @@
 						<span class="col-md-6 col-sm-12 lt_col">Operation:</span>
 						<span class="col-md-6 col-sm-12 lt_col">
 							<select id="apicall" name="apicall" class="form-control" required>
-				                <option value="">Pick an operation...</option>
+				                <!-- <option value="">Pick an operation...</option>
 				                <optgroup label="Feeds"></optgroup>
 				                <option value="CancelFeedSubmissions">CancelFeedSubmissions</option>
 				                <option value="GetFeedSubmissionList">GetFeedSubmissionList</option>
 				                <option value="GetFeedSubmissionListByNextToken">GetFeedSubmissionListByNextToken</option>
 				                <option value="GetFeedSubmissionCount">GetFeedSubmissionCount</option>
 				                <option value="GetFeedSubmissionResult">GetFeedSubmissionResult</option>
-				                <option value="SubmitFeed">SubmitFeed</option>
+				                <option value="SubmitFeed">SubmitFeed</option> -->
 				            </select>
 						</span>
 					</div>

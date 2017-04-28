@@ -61,8 +61,11 @@ Route::post('/products/search', 'ProductController@search');
 
 /************* Routes for Amazon API ************/
 Route::get('amazon-data', 'AmazonController@AmazonData')->name('amazon-data');
-Route::get('amazon-api-selection', 'AmazonController@ApiSelection')->name('amazon-api-selection');
-Route::get('amazon-api-operation', 'AmazonController@ApiOperation')->name('amazon-api-operation');
+Route::get('amazon-api-selection', 'ApiSelectionController@ApiSelection')->name('amazon-api-selection');
+Route::get('amazon-api-operation', 'ApiSelectionController@ApiOperation')->name('amazon-api-operation');
 Route::post('amazon/data', 'AmazonController@ApiFormAction')->name('api-form-action');
 Route::get('amazon/amazon-list-orders', 'AmazonController@ListOrders')->name('amazon-list-orders');
+Route::get('amazon/amazon-order-service-status', 'AmazonController@GetOrderServiceStatus')->name('amazon-order-service-status');
+Route::get('amazon/amazon-get-order', 'AmazonController@GetOrder')->name('amazon-get-order');
+Route::get('amazon/amazon-get-order-item', 'AmazonController@ListOrderItems')->name('amazon-get-order-item');
 Route::get('amazon/amazon-export-orders', 'AmazonController@ExportOrders')->name('amazon-export-orders');
