@@ -60,6 +60,7 @@ Route::get('/home', 'HomeController@index');
 Route::post('/products/search', 'ProductController@search');
 
 /************* Routes for Amazon API ************/
+/*** Amazon Order Routes *****/
 Route::get('amazon-data', 'AmazonController@AmazonData')->name('amazon-data');
 Route::get('amazon-api-selection', 'ApiSelectionController@ApiSelection')->name('amazon-api-selection');
 Route::get('amazon-api-operation', 'ApiSelectionController@ApiOperation')->name('amazon-api-operation');
@@ -69,3 +70,8 @@ Route::get('amazon/amazon-order-service-status', 'AmazonController@GetOrderServi
 Route::get('amazon/amazon-get-order', 'AmazonController@GetOrder')->name('amazon-get-order');
 Route::get('amazon/amazon-get-order-item', 'AmazonController@ListOrderItems')->name('amazon-get-order-item');
 Route::get('amazon/amazon-export-orders', 'AmazonController@ExportOrders')->name('amazon-export-orders');
+Route::get('amazon/amazon-order-info/{id}', 'AmazonController@GetOrderDetails')->name('amazon-order-info');
+
+/***** Amazon Product Routes ****/
+Route::get('amazon/amazon-product-service-status', 'ProductController@GetProductServiceStatus')->name('amazon-product-service-status');
+Route::get('amazon/amazon-product-get-price-sku', 'ProductController@GetMyPriceForSKU')->name('amazon-product-get-price-sku');

@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\AmazonOrders;
 use App\Product;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\ProductController;
 class AmazonController extends Controller
 { 
 
@@ -306,6 +307,22 @@ class AmazonController extends Controller
                 return  $this->ListOrderItems($request);
             }
         }
+
+        if( $ApiSelection== 'Products'){
+            if( $ApicallOperation=='GetProductServiceStatus' ){
+                $product = new ProductController;
+                return  $product->GetProductServiceStatus($request);
+            }
+            // if( $ApicallOperation=='ListOrders' ){
+            //     return  $this->ListOrders($request);
+            // }
+            // if( $ApicallOperation=='GetOrder' ){
+            //     return  $this->GetOrder($request);
+            // }
+            //  if( $ApicallOperation=='ListOrderItems' ){
+            //     return  $this->ListOrderItems($request);
+            // }
+        }
     }
 
     public function GetOrderServiceStatus(Request $request){
@@ -361,47 +378,18 @@ class AmazonController extends Controller
          if($list_amz){
             foreach ($list_amz as $order) {
                 $address            = $order->getShippingAddress();
-                $amount             = $order->getOrderTotal();
-                $amazon_id          = $order->getAmazonOrderId();
-                $purchase_data      = $order->getPurchaseDate();
-                $order_status       = $order->getOrderStatus();
-                $shipping_address   = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
-                $total              = $amount['Amount']." ".$amount['CurrencyCode'];
-                $payment_method     = $order->getPaymentMethod();
-                $market_id          = $order->getMarketplaceId();
-                $buyer_name         = $order->getBuyerName();
-                $email              = $order->getBuyerEmail();
-                $order_type         = $order->getOrderType();
-                
-                /*** Extracting Item sku **/
-                $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
-                $amz_item->setOrderId($amazon_id);
-         
-                $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
-                $amz_item->fetchItems();
-                $amz_item = $amz_item->getItems();
-                // $response = $amz_item->getLastResponse();
-                // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
-
-
-                foreach ($amz_item as $item) {
-                   
-                    $list_data['AmazonOrderID']      = $amazon_id;
-                    $list_data['ItemSku']            = $item['SellerSKU'];
-                    $list_data['ProductName']        = $item['Title'];
-                    $list_data['QuantityOrdered']    = $item['QuantityOrdered'];
-                    $list_data['QuantityShipped']    = $item['QuantityShipped'];
-                    $list_data['PurchaseDate']       = $purchase_data;
-                    $list_data['OrderStatus']        = $order_status;
-                    $list_data['ShippingAddress']    = $shipping_address;
-                    $list_data['OrderTotal']         = $total;
-                    $list_data['PaymentMethod']      = $payment_method;
-                    $list_data['MarketplaceId']      = $market_id;
-                    $list_data['BuyerName']          = $buyer_name;
-                    $list_data['Email']              = $email;
-                    $list_data['OrderType']          = $order_type;
-                    $list[] = $list_data;
-                }
+                $amount             = $order->getOrderTotal();                
+                $list_data['AmazonOrderID']      = $order->getAmazonOrderId();
+                $list_data['PurchaseDate']       = $order->getPurchaseDate();
+                $list_data['OrderStatus']        = $order->getOrderStatus();
+                $list_data['ShippingAddress']    = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
+                $list_data['OrderTotal']         = $amount['Amount']." ".$amount['CurrencyCode'];
+                $list_data['PaymentMethod']      = $order->getPaymentMethod();
+                $list_data['MarketplaceId']      = $order->getMarketplaceId();
+                $list_data['BuyerName']          = $order->getBuyerName();
+                $list_data['Email']              = $order->getBuyerEmail();
+                $list_data['OrderType']          = $order->getOrderType();
+                $list[] = $list_data;
 
             }
         }else{
@@ -417,7 +405,7 @@ class AmazonController extends Controller
     }
 
     public function GetOrder(Request $request){
-       $AmazonOrderId   = $request['AmazonOrderId'];
+        $AmazonOrderId   = $request['AmazonOrderId'];
         $amz = new \AmazonOrder("PROLINE"); //store name matches the array key in the config file
         $amz->setOrderId($AmazonOrderId);
         $amz->fetchOrder();
@@ -432,46 +420,17 @@ class AmazonController extends Controller
                 // die();
                 $address            = $order['ShippingAddress'];
                 $amount             = $order['OrderTotal'];
-                $amazon_id          = $order['AmazonOrderId'];
-                $purchase_data      = $order['PurchaseDate'];
-                $order_status       = $order['OrderStatus'];
-                $shipping_address   = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
-                $total              = $amount['Amount']." ".$amount['CurrencyCode'];
-                $payment_method     = $order['PaymentMethod'];
-                $market_id          = $order['MarketplaceId'];
-                $buyer_name         = $order['BuyerName'];
-                $email              = $order['BuyerEmail'];
-                $order_type         = $order['OrderType'];
-                
-                /*** Extracting Item sku **/
-                $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
-                $amz_item->setOrderId($amazon_id);
-         
-                $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
-                $amz_item->fetchItems();
-                $amz_item = $amz_item->getItems();
-                // $response = $amz_item->getLastResponse();
-                // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
-
-
-                foreach ($amz_item as $item) {
-                   
-                    $list_data['AmazonOrderID']      = $amazon_id;
-                    $list_data['ItemSku']            = $item['SellerSKU'];
-                    $list_data['ProductName']        = $item['Title'];
-                    $list_data['QuantityOrdered']    = $item['QuantityOrdered'];
-                    $list_data['QuantityShipped']    = $item['QuantityShipped'];
-                    $list_data['PurchaseDate']       = $purchase_data;
-                    $list_data['OrderStatus']        = $order_status;
-                    $list_data['ShippingAddress']    = $shipping_address;
-                    $list_data['OrderTotal']         = $total;
-                    $list_data['PaymentMethod']      = $payment_method;
-                    $list_data['MarketplaceId']      = $market_id;
-                    $list_data['BuyerName']          = $buyer_name;
-                    $list_data['Email']              = $email;
-                    $list_data['OrderType']          = $order_type;
-                    $list[] = $list_data;
-                }
+                $list_data['AmazonOrderID']      = $order['AmazonOrderId'];
+                $list_data['PurchaseDate']       = $order['PurchaseDate'];
+                $list_data['OrderStatus']        = $order['OrderStatus'];
+                $list_data['ShippingAddress']    = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
+                $list_data['OrderTotal']         = $amount['Amount']." ".$amount['CurrencyCode'];
+                $list_data['PaymentMethod']      = $order['PaymentMethod'];
+                $list_data['MarketplaceId']      = $order['MarketplaceId'];
+                $list_data['BuyerName']          = $order['BuyerName'];
+                $list_data['Email']              = $order['BuyerEmail'];
+                $list_data['OrderType']          = $order['OrderType'];
+                $list[] = $list_data;
 
            // }
         }else{
@@ -601,6 +560,77 @@ class AmazonController extends Controller
         }  
           
         fclose($outstream);
+    }
+
+    public function GetOrderDetails(Request $request,$id){
+       $AmazonOrderId   = $id;
+        $amz = new \AmazonOrder("PROLINE"); //store name matches the array key in the config file
+        $amz->setOrderId($AmazonOrderId);
+        $amz->fetchOrder();
+        $list_amz = $amz->getData();
+        // echo "<pre>"; print_r($list_amz); echo "</pre>"; die();
+        $message="";
+        $url="";
+         if($list_amz){
+            $message ="Order details associated with order Id : ".$AmazonOrderId;
+            $order = $list_amz;
+            //foreach ($list_amz as $order) {
+                // echo $order['ShippingAddress'];
+                // die();
+                $address            = $order['ShippingAddress'];
+                $amount             = $order['OrderTotal'];
+                $amazon_id          = $order['AmazonOrderId'];
+                $purchase_data      = $order['PurchaseDate'];
+                $order_status       = $order['OrderStatus'];
+                $shipping_address   = $address['Name']." ".$address['AddressLine1']." ".$address['City']." ".$address['StateOrRegion']." ".$address['PostalCode']." ".$address['CountryCode']." ".$address['Phone'];
+                $total              = $amount['Amount']." ".$amount['CurrencyCode'];
+                $payment_method     = $order['PaymentMethod'];
+                $market_id          = $order['MarketplaceId'];
+                $buyer_name         = $order['BuyerName'];
+                $email              = $order['BuyerEmail'];
+                $order_type         = $order['OrderType'];
+                
+                /*** Extracting Item sku **/
+                $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
+                $amz_item->setOrderId($amazon_id);
+         
+                $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
+                $amz_item->fetchItems();
+                $amz_item = $amz_item->getItems();
+                // $response = $amz_item->getLastResponse();
+                // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
+
+
+                foreach ($amz_item as $item) {
+                   
+                    $list_data['Amazon OrderID']      = $amazon_id;
+                    $list_data['Item Sku']            = $item['SellerSKU'];
+                    $list_data['Product Name']        = $item['Title'];
+                    $list_data['Quantity Ordered']    = $item['QuantityOrdered'];
+                    $list_data['Quantity Shipped']    = $item['QuantityShipped'];
+                    $list_data['Purchase Date']       = $purchase_data;
+                    $list_data['Order Status']        = $order_status;
+                    $list_data['Shipping Address']    = $shipping_address;
+                    $list_data['Order Total']         = $total;
+                    $list_data['Payment Method']      = $payment_method;
+                    $list_data['Marketplace Id']      = $market_id;
+                    $list_data['Buyer Name']          = $buyer_name;
+                    $list_data['Email']               = $email;
+                    $list_data['Order Type']          = $order_type;
+                    $list = $list_data;
+                }
+
+           // }
+        }else{
+            $message="No Data Found Matching to your request";
+            $list= "";
+        }
+        $response = $amz->getLastResponse();
+        //return $amz->getList();
+        // echo "<pre>"; print_r($list);
+        // die();
+        //$this->ExportOrders($request);
+        return view('amazon.amazon-order-info', ['message'=>$message,'response' => $response, 'list'=>$list]); 
     }
 
 }

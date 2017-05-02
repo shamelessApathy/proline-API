@@ -188,4 +188,45 @@ class ProductController extends Controller
     {
         //
     }
+
+    public function GetProductServiceStatus(Request $request){
+        $amz = new \AmazonServiceStatus("PROLINE"); //store name matches the array key in the 
+        $amz->setService('Products');
+        $amz->fetchServiceStatus(); 
+        $list_amz = $amz->getStatus();  
+        // Extracting Orders item sku  //
+        // $list;
+        $status =  $list_amz;
+        $response="";
+        $list="";
+        $message="";
+        $url="";
+        if(!empty($status)){
+            $message="Status : ".$status;
+        }
+        //return $amz->getList();
+        // echo "<pre>"; print_r($list);
+        // die();
+        //$this->ExportOrders($request); 
+        return view('products.amazon-products', ['message'=>$message,'response' => $response, 'list'=>$list]); 
+    }
+
+    public function GetMyPriceForSKU(Request $request){
+        $amz = new \AmazonProductInfo("PROLINE"); //store name matches the array key in the config file
+        $amz->setASINs('B06VWGWZ6N');
+        $amz->fetchCategories();
+          echo "<pre>"; print_r($amz); echo "</pre>"; die();
+        $response="";
+        $list="";
+        $message="";
+        $url="";
+        if(!empty($status)){
+            $message="Status : ".$status;
+        }
+        //return $amz->getList();
+        // echo "<pre>"; print_r($list);
+        // die();
+        //$this->ExportOrders($request); 
+        return view('products.amazon-products', ['message'=>$message,'response' => $response, 'list'=>$list]); 
+    }
 }

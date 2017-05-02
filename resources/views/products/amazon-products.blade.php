@@ -4,7 +4,7 @@
 	<div class="col-md-12">
 		<a href="{{ route('amazon-data') }}" class="btn btn-primary">Back</a>       
 		<div class="row">
-			<h1>This is the orders page</h1>
+			<h1>This is the Amazon Products page</h1>
 			{{$message}}
 			@if($list)
 			<h2>Click here to <a href="{{ route('amazon-export-orders')}}">Export Data </a></h2> 

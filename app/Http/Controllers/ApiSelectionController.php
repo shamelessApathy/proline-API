@@ -30,7 +30,7 @@ class ApiSelectionController extends Controller
             
             $result  = '<option value="">Pick an operation...</option>';
             $result .= '<optgroup label="Products"></optgroup>';
-            $result .= '<option value="GetServiceStatus">GetServiceStatus</option>';
+            $result .= '<option value="GetProductServiceStatus">GetServiceStatus</option>';
             $result .= '<option value="ListMatchingProducts">ListMatchingProducts</option>';
             $result .= '<option value="GetMatchingProduct">GetMatchingProduct</option>';
             $result .= '<option value="GetMatchingProductForId">GetMatchingProductForId</option>';
@@ -127,6 +127,13 @@ class ApiSelectionController extends Controller
                         </div>
                     </div>';
         }
+        /**** Products API operations *****/
+        if($value=="GetProductServiceStatus"){
+            $result ='<div class="row text-center">
+                    <div class="text_field clearfix"><h2>No required parameters</h2></div></div>';
+        }
+
+
         return $result;
     }
 
