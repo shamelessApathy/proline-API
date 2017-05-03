@@ -75,3 +75,7 @@ Route::get('amazon/amazon-order-info/{id}', 'AmazonController@GetOrderDetails')-
 /***** Amazon Product Routes ****/
 Route::get('amazon/amazon-product-service-status', 'ProductController@GetProductServiceStatus')->name('amazon-product-service-status');
 Route::get('amazon/amazon-product-get-price-sku', 'ProductController@GetMyPriceForSKU')->name('amazon-product-get-price-sku');
+
+/***** Amazon Reports Routes ****/
+Route::get('amazon/amazon-get-report', 'ReportController@GetReport')->name('amazon-get-report');
+Route::get('amazon/amazon-get-report-list', 'ReportController@GetReportList')->name('amazon-get-report-list');

@@ -106,6 +106,18 @@
           showAnim : 'fadeIn'
         });
     });
+    $(document).on("focus", "#AvailableFromDate", function(){
+        $(this).datepicker({
+          dateFormat: "yy-mm-dd",
+          showAnim : 'fadeIn'
+        });
+    });
+    $(document).on("focus", "#AvailableToDate", function(){
+        $(this).datepicker({
+          dateFormat: "yy-mm-dd",
+          showAnim : 'fadeIn'
+        });
+    });
   } );
   </script>
  
