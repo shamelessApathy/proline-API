@@ -638,5 +638,70 @@ class AmazonController extends Controller
         //$this->ExportOrders($request);
         return view('amazon.amazon-order-info', ['message'=>$message,'response' => $response, 'list'=>$list]); 
     }
+    /**
+    *
+    * @param none
+    * @return array with list of inventory that has status of "SHIPPED" to be subtracted from central product info
+    */
+    public function cron_inventory()
+    {
+       /* $reportId ='5017995438017290';
+        $amz = new \AmazonReport;
+        //$amz->setReportType('_GET_FLAT_FILE_ALL_ORDERS_DATA_BY_LAST_UPDATE_');
+        //$amz->setTimeLimits('-24 hour');
+        //$amz->requestReport();
+        //$amz->getReportRequestId($reportId);
+        $amz->setReportId($reportId);
+        $amz->fetchReport();
+        $amz->saveReport('/var/www/amazon-report.txt');*/
+        //$file = fopen('/var/www/amazon-report.csv', 'r');
+        //$response = fgetcsv($file,'\t');
+         # Open the File.
+    $handle = fopen("/var/www/amazon-report.csv", "r");
+        # Set the parent multidimensional array key to 0.
+ 
+      $data = fgetcsv($handle,'/n');
 
+        $rows = $data;
+        $header = array_shift($rows); 
+        $csv = array(); 
+        foreach($rows as $row) 
+            { 
+                $csv[] = array_combine($header, $row); 
+            }
+        
+
+        /*while (($data = fgetcsv($handle, 1000, "\t")) !== FALSE) {
+            # Count the total keys in the row.
+            $c = count($data);
+            # Populate the multidimensional array.
+            for ($x=0;$x<$c;$x++)
+            {
+                $csvarray[$nn][$x] = $data[$x];
+            }
+            $nn++;*/
+        //}
+        # Close the File.
+        //fclose($handle);
+
+    # Print the contents of the multidimensional array.
+    $response = $csv;
+
+    $file = file_get_contents('/var/www/amazon-report.csv');
+    $data = array_map('str_getcsv', preg_split('/\r*\n+|\r+/', $file));
+    $header = array_shift($data);
+    $header = preg_split('/\s+/', $header[0]);
+    $csvarray = array();
+    foreach( $data as $row)
+    {
+        $row = preg_split('/\s+/', $row[0]);
+        var_dump($row);
+      //  $new_row = array_combine($header, $row);
+        //array_push($csvarray,$new_row);
+    }            
+
+
+            
+      //  return view('amazon.test_list',['list'=>$csvarray]);
+    }
 }

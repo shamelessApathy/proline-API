@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 
 Auth::routes();
+Route::get('/amazon/cron', 'AmazonController@cron_inventory');
 Route::get('/amazon', 'AmazonController@home');
 Route::get('/home', 'HomeController@index');
 Route::post('/amazon/get_order_list', "AmazonController@get_order_list")->name('order-list');
