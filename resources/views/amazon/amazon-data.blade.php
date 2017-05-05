@@ -55,6 +55,43 @@
 		</div>
 	</div>
 
+<script type="text/javascript">
+	$(function(){
+    	$(document).on('click', '.btn-add', function(e){
+	        e.preventDefault();
+	        var controlForm = $('#ReportTypeList:first'),
+	            currentEntry = $(this).parents('.entry:first'),
+	            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+	        newEntry.find('input').val('');
+	        controlForm.find('.entry:not(:last) .btn-add')
+	            .removeClass('btn-add').addClass('btn-remove')
+	            .removeClass('btn-success').addClass('btn-danger')
+	            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+    	}).on('click', '.btn-remove', function(e){
+	        e.preventDefault();
+	        $(this).parents('.entry:first').remove();
+	        return false;
+    });
+
+    	$(document).on('click', '.btn-add-rId', function(e){
+	        e.preventDefault();
+	        var controlForm = $('#ReportRequestIdList:first'),
+	            currentEntry = $(this).parents('.entry-rId:first'),
+	            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+	        newEntry.find('input').val('');
+	        controlForm.find('.entry-rId:not(:last) .btn-add-rId')
+	            .removeClass('btn-add-rId').addClass('btn-remove-rId')
+	            .removeClass('btn-success').addClass('btn-danger')
+	            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+    	}).on('click', '.btn-remove-rId', function(e){
+	        e.preventDefault();
+	        $(this).parents('.entry-rId:first').remove();
+	        return false;
+    });
+});
+</script>
+
+
 <?php //var_dump($response[0]->Request); ?>
 <script type="text/javascript">
 	$('select#apisection').on('change', function() {

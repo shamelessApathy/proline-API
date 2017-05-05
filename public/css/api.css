@@ -9,3 +9,18 @@
 .clickable-row{
 	cursor: pointer;
 }
+.repeat-in button.btn,.repeat-in button.btn:active:hover{
+    background: none;
+    padding: 0px;
+    color: #2ab27b;
+    border-color: transparent;
+    box-shadow : none;
+    border: none;
+}
+.repeat-in button.btn.btn-danger {
+    color: red;
+}
+.repeat-in input {
+    width: 90%;
+    display: inline-block;
+}

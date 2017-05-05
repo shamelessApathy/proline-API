@@ -79,3 +79,4 @@ Route::get('amazon/amazon-product-get-price-sku', 'ProductController@GetMyPriceF
 /***** Amazon Reports Routes ****/
 Route::get('amazon/amazon-get-report', 'ReportController@GetReport')->name('amazon-get-report');
 Route::get('amazon/amazon-get-report-list', 'ReportController@GetReportList')->name('amazon-get-report-list');
+Route::get('amazon/amazon-get-report-info/{id}', 'ReportController@GetReportInfo')->name('amazon-get-report-info');

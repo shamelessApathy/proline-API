@@ -77,25 +77,25 @@ class ApiSelectionController extends Controller
                     <div class="text_field clearfix">
                         <span class="col-md-6 col-sm-12 lt_col">CreatedAfter</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input name="CreatedAfter" type="text" id="CreatedAfter">
+                            <input name="CreatedAfter" type="text" class="form-control" id="CreatedAfter">
                         </span>
                     </div>
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">CreatedBefore</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input name="CreatedBefore" type="text" id="CreatedBefore">
+                            <input name="CreatedBefore" type="text" class="form-control" id="CreatedBefore">
                         </span>
                     </div>
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">LastUpdatedAfter</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input name="LastUpdatedAfter" type="text" id="LastUpdatedAfter">
+                            <input name="LastUpdatedAfter" type="text" class="form-control" id="LastUpdatedAfter">
                         </span>
                     </div>
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">LastUpdatedBefore</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input name="LastUpdatedBefore" type="text" id="LastUpdatedBefore">
+                            <input name="LastUpdatedBefore" type="text" class="form-control" id="LastUpdatedBefore">
                         </span>
                     </div>
                      <div class="text_field clearfix top-buffer">
@@ -132,7 +132,7 @@ class ApiSelectionController extends Controller
                         <div class="text_field clearfix">
                             <span class="col-md-6 col-sm-12 lt_col">AmazonOrderId</span>
                             <span class="col-md-6 col-sm-12 lt_col">
-                                <input name="AmazonOrderId" type="text" id="AmazonOrderId" required>
+                                <input name="AmazonOrderId" class="form-control" type="text" id="AmazonOrderId" required>
                             </span>
                         </div>
                     </div>';
@@ -142,7 +142,7 @@ class ApiSelectionController extends Controller
                         <div class="text_field clearfix">
                             <span class="col-md-6 col-sm-12 lt_col">AmazonOrderId</span>
                             <span class="col-md-6 col-sm-12 lt_col">
-                                <input name="AmazonOrderId" type="text" id="AmazonOrderId" required>
+                                <input name="AmazonOrderId" type="text" class="form-control" id="AmazonOrderId" required>
                             </span>
                         </div>
                     </div>';
@@ -159,7 +159,7 @@ class ApiSelectionController extends Controller
                         <div class="text_field clearfix">
                             <span class="col-md-6 col-sm-12 lt_col">ReportId</span>
                             <span class="col-md-6 col-sm-12 lt_col">
-                                <input name="ReportId" type="text" id="ReportId" required>
+                                <input name="ReportId" type="text" class="form-control" id="ReportId" required>
                             </span>
                         </div>
                     </div>';
@@ -169,19 +169,24 @@ class ApiSelectionController extends Controller
                     <div class="text_field clearfix">
                         <span class="col-md-6 col-sm-12 lt_col">MaxCount</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input name="MaxCount" type="text" id="MaxCount">
+                            <input name="MaxCount" type="text" class="form-control" id="MaxCount">
                         </span>
                     </div>
-                     <div class="text_field clearfix top-buffer">
-                        <span class="col-md-6 col-sm-12 lt_col">ReportTypeList.Type.1</span>
-                        <span class="col-md-6 col-sm-12 lt_col">
-                            <input name="ReportTypeList" type="text" id="ReportTypeList">
-                        </span>
+                    <div class="text_field clearfix repeat-in" id="ReportTypeList">
+                        <div class="entry top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">ReportTypeList.Type.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                                <input name="ReportTypeList[]" class="form-control" type="text" id="ReportTypeList">
+                                <button type="button" class="btn btn-success btn-lg btn-add">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
                     </div>
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">Acknowledged</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <select id="shipping" name="shipping" class="form-control" required>
+                            <select id="Acknowledged" name="Acknowledged" class="form-control" required>
                                 <option value="">Select Option...</option>
                                 <option value="True">True</option>
                                 <option value="False">False</option>
@@ -191,21 +196,26 @@ class ApiSelectionController extends Controller
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">AvailableFromDate</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <input name="AvailableFromDate" type="text" id="AvailableFromDate">
+                            <input name="AvailableFromDate" class="form-control" type="text" id="AvailableFromDate">
                         </span>
                     </div>
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">AvailableToDate</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                           <input name="AvailableToDate" type="text" id="AvailableToDate">
+                           <input name="AvailableToDate" class="form-control" type="text" id="AvailableToDate">
                         </span>
                     </div>  
-                     <div class="text_field clearfix top-buffer">
-                        <span class="col-md-6 col-sm-12 lt_col">ReportRequestIdList.Id.1</span>
-                        <span class="col-md-6 col-sm-12 lt_col">
-                            <input name="ReportRequestIdList" type="text" id="ReportRequestIdList">
-                        </span>
-                    </div>  
+                     <div class="text_field clearfix repeat-in" id="ReportRequestIdList">
+                        <div class="entry-rId top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">ReportRequestIdList.Id.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                                <input name="ReportRequestIdList[]" class="form-control" type="text" id="ReportRequestIdList">
+                                <button type="button" class="btn btn-success btn-lg btn-add-rId">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
+                    </div>
                 </div>';
         }
 

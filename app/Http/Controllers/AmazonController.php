@@ -324,9 +324,9 @@ class AmazonController extends Controller
             // }
         }
         if( $ApiSelection== 'Reports'){
-            if( $ApicallOperation=='GetReport' ){
-                $product = new ProductController;
-                return  $product->GetProductServiceStatus($request);
+            if( $ApicallOperation=='GetReportList' ){
+                $product = new ReportController;
+                return  $product->GetReportList($request);
             }
         }
     }
