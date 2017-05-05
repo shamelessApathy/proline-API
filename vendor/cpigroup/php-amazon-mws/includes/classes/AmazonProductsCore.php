@@ -148,17 +148,5 @@ abstract class AmazonProductsCore extends AmazonCore{
             return $this->productList;
         }
     }
-
-    /**
-    * Returns protected data object for accesibility in the view -Brian
-    *
-    *
-    * @param none
-    * @return Data Set of Product
-    */
-    public function getData()
-    {
-        return $this->productList[0]->data['AttributeSets'];
-    }
 }
 ?>

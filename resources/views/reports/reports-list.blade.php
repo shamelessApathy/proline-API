@@ -26,7 +26,7 @@
 						@foreach ($list as $listValue)
 							<tr class='clickable-row' data-href="{{ route('amazon-get-report-info',['id' => $listValue['ReportId']] )}}">
 								<td>{{ $i }}</td>
-								<td>{{ $listValue['ReportId'] }}</td>
+								<td><!--{{ $listValue['ReportId'] }}--></td>
 								<td>{{ $listValue['ReportType'] }}</td>
 								<td>{{ $listValue['ReportRequestId'] }}</td>
 								<td>{{ $listValue['AvailableDate'] }}</td>

@@ -186,7 +186,7 @@ class ApiSelectionController extends Controller
                      <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">Acknowledged</span>
                         <span class="col-md-6 col-sm-12 lt_col">
-                            <select id="Acknowledged" name="Acknowledged" class="form-control" required>
+                            <select id="Acknowledged" name="Acknowledged" class="form-control">
                                 <option value="">Select Option...</option>
                                 <option value="True">True</option>
                                 <option value="False">False</option>

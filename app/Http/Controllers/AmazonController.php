@@ -329,6 +329,13 @@ class AmazonController extends Controller
                 return  $product->GetReportList($request);
             }
         }
+        if ( $ApiSelection == 'Reports'){
+            if ($ApicallOperation =='GetReport')
+            {
+                $product = new ReportController;
+                $product->GetReport($request);
+            }
+        }
     }
 
     public function GetOrderServiceStatus(Request $request){
