@@ -145,7 +145,7 @@ class AmazonController extends Controller
             }      
         }
 
-          /**** Generate feed ****/
+        /**** Generate feed ****/
          $product_feed = Product::all();
          //$products_data[] = array();
          foreach ($product_feed as $data) {
@@ -328,12 +328,9 @@ class AmazonController extends Controller
                 $product = new ReportController;
                 return  $product->GetReportList($request);
             }
-        }
-        if ( $ApiSelection == 'Reports'){
-            if ($ApicallOperation =='GetReport')
-            {
+            if ($ApicallOperation =='GetReport'){
                 $product = new ReportController;
-                $product->GetReport($request);
+                return $product->GetReport($request);
             }
         }
     }

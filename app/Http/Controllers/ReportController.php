@@ -22,20 +22,31 @@ class ReportController extends Controller
     * @param search query and type of search
     * @return list of products matching query
     */
-    public function GetReport($id){
-      
+    public function GetReport(Request $request){
+        //echo "<pre>"; print_r($request->input()); echo "</pre>";
+        $ReportId   = $request['ReportId'];
         $report = new \AmazonReport("PROLINE"); //store name matches the array key in the config file
-        $report->setReportId($id);
+        $report->setReportId($ReportId);
         $report->fetchReport();
         $list_report = $report->getRawReport();
-         echo "<pre>"; print_r($list_report); echo "</pre>"; 
+        $message ="";
+        if(!empty($list_report)){
+            $message = "Report details associated with order Id : ".$ReportId;
+        }
+        else{
+            $message = "No details Found Matching to your request";
+        }
+        $list_report = $list_report;
+        //die();
+
+        return view('reports.report-info', ['message'=>$message,'list_report'=>$list_report]); 
     }
     public function GetReportList(Request $request){
         //echo "<pre>"; print_r($request->input()); echo "</pre>";
         $message ="";
         $MaxCount               = $request['MaxCount'];
         $ReportTypeList         = $request['ReportTypeList'];
-        $Acknowledged           = $request['Acknowledged'] ?? null;
+        $Acknowledged           = $request['Acknowledged'] ;
         $AvailableFromDate      = $request['AvailableFromDate'];
         $AvailableToDate        = $request['AvailableToDate'];
         $ReportRequestIdList    = $request['ReportRequestIdList'];
@@ -43,25 +54,24 @@ class ReportController extends Controller
         //echo "<pre>"; print_r($ReportRequestIdList);
         $amz = new \AmazonReportList("PROLINE"); //store name matches the array key in the config file
         $amz->setMaxCount($MaxCount);
-        if (!empty($ReportTypeList))
-        {
-        $amz->setReportTypes($ReportTypeList);
+        if (!empty($ReportTypeList)){
+            $amz->setReportTypes($ReportTypeList);
         }
         // Not necessary, scratchpad doesn't require, I changed it to only add if it's not null
-        if (!empty($Acknowledged))
-        {
+        if (!empty($Acknowledged)){
             $amz->setAcknowledgedFilter($Acknowledged);
         }
-        if (!empty($AvailableFromDate) && !empty($AvailableToDate))
-        {
+        if (!empty($AvailableFromDate) && !empty($AvailableToDate)){
             $amz->setTimeLimits($AvailableFromDate,$AvailableToDate );
         }
-        if (!empty($ReportRequestIdList))
-        {
+        if (!empty($ReportRequestIdList)){
             $amz->setRequestIds($ReportRequestIdList);
         }
         $amz->fetchReportList();
         $list = $amz->getList();
+        $response = $amz->getLastResponse();
+       //  echo "<pre>"; print_r($list); echo "</pre>";
+        // echo count($list); 
         if(!empty($list)){
             $message ="Report list is below :";
         }
@@ -70,9 +80,9 @@ class ReportController extends Controller
         }
         //echo "<pre>"; print_r($list_amz); echo "</pre>"; 
         //die();
-        $response = $amz->getLastResponse();
-         var_dump($list);
-        //return view('reports.reports-list', ['message'=>$message,'list'=>$response]); 
+        
+     //    var_dump($list);
+        return view('reports.reports-list', ['message'=>$message,'list'=>$list]); 
     }
      public function GetReportInfo(Request $request,$id){
         $ReportId   = $id; //die();

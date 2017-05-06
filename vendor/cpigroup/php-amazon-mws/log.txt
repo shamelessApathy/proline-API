@@ -18,3 +18,90 @@ test
 [Info][2017/05/05 18:01:29 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
 [Urgent][2017/05/05 18:01:29 guest@local AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportType - Type Name must not be null or blank
 [Info][2017/05/05 18:02:09 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/06 10:53:16 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 10:53:19 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 10:54:35 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 10:54:37 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 10:54:53 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 10:54:55 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 10:58:19 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 10:58:21 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 10:58:33 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 10:58:35 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:06:05 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:06:06 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:06:20 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:06:22 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:06:32 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:06:34 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:07:24 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:07:26 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:07:56 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:07:57 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:08:43 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:08:45 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:11:08 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:11:10 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:11:42 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:11:44 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:12:12 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:12:14 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:13:04 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:13:05 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:13:41 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:13:43 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:15:03 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:15:04 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:15:57 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:15:59 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:16:20 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:16:22 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:17:02 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:17:03 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:17:41 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:17:43 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:17:53 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:17:55 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:18:52 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:18:54 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:22:20 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:22:21 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:23:35 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:23:37 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:24:48 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:24:50 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 11:27:23 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 11:27:24 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 12:01:31 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 12:01:33 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 12:21:49 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Urgent][2017/05/06 12:21:50 guest@::1 AmazonReport.php:102 checkResponse] Bad Response! 400 Bad Request: InputDataError - InputDataError
+[Info][2017/05/06 12:22:18 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Urgent][2017/05/06 12:22:20 guest@::1 AmazonReport.php:102 checkResponse] Bad Response! 400 Bad Request: InputDataError - InputDataError
+[Info][2017/05/06 12:22:59 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Urgent][2017/05/06 12:23:01 guest@::1 AmazonReport.php:102 checkResponse] Bad Response! 400 Bad Request: InputDataError - InputDataError
+[Info][2017/05/06 12:24:02 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Urgent][2017/05/06 12:24:04 guest@::1 AmazonReport.php:102 checkResponse] Bad Response! 400 Bad Request: InputDataError - InputDataError
+[Info][2017/05/06 12:24:49 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 12:24:50 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 12:25:18 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 12:25:20 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 12:25:50 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/06 12:26:00 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/06 12:26:12 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/06 12:26:17 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Urgent][2017/05/06 12:26:19 guest@::1 AmazonReport.php:102 checkResponse] Bad Response! 400 Bad Request: InputDataError - InputDataError
+[Info][2017/05/06 12:26:31 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/06 12:26:57 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Urgent][2017/05/06 12:26:59 guest@::1 AmazonReport.php:102 checkResponse] Bad Response! 400 Bad Request: InputDataError - InputDataError
+[Info][2017/05/06 12:27:20 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/06 12:28:47 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/06 12:28:59 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/06 12:29:03 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/06 12:29:46 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/06 12:29:46 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 12:29:47 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Urgent][2017/05/06 12:29:47 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/06 12:53:25 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/06 12:56:12 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/06 12:56:14 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
