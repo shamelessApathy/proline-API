@@ -126,3 +126,17 @@ test
 [Info][2017/05/09 12:48:10 guest@::1 AmazonReportRequest.php:259 sendRequest] Making request to Amazon: RequestReport
 [Urgent][2017/05/09 12:48:12 guest@::1 AmazonReportRequest.php:261 checkResponse] Bad Response! 400 Bad Request: InvalidParameterValue - Request for report type 100 is not allowed at this time
 [Info][2017/05/09 12:48:38 guest@::1 AmazonReportRequest.php:259 sendRequest] Making request to Amazon: RequestReport
+[Info][2017/05/09 18:02:50 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/09 18:14:03 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:15:28 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:15:55 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:16:28 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:16:36 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:16:50 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:17:40 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:22:58 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:22:59 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/09 18:22:59 guest@local CronController.php:38 saveReport] Successfully saved report #5065995634017295 at report-test-log.txt
+[Info][2017/05/09 18:33:49 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/09 18:33:50 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/09 18:33:50 guest@local CronController.php:38 saveReport] Successfully saved report #5066410094017295 at report-test-log.txt
