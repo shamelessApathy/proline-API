@@ -105,3 +105,24 @@ test
 [Info][2017/05/06 12:53:25 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
 [Info][2017/05/06 12:56:12 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
 [Urgent][2017/05/06 12:56:14 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/09 12:31:14 guest@::1 AmazonOrderList.php:426 sendRequest] Making request to Amazon: ListOrders
+[Info][2017/05/09 12:31:25 guest@::1 AmazonOrder.php:107 sendRequest] Making request to Amazon: GetOrder
+[Info][2017/05/09 12:31:28 guest@::1 AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/05/09 12:31:39 guest@::1 AmazonOrder.php:107 sendRequest] Making request to Amazon: GetOrder
+[Info][2017/05/09 12:31:41 guest@::1 AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/05/09 12:31:48 guest@::1 AmazonOrder.php:107 sendRequest] Making request to Amazon: GetOrder
+[Info][2017/05/09 12:31:50 guest@::1 AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Info][2017/05/09 12:42:23 guest@::1 AmazonOrder.php:107 sendRequest] Making request to Amazon: GetOrder
+[Warning][2017/05/09 12:42:25 guest@::1 ReportController.php:107 requestReport] Report Type must be set in order to request a report!
+[Warning][2017/05/09 12:42:25 guest@::1 ReportController.php:109 requestReport] Report Type must be set in order to request a report!
+[Info][2017/05/09 12:42:31 guest@::1 AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Warning][2017/05/09 12:43:45 guest@::1 ReportController.php:109 requestReport] Report Type must be set in order to request a report!
+[Info][2017/05/09 12:45:09 guest@::1 AmazonOrder.php:107 sendRequest] Making request to Amazon: GetOrder
+[Info][2017/05/09 12:45:09 guest@::1 AmazonReportRequest.php:259 sendRequest] Making request to Amazon: RequestReport
+[Info][2017/05/09 12:45:10 guest@::1 AmazonOrderItemList.php:132 sendRequest] Making request to Amazon: ListOrderItems
+[Urgent][2017/05/09 12:45:11 guest@::1 AmazonReportRequest.php:261 checkResponse] Bad Response! 400 Bad Request: InvalidReportType - Invalid Report Type xml
+[Info][2017/05/09 12:45:27 guest@::1 AmazonReportRequest.php:259 sendRequest] Making request to Amazon: RequestReport
+[Info][2017/05/09 12:45:42 guest@::1 AmazonReportRequest.php:259 sendRequest] Making request to Amazon: RequestReport
+[Info][2017/05/09 12:48:10 guest@::1 AmazonReportRequest.php:259 sendRequest] Making request to Amazon: RequestReport
+[Urgent][2017/05/09 12:48:12 guest@::1 AmazonReportRequest.php:261 checkResponse] Bad Response! 400 Bad Request: InvalidParameterValue - Request for report type 100 is not allowed at this time
+[Info][2017/05/09 12:48:38 guest@::1 AmazonReportRequest.php:259 sendRequest] Making request to Amazon: RequestReport

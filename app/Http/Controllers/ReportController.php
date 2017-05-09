@@ -102,4 +102,24 @@ class ReportController extends Controller
 
          return view('reports.report-info', ['message'=>$message,'list_report'=>$list_report]); 
     }
+
+    /**** 9th may Working in Eport Request ***/
+    public function GetReportRequest(Request $request){
+        $report = new \AmazonReportRequest("PROLINE"); //store name matches the array key in the config file
+        $report->setReportType('_GET_FLAT_FILE_ORDERS_DATA_');
+       
+        $list_report =  $report->requestReport();
+       
+        echo "<pre>"; print_r($list_report); echo "</pre>"; 
+        die();
+    }
+    public function AmazonReportScheduleManager(Request $request){
+        $report = new \AmazonReportRequest("PROLINE"); //store name matches the array key in the config file
+        $report->setReportType('_GET_FLAT_FILE_ORDERS_DATA_');
+       
+        $list_report =  $report->manageReportSchedule();
+       
+        echo "<pre>"; print_r($list_report); echo "</pre>"; 
+        die();
+    }
 }
