@@ -20,7 +20,7 @@
 .repeat-in button.btn.btn-danger {
     color: red;
 }
-.repeat-in input {
+.repeat-in input,.repeat-in select {
     width: 90%;
     display: inline-block;
 }

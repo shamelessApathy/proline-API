@@ -332,6 +332,22 @@ class AmazonController extends Controller
                 $product = new ReportController;
                 return $product->GetReport($request);
             }
+             if ($ApicallOperation =='GetReportRequestList'){
+                $product = new ReportController;
+                return $product->AmazonReportRequestList($request);
+            }
+             if ($ApicallOperation =='RequestReport'){
+                $product = new ReportController;
+                return $product->GetReportRequest($request);
+            }
+             if ($ApicallOperation =='ManageReportSchedule'){
+                $product = new ReportController;
+                return $product->ManageReportSchedule($request);
+            }
+             if ($ApicallOperation =='GetReportScheduleList'){
+                $product = new ReportController;
+                return $product->GetReportScheduleList($request);
+            }
         }
     }
 

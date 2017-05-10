@@ -51,20 +51,20 @@ class ApiSelectionController extends Controller
             $result  = '<option value="">Pick an operation...</option>';
             $result .= '<optgroup label="Reports"></optgroup>';
             $result .= '<option value="GetReport">GetReport</option>';
-            $result .= '<option value="GetReportCount">GetReportCount</option>';
+          //  $result .= '<option value="GetReportCount">GetReportCount</option>';
             $result .= '<option value="GetReportList">GetReportList</option>';
-            $result .= '<option value="GetReportListByNextToken">GetReportListByNextToken</option>';
-            $result .= '<option value="GetReportRequestCount">GetReportRequestCount</option>';
+          //  $result .= '<option value="GetReportListByNextToken">GetReportListByNextToken</option>';
+          //  $result .= '<option value="GetReportRequestCount">GetReportRequestCount</option>';
             $result .= '<option value="GetReportRequestList">GetReportRequestList</option>';
-            $result .= '<option value="GetReportRequestListByNextToken">GetReportRequestListByNextToken</option>';
-            $result .= '<option value="CancelReportRequests">CancelReportRequests</option>';
+          //  $result .= '<option value="GetReportRequestListByNextToken">GetReportRequestListByNextToken</option>';
+         //   $result .= '<option value="CancelReportRequests">CancelReportRequests</option>';
             $result .= '<option value="RequestReport">RequestReport</option>';
             $result .= '<optgroup label="ReportSchedule"></optgroup>';
             $result .= '<option value="ManageReportSchedule">ManageReportSchedule</option>';
             $result .= '<option value="GetReportScheduleList">GetReportScheduleList</option>';
-            $result .= '<option value="GetReportScheduleListByNextToken">GetReportScheduleListByNextToken</option>';
-            $result .= '<option value="GetReportScheduleCount">GetReportScheduleCount</option>';
-            $result .= '<option value="UpdateReportAcknowledgements">UpdateReportAcknowledgements</option>';
+         //   $result .= '<option value="GetReportScheduleListByNextToken">GetReportScheduleListByNextToken</option>';
+          //  $result .= '<option value="GetReportScheduleCount">GetReportScheduleCount</option>';
+           // $result .= '<option value="UpdateReportAcknowledgements">UpdateReportAcknowledgements</option>';
         }
 
         return $result;
@@ -211,6 +211,158 @@ class ApiSelectionController extends Controller
                             <span class="col-md-6 col-sm-12 lt_col">
                                 <input name="ReportRequestIdList[]" class="form-control" type="text" id="ReportRequestIdList">
                                 <button type="button" class="btn btn-success btn-lg btn-add-rId">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
+                    </div>
+                </div>';
+        }
+        if($value=="RequestReport"){
+
+            $result='<div class="row top-buffer">
+                    <div class="text_field clearfix">
+                        <span class="col-md-6 col-sm-12 lt_col">ReportType</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input name="ReportType" type="text" class="form-control" id="ReportType">
+                        </span>
+                    </div>
+                    <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">StartDate</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input name="StartDate" class="form-control" type="text" id="StartDate">
+                        </span>
+                    </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">EndDate</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                           <input name="EndDate" class="form-control" type="text" id="EndDate">
+                        </span>
+                    </div>  
+                     
+                </div>';
+        }
+        if($value=="GetReportRequestList"){
+
+            $result='<div class="row top-buffer">
+                    <div class="text_field clearfix text-center"><p>No required parameters</p></div>
+                     <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3>
+                    <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">MaxCount</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input name="MaxCount" type="text" class="form-control" id="MaxCount">
+                        </span>
+                    </div>
+                   
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">RequestedFromDate</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input name="RequestedFromDate" class="form-control" type="text" id="RequestedFromDate">
+                        </span>
+                    </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">RequestedToDate</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                           <input name="RequestedToDate" class="form-control" type="text" id="RequestedToDate">
+                        </span>
+                    </div>  
+                    <div class="text_field clearfix repeat-in" id="ReportRequestIdList">
+                        <div class="entry-rril top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">ReportRequestIdList.Id.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                                <input name="ReportRequestIdList[]" class="form-control" type="text" id="ReportRequestIdList">
+                                <button type="button" class="btn btn-success btn-lg btn-add-rril">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="text_field clearfix repeat-in" id="ReportTypeList">
+                        <div class="entry-rtl top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">ReportTypeList.Type.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                                <input name="ReportTypeList[]" class="form-control" type="text" id="ReportTypeList">
+                                <button type="button" class="btn btn-success btn-lg btn-add-rtl">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="text_field clearfix repeat-in" id="ReportProcessingStatusList">
+                        <div class="entry-rpsl top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">ReportProcessingStatusList.Status.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                               <select id="ReportProcessingStatusList" name="ReportProcessingStatusList[]" class="form-control">
+                                    <option value="">Select Option...</option>
+                                    <option value="_SUBMITTED_">_SUBMITTED_</option>
+                                    <option value="_IN_PROGRESS_">_IN_PROGRESS_</option>
+                                    <option value="_CANCELLED_">_CANCELLED_</option>
+                                    <option value="_DONE_">_DONE_</option>
+                                    <option value="_DONE_NO_DATA_">_DONE_NO_DATA_</option>
+                                </select>
+                                <button type="button" class="btn btn-success btn-lg btn-add-rpsl">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
+                    </div>
+                     
+                </div>';
+        }
+
+        if($value=="ManageReportSchedule"){
+
+            $result='<div class="row top-buffer">
+                    <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">ReportType</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input required name="ReportType" type="text" class="form-control" id="ReportType">
+                        </span>
+                    </div>
+                    <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">Schedule</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <select id="Schedule" name="Schedule" class="form-control" required>
+                                    <option value="_15_MINUTES_">_15_MINUTES_</option>
+                                    <option value="_30_MINUTES_">_30_MINUTES_</option>
+                                    <option value="_1_HOUR_">_1_HOUR_</option>
+                                    <option value="_2_HOURS_">_2_HOURS_</option>
+                                    <option value="_4_HOURS_">_4_HOURS_</option>
+                                    <option value="_8_HOURS_">_8_HOURS_</option>
+                                    <option value="_12_HOURS_">_12_HOURS_</option>
+                                    <option value="_72_HOURS_">_72_HOURS_</option>
+                                    <option value="_1_DAY_">_1_DAY_</option>
+                                    <option value="_2_DAYS_">_2_DAYS_</option>
+                                    <option value="_1_WEEK_">_1_WEEK_</option>
+                                    <option value="_14_DAYS_">_14_DAYS_</option>
+                                    <option value="_15_DAYS_">_15_DAYS_</option>
+                                    <option value="_30_DAYS_">_30_DAYS_</option>
+                                    <option value="_NEVER_">_NEVER_</option>
+                                </select>
+                        </span>
+                    </div>
+                     <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3>
+                    <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">ScheduleDate</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input name="ScheduleDate" type="text" class="form-control" id="ScheduleDate">
+                        </span>
+                    </div>                     
+                </div>';
+        }
+
+        if($value=="GetReportScheduleList"){
+
+            $result='<div class="row top-buffer">
+                    <div class="text_field clearfix text-center"><p>No required parameters</p></div>
+                     <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3>  
+                    <div class="text_field clearfix repeat-in" id="ReportTypeList">
+                        <div class="entry-rrl top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">ReportTypeList.Type.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                                <input name="ReportTypeList[]" class="form-control" type="text" id="ReportTypeList">
+                                <button type="button" class="btn btn-success btn-lg btn-add-rrl">
                                     <i class="fa fa-plus-circle" aria-hidden="true"></i>
                                 </button>
                             </span>

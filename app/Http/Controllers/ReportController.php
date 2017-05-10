@@ -105,21 +105,105 @@ class ReportController extends Controller
 
     /**** 9th may Working in Eport Request ***/
     public function GetReportRequest(Request $request){
+        $ReportType        = $request['ReportType'];
+        $StartDate         = $request['StartDate'];
+        $EndDate           = $request['EndDate'] ;
+        
         $report = new \AmazonReportRequest("PROLINE"); //store name matches the array key in the config file
-        $report->setReportType('_GET_FLAT_FILE_ORDERS_DATA_');
-       
-        $list_report =  $report->requestReport();
-       
-        echo "<pre>"; print_r($list_report); echo "</pre>"; 
-        die();
+        $report->setReportType($ReportType);
+        $report->requestReport();
+        if ( (!empty($StartDate)) && (!empty($EndDate)) ) {
+            $report->setTimeLimits($StartDate,$EndDate);
+        }
+        $report->getStatus();
+        $list_report =  $report->getResponse();
+
+        if(!empty($list_report)){
+            $message = "Requested Reports Details : ";
+        }
+        else{
+            $message = "No details Found Matching to your request";
+        }
+        // /  echo "<pre>"; print_r($list_report); echo "</pre>"; 
+       return view('reports.requested-report-info', ['message'=>$message,'list'=>$list_report]); 
+       // echo "<pre>"; print_r($list_report); echo "</pre>"; 
+        
     }
-    public function AmazonReportScheduleManager(Request $request){
-        $report = new \AmazonReportRequest("PROLINE"); //store name matches the array key in the config file
-        $report->setReportType('_GET_FLAT_FILE_ORDERS_DATA_');
-       
-        $list_report =  $report->manageReportSchedule();
-       
-        echo "<pre>"; print_r($list_report); echo "</pre>"; 
-        die();
+    public function AmazonReportRequestList(Request $request){
+        $report = new \AmazonReportRequestList("PROLINE"); //store name matches the array key in the config file
+        $MaxCount                   = $request['MaxCount'];
+        $RequestedFromDate          = $request['RequestedFromDate'];
+        $RequestedToDate            = $request['RequestedToDate'] ;
+        $ReportRequestIdList        = array_values($request['ReportRequestIdList']);
+        $ReportTypeList             = array_values($request['ReportTypeList']);
+        $ReportProcessingStatusList = array_values($request['ReportProcessingStatusList']) ;
+      // echo "<pre>"; print_r($request->input()); echo "</pre>";
+        if (!empty($MaxCount)) {
+            $report->setMaxCount($MaxCount);
+        }
+        if ( (!empty($RequestedFromDate)) && (!empty($RequestedToDate)) ) {
+            $report->setTimeLimits($RequestedFromDate,$RequestedToDate);
+        }
+        if (!empty($ReportRequestIdList)) {
+            $report->setRequestIds($ReportRequestIdList);
+        }
+        if (!empty($ReportTypeList)) {
+            $report->setReportTypes($ReportTypeList );
+        }
+        if (!empty($ReportProcessingStatusList)) {
+            $report->setReportStatuses($ReportProcessingStatusList);
+        }
+        
+        $report->fetchRequestList();
+        $list_report =  $report->getList();
+        if(!empty($list_report)){
+            $message = "Requested Reports list : ";
+        }
+        else{
+            $message = "No details Found Matching to your request";
+        }
+      // /  echo "<pre>"; print_r($list_report); echo "</pre>"; 
+       return view('reports.requested-reports-list', ['message'=>$message,'list'=>$list_report]);
     }
+
+    public function ManageReportSchedule(Request $request){
+        $ReportType                 = $request['ReportType'];
+        $Schedule                   = $request['Schedule'];
+        $ScheduleDate               = $request['ScheduleDate'] ;
+      //  echo "<pre>"; print_r($request->input()); echo "</pre>";
+        $report = new \AmazonReportScheduleManager("PROLINE"); 
+        $report->setReportType($ReportType);
+        $report->setSchedule($Schedule);
+        if (!empty($ScheduleDate )) {
+            $report->setScheduledDate('2017-05-01');
+        }
+        $report->manageReportSchedule();
+        $list_report =  $report->getList();
+        if(!empty($list_report)){
+            $message = "Scheduled Reports list : ";
+        }
+        else{
+            $message = "No details Found Matching to your request";
+        }
+        return view('reports.schedule-report', ['message'=>$message,'list'=>$list_report]);
+
+    }
+    public function GetReportScheduleList(Request $request){
+        $ReportTypeList     = array_values($request['ReportTypeList']);
+        $report = new \AmazonReportScheduleList("PROLINE"); 
+        if(!empty($ReportTypeList)){
+            $report->setReportTypes('_GET_ORDERS_DATA_');
+        }
+        $report->fetchReportList();
+        $list_report =  $report->getList();
+        if(!empty($list_report)){
+            $message = "Requested Reports Details : ";
+        }
+        else{
+            $message = "No details Found Matching to your request";
+        }
+     //     echo "<pre>"; print_r($list_report); echo "</pre>"; 
+       return view('reports.schedule-report', ['message'=>$message,'list'=>$list_report]); 
+    }
+
 }

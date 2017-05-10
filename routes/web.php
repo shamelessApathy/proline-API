@@ -83,3 +83,6 @@ Route::get('amazon/amazon-get-report', 'ReportController@GetReport')->name('amaz
 Route::get('amazon/amazon-get-report-list', 'ReportController@GetReportList')->name('amazon-get-report-list');
 Route::get('amazon/amazon-get-report-info/{id}', 'ReportController@GetReportInfo')->name('amazon-get-report-info');
 Route::get('amazon/amazon-get-report-request', 'ReportController@GetReportRequest')->name('amazon-get-report-request');
+Route::get('amazon/amazon-get-report-request-list', 'ReportController@AmazonReportRequestList')->name('amazon-get-report-request-list');
+Route::get('amazon/amazon-manage-report-schedule', 'ReportController@ManageReportSchedule')->name('amazon-manage-report-schedule');
+Route::get('amazon/amazon-get-report-schedule-list', 'ReportController@GetReportScheduleList')->name('amazon-get-report-schedule-list');

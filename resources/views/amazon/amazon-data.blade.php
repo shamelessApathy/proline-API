@@ -73,20 +73,81 @@
 	        return false;
     });
 
-    	$(document).on('click', '.btn-add-rId', function(e){
-	        e.preventDefault();
-	        var controlForm = $('#ReportRequestIdList:first'),
-	            currentEntry = $(this).parents('.entry-rId:first'),
-	            newEntry = $(currentEntry.clone()).appendTo(controlForm);
-	        newEntry.find('input').val('');
-	        controlForm.find('.entry-rId:not(:last) .btn-add-rId')
-	            .removeClass('btn-add-rId').addClass('btn-remove-rId')
-	            .removeClass('btn-success').addClass('btn-danger')
-	            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
-    	}).on('click', '.btn-remove-rId', function(e){
-	        e.preventDefault();
-	        $(this).parents('.entry-rId:first').remove();
-	        return false;
+	$(document).on('click', '.btn-add-rId', function(e){
+        e.preventDefault();
+        var controlForm = $('#ReportRequestIdList:first'),
+            currentEntry = $(this).parents('.entry-rId:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('input').val('');
+        controlForm.find('.entry-rId:not(:last) .btn-add-rId')
+            .removeClass('btn-add-rId').addClass('btn-remove-rId')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+	}).on('click', '.btn-remove-rId', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-rId:first').remove();
+        return false;
+    });
+
+	$(document).on('click', '.btn-add-rril', function(e){
+        e.preventDefault();
+        var controlForm = $('#ReportRequestIdList:first'),
+            currentEntry = $(this).parents('.entry-rril:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('input').val('');
+        controlForm.find('.entry-rril:not(:last) .btn-add-rril')
+            .removeClass('btn-add-rril').addClass('btn-remove-rril')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+	}).on('click', '.btn-remove-rril', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-rril:first').remove();
+        return false;
+    });
+    $(document).on('click', '.btn-add-rtl', function(e){
+        e.preventDefault();
+        var controlForm = $('#ReportTypeList:first'),
+            currentEntry = $(this).parents('.entry-rtl:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('input').val('');
+        controlForm.find('.entry-rtl:not(:last) .btn-add-rtl')
+            .removeClass('btn-add-rtl').addClass('btn-remove-rtl')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+	}).on('click', '.btn-remove-rtl', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-rtl:first').remove();
+        return false;
+    });
+    $(document).on('click', '.btn-add-rpsl', function(e){
+        e.preventDefault();
+        var controlForm = $('#ReportProcessingStatusList:first'),
+            currentEntry = $(this).parents('.entry-rpsl:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('select').val('');
+        controlForm.find('.entry-rpsl:not(:last) .btn-add-rpsl')
+            .removeClass('btn-add-rpsl').addClass('btn-remove-rpsl')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+	}).on('click', '.btn-remove-rpsl', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-rpsl:first').remove();
+        return false;
+    });
+    $(document).on('click', '.btn-add-rrl', function(e){
+        e.preventDefault();
+        var controlForm = $('#ReportTypeList:first'),
+            currentEntry = $(this).parents('.entry-rrl:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('select').val('');
+        controlForm.find('.entry-rrl:not(:last) .btn-add-rrl')
+            .removeClass('btn-add-rrl').addClass('btn-remove-rrl')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+    }).on('click', '.btn-remove-rrl', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-rrl:first').remove();
+        return false;
     });
 });
 </script>
@@ -116,6 +177,7 @@
 	      }
 	    });   
 	});
+
 </script>
 <script type="text/javascript">
   $(document).ready(function() {
@@ -150,6 +212,36 @@
         });
     });
     $(document).on("focus", "#AvailableToDate", function(){
+        $(this).datepicker({
+          dateFormat: "yy-mm-dd",
+          showAnim : 'fadeIn'
+        });
+    });
+    $(document).on("focus", "#StartDate", function(){
+        $(this).datepicker({
+          dateFormat: "yy-mm-dd",
+          showAnim : 'fadeIn'
+        });
+    });
+    $(document).on("focus", "#EndDate", function(){
+        $(this).datepicker({
+          dateFormat: "yy-mm-dd",
+          showAnim : 'fadeIn'
+        });
+    });
+    $(document).on("focus", "#RequestedFromDate", function(){
+        $(this).datepicker({
+          dateFormat: "yy-mm-dd",
+          showAnim : 'fadeIn'
+        });
+    });
+    $(document).on("focus", "#RequestedToDate", function(){
+        $(this).datepicker({
+          dateFormat: "yy-mm-dd",
+          showAnim : 'fadeIn'
+        });
+    });
+    $(document).on("focus", "#ScheduleDate", function(){
         $(this).datepicker({
           dateFormat: "yy-mm-dd",
           showAnim : 'fadeIn'
