@@ -239,3 +239,31 @@ test
 [Info][2017/05/10 11:40:11 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
 [Info][2017/05/10 11:41:24 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
 [Urgent][2017/05/10 11:41:26 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/10 17:09:24 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/10 17:09:24 guest@local AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/10 17:09:48 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/10 17:09:49 guest@local AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/10 17:10:05 guest@local AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
+[Urgent][2017/05/10 17:10:06 guest@local AmazonReportRequestList.php:275 checkResponse] Bad Response! 400 Bad Request: ValidationError - 1 validation error detected: Value '[]' at 'reportProcessingStatusList' failed to satisfy constraint: Member must satisfy constraint: [Member must satisfy enum value set: [_SUBMITTED_, _CANCELLED_, _DONE_NO_DATA_, _IN_PROGRESS_, _DONE_]]
+[Info][2017/05/10 17:11:47 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/10 17:11:48 guest@local AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/10 17:12:20 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/10 17:13:21 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/10 17:18:23 guest@local AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
+[Urgent][2017/05/10 17:18:24 guest@local AmazonReportRequestList.php:275 checkResponse] Bad Response! 400 Bad Request: ValidationError - 1 validation error detected: Value '[]' at 'reportProcessingStatusList' failed to satisfy constraint: Member must satisfy constraint: [Member must satisfy enum value set: [_SUBMITTED_, _CANCELLED_, _DONE_NO_DATA_, _IN_PROGRESS_, _DONE_]]
+[Info][2017/05/10 17:18:46 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/10 17:18:46 guest@local AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/10 17:21:30 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/10 17:21:31 guest@local AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/10 20:07:25 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Urgent][2017/05/10 20:07:26 guest@local AmazonReport.php:102 checkResponse] Bad Response! 400 Bad Request: InputDataError - InputDataError
+[Info][2017/05/10 20:07:54 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/10 20:24:22 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/10 20:24:23 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/10 20:24:23 guest@local CronController.php:39 saveReport] Successfully saved report #5065995634017295 at report-test-log.txt
+[Info][2017/05/10 20:29:02 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/10 20:29:03 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/10 20:29:03 guest@local CronController.php:40 saveReport] Successfully saved report #5072703818017296 at report-test-log.1494448143.txt
+[Info][2017/05/10 20:43:22 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/10 20:43:22 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/10 20:43:23 guest@local CronController.php:41 saveReport] Successfully saved report #5078244428017296 at report-log.1494449003.xml

@@ -28,7 +28,7 @@ class CronController extends Controller
     	echo "</pre>";
 
     	// Define the most recent ReportID
-    	$latest = $list[1];
+    	$latest = $list[0];
     	$reportId = $latest['ReportId'];
 
     	// Instantiate AmazonReport Class
@@ -36,7 +36,10 @@ class CronController extends Controller
     	$report = new \AmazonReport();
     	$report->setReportId($reportId);
     	$report->fetchReport();
-    	$report->saveReport("report-test-log.txt");
+    	$time = time();
+    	$reportName = "report-log.$time.xml";
+    	$report->saveReport($reportName);
+    	$this->handle_data($reportName);
 
     }
 
@@ -45,12 +48,9 @@ class CronController extends Controller
     * @param none
     * @return Data that is usable to be sent to either a display, or to an inventory_update function
     */
-    public function handle_data()
+    public function handle_data($reportName)
     {
-    	 $xml = simplexml_load_file('report-test-log.txt');
- 		echo "<pre>";
- 		print_r($xml);
- 		echo "</pre>";
+    	 $xml = simplexml_load_file($reportName);
 // Currently able to grab the SKU of every item thats been orders on the current sheet
  		$data = array();
  		foreach($xml->Message as $order)
@@ -70,5 +70,9 @@ class CronController extends Controller
 			$product->inventory = $product->inventory - $order['quantity'];
 			$product->save();
 		}
+	}
+	public function cron_test()
+	{
+		file_put_contents("crontestbae.txt",'IT should be woooorking');
 	}
 }
