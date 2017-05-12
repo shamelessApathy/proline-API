@@ -324,7 +324,7 @@ class AmazonController extends Controller
             // }
         }
         if( $ApiSelection== 'Reports'){
-            if( $ApicallOperation=='GetReportList' ){
+            if( $ApicallOperation=='GetReportList'){
                 $product = new ReportController;
                 return  $product->GetReportList($request);
             }
@@ -366,10 +366,6 @@ class AmazonController extends Controller
         if(!empty($status)){
             $message="Status : ".$status;
         }
-        //return $amz->getList();
-        // echo "<pre>"; print_r($list);
-        // die();
-        //$this->ExportOrders($request);
         return view('orders', ['message'=>$message,'response' => $response, 'list'=>$list]); 
     }
 
@@ -423,10 +419,6 @@ class AmazonController extends Controller
             $list= "";
         }
         $response = $amz->getLastResponse();
-        //return $amz->getList();
-        // echo "<pre>"; print_r($list);
-        // die();
-        //$this->ExportOrders($request);
         return view('orders', ['message'=>$message,'response' => $response, 'list'=>$list]); 
     }
 
@@ -464,10 +456,6 @@ class AmazonController extends Controller
             $list= "";
         }
         $response = $amz->getLastResponse();
-        //return $amz->getList();
-        // echo "<pre>"; print_r($list);
-        // die();
-        //$this->ExportOrders($request);
         return view('orders', ['message'=>$message,'response' => $response, 'list'=>$list]); 
     }
 
@@ -476,13 +464,10 @@ class AmazonController extends Controller
                 
         /*** Extracting Item sku **/
         $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
-        $amz_item->setOrderId($AmazonOrderId);
- 
+        $amz_item->setOrderId($AmazonOrderId); 
         $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
         $amz_item->fetchItems();
         $amz_item = $amz_item->getItems();
-        // $response = $amz_item->getLastResponse();
-        // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
         $message="";
         $url="";
         if($amz_item){
@@ -508,10 +493,6 @@ class AmazonController extends Controller
             $list= "";
         }
         $response = '';
-        //return $amz->getList();
-        // echo "<pre>"; print_r($list);
-        // die();
-        //$this->ExportOrders($request);
         return view('amazon.amazon-order-items', ['message'=>$message,'response' => $response, 'list'=>$list]); 
     }
 
@@ -561,16 +542,12 @@ class AmazonController extends Controller
             $buyer_name         = $order->getBuyerName();
             $email              = $order->getBuyerEmail();
             $order_type         = $order->getOrderType();
-
             /*** Extracting Item sku **/
             $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
-            $amz_item->setOrderId($amazon_id);
-     
+            $amz_item->setOrderId($amazon_id);     
             $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
             $amz_item->fetchItems();
             $amz_item = $amz_item->getItems();
-            // $response = $amz_item->getLastResponse();
-            // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
             foreach ($amz_item as $item) {
                 $Sku                = $item['SellerSKU'];
                 $proNmae            = $item['Title'];
@@ -579,12 +556,10 @@ class AmazonController extends Controller
                 $order_data[] = array($amazon_id,$Sku,$proNmae,$QuantityOrdered,$QuantityShipped,$purchase_data,$order_status,$shipping_address,$total,$payment_method,$market_id,$buyer_name,$email,$order_type);
             }
         }
-
         foreach( $order_data as $row )  
         {  
             fputcsv($outstream, $row, ',', '"');  
-        }  
-          
+        }            
         fclose($outstream);
     }
 
@@ -614,21 +589,15 @@ class AmazonController extends Controller
                 $market_id          = $order['MarketplaceId'];
                 $buyer_name         = $order['BuyerName'];
                 $email              = $order['BuyerEmail'];
-                $order_type         = $order['OrderType'];
-                
+                $order_type         = $order['OrderType'];                
                 /*** Extracting Item sku **/
                 $amz_item = new \AmazonOrderItemList("PROLINE"); //store name matches the array key in the config file
-                $amz_item->setOrderId($amazon_id);
-         
+                $amz_item->setOrderId($amazon_id);         
                 $amz_item->setUseToken(); //Amazon sends orders 100 at a time, but we want them all
                 $amz_item->fetchItems();
                 $amz_item = $amz_item->getItems();
-                // $response = $amz_item->getLastResponse();
-                // echo "<pre>"; print_r($amz_item); echo "</pre>"; die();
 
-
-                foreach ($amz_item as $item) {
-                   
+                foreach ($amz_item as $item) {   
                     $list_data['Amazon OrderID']      = $amazon_id;
                     $list_data['Item Sku']            = $item['SellerSKU'];
                     $list_data['Product Name']        = $item['Title'];
@@ -652,10 +621,6 @@ class AmazonController extends Controller
             $list= "";
         }
         $response = $amz->getLastResponse();
-        //return $amz->getList();
-        // echo "<pre>"; print_r($list);
-        // die();
-        //$this->ExportOrders($request);
         return view('amazon.amazon-order-info', ['message'=>$message,'response' => $response, 'list'=>$list]); 
     }
 

@@ -22,13 +22,27 @@ class ReportController extends Controller
     * @param search query and type of search
     * @return list of products matching query
     */
+
     public function GetReport(Request $request){
         //echo "<pre>"; print_r($request->input()); echo "</pre>";
+        // $simple = "<para><note>simple note</note></para>";
+        // $p = xml_parser_create();
+        // xml_parse_into_struct($p, $simple, $vals, $index);
+        // xml_parser_free($p);
+        // echo "Index array\n"; echo "</br>";
+        // echo "<pre>"; print_r($index);
+        // echo "\nVals array\n";
+        // echo "<br> lkvjl;sk";
+        // echo "<pre>"; print_r($vals); echo "</pre>";
+
         $ReportId   = $request['ReportId'];
         $report = new \AmazonReport("PROLINE"); //store name matches the array key in the config file
         $report->setReportId($ReportId);
         $report->fetchReport();
         $list_report = $report->getRawReport();
+        
+        // echo "<pre>"; print_r($report);
+        // die();
         $message ="";
         if(!empty($list_report)){
             $message = "Report details associated with order Id : ".$ReportId;
@@ -41,20 +55,23 @@ class ReportController extends Controller
 
         return view('reports.report-info', ['message'=>$message,'list_report'=>$list_report]); 
     }
+
     public function GetReportList(Request $request){
-        //echo "<pre>"; print_r($request->input()); echo "</pre>";
-        $message ="";
+       // echo "<pre>"; print_r($request->input()); echo "</pre>";
         $MaxCount               = $request['MaxCount'];
-        $ReportTypeList         = $request['ReportTypeList'];
+        $ReportTypeList         = array_values($request['ReportTypeList']);
         $Acknowledged           = $request['Acknowledged'] ;
         $AvailableFromDate      = $request['AvailableFromDate'];
         $AvailableToDate        = $request['AvailableToDate'];
-        $ReportRequestIdList    = $request['ReportRequestIdList'];
-        $ReportRequestIdList    = array_values($ReportRequestIdList);
+        $ReportRequestIdList    = array_values($request['ReportRequestIdList']);
         //echo "<pre>"; print_r($ReportRequestIdList);
-        $amz = new \AmazonReportList("PROLINE"); //store name matches the array key in the config file
-        $amz->setMaxCount($MaxCount);
-        if (!empty($ReportTypeList)){
+        $ReportTypeList  = array_filter($ReportTypeList);
+        $ReportRequestIdList =array_filter($ReportRequestIdList);
+        $amz = new \AmazonReportList("PROLINE"); 
+        if (!empty($MaxCount)){
+            $amz->setMaxCount($MaxCount);
+        }
+        if (!empty($ReportTypeList)){ echo "string1";
             $amz->setReportTypes($ReportTypeList);
         }
         // Not necessary, scratchpad doesn't require, I changed it to only add if it's not null
@@ -64,27 +81,22 @@ class ReportController extends Controller
         if (!empty($AvailableFromDate) && !empty($AvailableToDate)){
             $amz->setTimeLimits($AvailableFromDate,$AvailableToDate );
         }
-        if (!empty($ReportRequestIdList)){
+        if (!empty($ReportRequestIdList)){echo "stringrw";
             $amz->setRequestIds($ReportRequestIdList);
         }
         $amz->fetchReportList();
         $list = $amz->getList();
         $response = $amz->getLastResponse();
-       //  echo "<pre>"; print_r($list); echo "</pre>";
-        // echo count($list); 
         if(!empty($list)){
             $message ="Report list is below :";
         }
         else{
             $message ="No Record Found Matching to your request";
         }
-        //echo "<pre>"; print_r($list_amz); echo "</pre>"; 
-        //die();
-        
-     //    var_dump($list);
         return view('reports.reports-list', ['message'=>$message,'list'=>$list]); 
     }
-     public function GetReportInfo(Request $request,$id){
+
+    public function GetReportInfo(Request $request,$id){
         $ReportId   = $id; //die();
         $report = new \AmazonReport("PROLINE"); //store name matches the array key in the config file
         $report->setReportId($ReportId);
@@ -98,8 +110,6 @@ class ReportController extends Controller
             $message = "No details Found Matching to your request";
         }
         $list_report = $list_report;
-        //die();
-
          return view('reports.report-info', ['message'=>$message,'list_report'=>$list_report]); 
     }
 
@@ -125,10 +135,9 @@ class ReportController extends Controller
             $message = "No details Found Matching to your request";
         }
         // /  echo "<pre>"; print_r($list_report); echo "</pre>"; 
-       return view('reports.requested-report-info', ['message'=>$message,'list'=>$list_report]); 
-       // echo "<pre>"; print_r($list_report); echo "</pre>"; 
-        
+       return view('reports.requested-report-info', ['message'=>$message,'list'=>$list_report]);       
     }
+    
     public function AmazonReportRequestList(Request $request){
         $report = new \AmazonReportRequestList("PROLINE"); //store name matches the array key in the config file
         $MaxCount                   = $request['MaxCount'];
@@ -138,6 +147,9 @@ class ReportController extends Controller
         $ReportTypeList             = array_values($request['ReportTypeList']);
         $ReportProcessingStatusList = array_values($request['ReportProcessingStatusList']) ;
       // echo "<pre>"; print_r($request->input()); echo "</pre>";
+        $ReportRequestIdList  = array_filter($ReportRequestIdList);
+        $ReportTypeList =array_filter($ReportTypeList);
+        $ReportProcessingStatusList =array_filter($ReportProcessingStatusList);
         if (!empty($MaxCount)) {
             $report->setMaxCount($MaxCount);
         }
@@ -189,6 +201,7 @@ class ReportController extends Controller
 
     }
     public function GetReportScheduleList(Request $request){
+         //  echo "<pre>"; print_r($request->input()); echo "</pre>";
         $ReportTypeList     = array_values($request['ReportTypeList']);
         $report = new \AmazonReportScheduleList("PROLINE"); 
         if(!empty($ReportTypeList)){

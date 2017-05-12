@@ -267,3 +267,152 @@ test
 [Info][2017/05/10 20:43:22 guest@local AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
 [Info][2017/05/10 20:43:22 guest@local AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
 [Info][2017/05/10 20:43:23 guest@local CronController.php:41 saveReport] Successfully saved report #5078244428017296 at report-log.1494449003.xml
+[Info][2017/05/11 09:15:11 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:19:34 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:20:13 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:21:41 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:22:15 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:31:10 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:32:33 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:33:01 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:33:13 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:33:31 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:34:10 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:34:33 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:35:38 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:36:46 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:36:53 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:37:38 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 09:37:56 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 10:02:05 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 10:05:12 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:05:14 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:05:39 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:05:41 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:06:48 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:06:50 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:06:59 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:07:01 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:08:28 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:08:30 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:10:17 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:10:19 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:11:27 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:11:30 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:11:43 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:11:45 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:12:27 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:12:28 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:19:11 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:19:13 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:24:04 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:24:05 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:24:25 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:24:26 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:24:36 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:24:38 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:24:51 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:24:54 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:25:03 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:25:05 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:25:14 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:25:16 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:25:37 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:25:39 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:25:52 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:25:54 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:26:57 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:26:58 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:27:17 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:27:19 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:27:48 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:27:50 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 10:28:24 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 10:28:26 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:06:01 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:06:03 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:06:16 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:06:18 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:06:33 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:06:34 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:07:18 guest@::1 AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
+[Urgent][2017/05/11 11:07:26 guest@::1 AmazonReportRequestList.php:275 checkResponse] Bad Response! 400 Bad Request: ValidationError - 1 validation error detected: Value '[]' at 'reportProcessingStatusList' failed to satisfy constraint: Member must satisfy constraint: [Member must satisfy enum value set: [_SUBMITTED_, _CANCELLED_, _DONE_NO_DATA_, _IN_PROGRESS_, _DONE_]]
+[Info][2017/05/11 11:07:38 guest@::1 AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
+[Urgent][2017/05/11 11:07:40 guest@::1 AmazonReportRequestList.php:275 checkResponse] Bad Response! 400 Bad Request: ValidationError - 1 validation error detected: Value '[]' at 'reportProcessingStatusList' failed to satisfy constraint: Member must satisfy constraint: [Member must satisfy enum value set: [_SUBMITTED_, _CANCELLED_, _DONE_NO_DATA_, _IN_PROGRESS_, _DONE_]]
+[Info][2017/05/11 11:09:51 guest@::1 AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
+[Info][2017/05/11 11:10:27 guest@::1 AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
+[Info][2017/05/11 11:11:05 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/11 11:11:12 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/11 11:11:57 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:11:59 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:12:41 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/11 11:12:43 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:12:44 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:13:25 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:13:27 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:13:35 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:13:37 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:13:43 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:13:48 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:13:55 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:13:57 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:14:18 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:14:20 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:17:53 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:17:54 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportType - Type Name must not be null or blank
+[Info][2017/05/11 11:18:17 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:18:19 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:18:25 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:18:26 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/11 11:18:41 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/11 11:18:43 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 11:37:26 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 11:37:29 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 11:38:43 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 11:39:28 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 11:39:31 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 11:39:50 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 11:40:24 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
+[Info][2017/05/12 11:41:56 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 11:41:58 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 11:42:18 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
+[Info][2017/05/12 11:43:09 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
+[Info][2017/05/12 11:43:10 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 11:43:12 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 11:46:44 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 11:46:45 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 11:49:01 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 11:49:02 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:02:14 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:02:15 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:02:55 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:02:57 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:03:04 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/12 12:05:38 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:05:40 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:06:05 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
+[Info][2017/05/12 12:07:12 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:07:14 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:11:26 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:11:28 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:12:08 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:12:09 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:13:21 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:13:23 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:13:50 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:13:52 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:14:15 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:14:17 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:14:35 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:14:37 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:16:13 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
+[Info][2017/05/12 12:16:20 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
+[Info][2017/05/12 12:17:51 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Urgent][2017/05/12 12:17:52 guest@::1 AmazonReportList.php:258 checkResponse] Bad Response! 400 Bad Request: InvalidReportRequestId - Reference must not be null or blank
+[Info][2017/05/12 12:18:19 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 12:19:01 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 12:19:14 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 12:19:25 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
+[Info][2017/05/12 12:20:25 guest@::1 AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
+[Info][2017/05/12 12:23:19 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
+[Info][2017/05/12 12:34:01 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList

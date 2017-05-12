@@ -162,11 +162,15 @@ class ApiSelectionController extends Controller
                                 <input name="ReportId" type="text" class="form-control" id="ReportId" required>
                             </span>
                         </div>
+                        <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3> 
+                        <div class="text_field top-buffer clearfix text-center"><p>No optional parameters</p></div>   
                     </div>';
         }
         if($value=="GetReportList"){
              $result='<div class="row top-buffer">
-                    <div class="text_field clearfix">
+                     <div class="text_field clearfix text-center"><p>No required parameters</p></div>   
+                     <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3> 
+                    <div class="text_field clearfix top-buffer">
                         <span class="col-md-6 col-sm-12 lt_col">MaxCount</span>
                         <span class="col-md-6 col-sm-12 lt_col">
                             <input name="MaxCount" type="text" class="form-control" id="MaxCount">
