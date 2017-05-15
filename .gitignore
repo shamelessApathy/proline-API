@@ -9,3 +9,4 @@ Homestead.yaml
 .env
 /app/Http/Controllers/CronController.php
 !/vendor/cpigroup/php-amazon-mws
+/app/Console/Kernel.php
