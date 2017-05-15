@@ -582,3 +582,25 @@ Stack trace:
 [Info][2017/05/15 17:21:52 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
 [Info][2017/05/15 17:21:53 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
 [Info][2017/05/15 17:21:53 guest@cli CronController.php:42 saveReport] Successfully saved report #5119210912017300 at /var/www/API/API/public/cronlogs/report-log.1494868913.xml
+[Info][2017/05/15 17:43:45 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/15 17:43:45 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Urgent][2017/05/15 17:43:46 guest@cli CronController.php:42 saveReport] Unable to save report #5119210912017300 at /var/www/API/API/public/cronlogs/report-log.1494870226.xml: ErrorException: file_put_contents(/var/www/API/API/public/cronlogs/report-log.1494870226.xml): failed to open stream: No such file or directory in /var/www/proline-API/vendor/cpigroup/php-amazon-mws/includes/classes/AmazonReport.php:135
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/var/www/prolin...', 135, Array)
+#1 /var/www/proline-API/vendor/cpigroup/php-amazon-mws/includes/classes/AmazonReport.php(135): file_put_contents('/var/www/API/AP...', '<?xml version="...')
+#2 /var/www/proline-API/app/Http/Controllers/CronController.php(42): AmazonReport->saveReport('/var/www/API/AP...')
+#3 /var/www/proline-API/app/Console/Commands/RunAmazonCron.php(41): App\Http\Controllers\CronController->get_amazon_orders()
+#4 [internal function]: App\Console\Commands\RunAmazonCron->handle()
+#5 /var/www/proline-API/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#6 /var/www/proline-API/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#7 /var/www/proline-API/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#8 /var/www/proline-API/vendor/laravel/framework/src/Illuminate/Container/Container.php(524): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#9 /var/www/proline-API/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#10 /var/www/proline-API/vendor/symfony/console/Command/Command.php(265): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#11 /var/www/proline-API/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#12 /var/www/proline-API/vendor/symfony/console/Application.php(826): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /var/www/proline-API/vendor/symfony/console/Application.php(189): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\RunAmazonCron), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /var/www/proline-API/vendor/symfony/console/Application.php(120): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/proline-API/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(123): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/proline-API/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}

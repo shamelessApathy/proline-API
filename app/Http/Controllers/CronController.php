@@ -37,7 +37,7 @@ class CronController extends Controller
     	$report->setReportId($reportId);
     	$report->fetchReport();
     	$time = time();
-    	$reportName = "/var/www/API/API/public/cronlogs/report-log.$time.xml";
+    	$reportName = "/var/www/proline-API/public/cronlogs/report-log.$time.xml";
     	try {
                 $report->saveReport($reportName);
                 //If the exception is thrown, this text will not be shown
