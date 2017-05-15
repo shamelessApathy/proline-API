@@ -349,6 +349,16 @@ class AmazonController extends Controller
                 return $product->GetReportScheduleList($request);
             }
         }
+        if( $ApiSelection== 'Feeds'){
+            if( $ApicallOperation=='GetFeedSubmissionList'){
+                $product = new FeedController;
+                return  $product->GetFeedSubmissionList($request);
+            }
+             if( $ApicallOperation=='GetFeedSubmissionResult'){
+                $product = new FeedController;
+                return  $product->GetFeedSubmissionResult($request);
+            }
+        }
     }
 
     public function GetOrderServiceStatus(Request $request){

@@ -12,7 +12,8 @@
 					<div class="text_field clearfix">
 						<span class="col-md-6 col-sm-12 lt_col">API Section:</span>
 						<span class="col-md-6 col-sm-12 lt_col">
-							<select id="apisection" name="apisection" class="form-control" required>    
+							<select id="apisection" name="apisection" class="form-control" required>
+                                <option value="">Pick an operation...</option>    
                     			<option value="Feeds">Feeds</option>
                     			<option value="Reports">Reports</option>
                     			<option value="FulfillmentByAmazon">Fulfillment</option>
@@ -56,6 +57,9 @@
 	</div>
 
 <script type="text/javascript">
+    $(document).ready(function(){
+        $("#apisectionoption:selected").removeAttr("selected");
+    });
 	$(function(){
     	$(document).on('click', '.btn-add', function(e){
 	        e.preventDefault();
@@ -147,6 +151,51 @@
     }).on('click', '.btn-remove-rrl', function(e){
         e.preventDefault();
         $(this).parents('.entry-rrl:first').remove();
+        return false;
+    });
+    $(document).on('click', '.btn-add-fsil', function(e){
+        e.preventDefault();
+        var controlForm = $('#FeedSubmissionIdList:first'),
+            currentEntry = $(this).parents('.entry-fsil:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('input').val('');
+        controlForm.find('.entry-fsil:not(:last) .btn-add-fsil')
+            .removeClass('btn-add-fsil').addClass('btn-remove-fsil')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+    }).on('click', '.btn-remove-fsil', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-fsil:first').remove();
+        return false;
+    });
+    $(document).on('click', '.btn-add-ftl', function(e){
+        e.preventDefault();
+        var controlForm = $('#FeedTypeList:first'),
+            currentEntry = $(this).parents('.entry-ftl:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('input').val('');
+        controlForm.find('.entry-ftl:not(:last) .btn-add-ftl')
+            .removeClass('btn-add-ftl').addClass('btn-remove-ftl')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+    }).on('click', '.btn-remove-ftl', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-ftl:first').remove();
+        return false;
+    });
+    $(document).on('click', '.btn-add-fpsl', function(e){
+        e.preventDefault();
+        var controlForm = $('#FeedProcessingStatusList:first'),
+            currentEntry = $(this).parents('.entry-fpsl:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('select').val('');
+        controlForm.find('.entry-fpsl:not(:last) .btn-add-fpsl')
+            .removeClass('btn-add-fpsl').addClass('btn-remove-fpsl')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+    }).on('click', '.btn-remove-fpsl', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-fpsl:first').remove();
         return false;
     });
 });
@@ -247,6 +296,18 @@
           showAnim : 'fadeIn'
         });
     });
+     $(document).on("focus", "#SubmittedFromDate", function(){
+        $(this).datepicker({
+          dateFormat: "yy-mm-dd",
+          showAnim : 'fadeIn'
+        });
+    });
+  $(document).on("focus", "#SubmittedToDate", function(){
+    $(this).datepicker({
+      dateFormat: "yy-mm-dd",
+      showAnim : 'fadeIn'
+    });
+});
   } );
   </script>
  

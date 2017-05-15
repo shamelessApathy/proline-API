@@ -416,3 +416,42 @@ test
 [Info][2017/05/12 12:20:25 guest@::1 AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
 [Info][2017/05/12 12:23:19 guest@::1 AmazonReportScheduleList.php:146 sendRequest] Making request to Amazon: GetReportScheduleList
 [Info][2017/05/12 12:34:01 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 12:39:52 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 12:39:55 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/12 12:40:01 guest@::1 AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/12 12:40:14 guest@::1 AmazonReportRequestList.php:273 sendRequest] Making request to Amazon: GetReportRequestList
+[Info][2017/05/12 12:47:49 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/12 12:48:29 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/15 11:00:39 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/15 11:01:32 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/15 11:06:34 guest@::1 AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/15 11:15:38 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 11:15:47 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 11:18:51 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 12:17:15 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 12:25:54 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Urgent][2017/05/15 12:25:56 guest@::1 AmazonFeedList.php:281 checkResponse] Bad Response! 400 Bad Request: InvalidFeedSubmissionId - dfqw is not a valid Id.
+[Info][2017/05/15 12:26:45 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 12:30:54 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 12:32:29 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 12:32:59 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 12:33:12 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 12:33:22 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 12:37:45 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:37:57 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:38:08 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:40:14 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:40:23 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:50:03 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:50:33 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:50:45 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:51:15 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:51:30 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/15 12:51:40 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Warning][2017/05/15 13:00:59 guest@::1 FeedController.php:96 submitFeed] Feed's contents must be set in order to submit it!
+[Warning][2017/05/15 13:01:08 guest@::1 FeedController.php:96 submitFeed] Feed's contents must be set in order to submit it!
+[Warning][2017/05/15 13:03:23 guest@::1 FeedController.php:96 submitFeed] Feed's contents must be set in order to submit it!
+[Warning][2017/05/15 13:03:59 guest@::1 FeedController.php:96 submitFeed] Feed's contents must be set in order to submit it!
+[Warning][2017/05/15 13:06:34 guest@::1 FeedController.php:95 submitFeed] Feed's contents must be set in order to submit it!
+[Info][2017/05/15 13:19:28 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList
+[Info][2017/05/15 13:19:37 guest@::1 AmazonFeedList.php:279 sendRequest] Making request to Amazon: GetFeedSubmissionList

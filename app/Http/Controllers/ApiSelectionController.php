@@ -67,6 +67,18 @@ class ApiSelectionController extends Controller
            // $result .= '<option value="UpdateReportAcknowledgements">UpdateReportAcknowledgements</option>';
         }
 
+        if($value=='Feeds'){
+            
+            $result  = '<option value="">Pick an operation...</option>';
+            $result .= '<optgroup label="Feeds"></optgroup>';
+          //  $result .= '<option value="CancelFeedSubmissions">CancelFeedSubmissions</option>';
+            $result .= '<option value="GetFeedSubmissionList">GetFeedSubmissionList</option>';
+           // $result .= '<option value="GetFeedSubmissionListByNextToken">GetFeedSubmissionListByNextToken</option>';
+            //$result .= '<option value="GetFeedSubmissionCount">GetFeedSubmissionCount</option>';
+            $result .= '<option value="GetFeedSubmissionResult">GetFeedSubmissionResult</option>';
+            //$result .= '<option value="SubmitFeed">SubmitFeed</option>';
+        }
+
         return $result;
     }
 
@@ -373,6 +385,85 @@ class ApiSelectionController extends Controller
                         </div> 
                     </div>
                 </div>';
+        }
+
+        /**** Feeds API operations *****/
+        if($value=="GetFeedSubmissionList"){
+
+            $result='<div class="row top-buffer">
+                    <div class="text_field clearfix text-center"><p>No required parameters</p></div>
+                     <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3>
+                     <div class="text_field clearfix repeat-in" id="FeedSubmissionIdList">
+                        <div class="entry-fsil top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">FeedSubmissionIdList.Id.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                                <input name="FeedSubmissionIdList[]" class="form-control" type="text" id="FeedSubmissionIdList">
+                                <button type="button" class="btn btn-success btn-lg btn-add-fsil">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">MaxCount</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input name="MaxCount" type="text" class="form-control" id="MaxCount">
+                        </span>
+                    </div>
+                    <div class="text_field clearfix repeat-in" id="FeedTypeList">
+                        <div class="entry-ftl top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">FeedTypeList.Type.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                                <input name="FeedTypeList[]" class="form-control" type="text" id="FeedTypeList">
+                                <button type="button" class="btn btn-success btn-lg btn-add-ftl">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
+                    </div>
+                    <div class="text_field clearfix repeat-in" id="FeedProcessingStatusList">
+                        <div class="entry-fpsl top-buffer text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col_text">FeedProcessingStatusList.Status.1</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                               <select id="FeedProcessingStatusList" name="FeedProcessingStatusList[]" class="form-control">
+                                    <option value="">Select Option...</option>
+                                    <option value="_SUBMITTED_">_SUBMITTED_</option>
+                                    <option value="_IN_PROGRESS_">_IN_PROGRESS_</option>
+                                    <option value="_CANCELLED_">_CANCELLED_</option>
+                                    <option value="_DONE_">_DONE_</option>
+                                </select>
+                                <button type="button" class="btn btn-success btn-lg btn-add-fpsl">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div> 
+                    </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">SubmittedFromDate</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                            <input name="SubmittedFromDate" class="form-control" type="text" id="SubmittedFromDate">
+                        </span>
+                    </div>
+                     <div class="text_field clearfix top-buffer">
+                        <span class="col-md-6 col-sm-12 lt_col">SubmittedToDate</span>
+                        <span class="col-md-6 col-sm-12 lt_col">
+                           <input name="SubmittedToDate" class="form-control" type="text" id="SubmittedToDate">
+                        </span>
+                    </div>  
+                     
+                </div>';
+        }
+          if($value=="GetFeedSubmissionResult"){
+             $result='<div class="row top-buffer">
+                        <div class="text_field clearfix">
+                            <span class="col-md-6 col-sm-12 lt_col">FeedSubmissionId</span>
+                            <span class="col-md-6 col-sm-12 lt_col">
+                                <input name="FeedSubmissionId" type="text" class="form-control" id="FeedSubmissionId" required>
+                            </span>
+                        </div>
+                        <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3> 
+                        <div class="text_field top-buffer clearfix text-center"><p>No optional parameters</p></div>   
+                    </div>';
         }
 
         return $result;

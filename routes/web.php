@@ -87,3 +87,8 @@ Route::get('amazon/amazon-get-report-request', 'ReportController@GetReportReques
 Route::get('amazon/amazon-get-report-request-list', 'ReportController@AmazonReportRequestList')->name('amazon-get-report-request-list');
 Route::get('amazon/amazon-manage-report-schedule', 'ReportController@ManageReportSchedule')->name('amazon-manage-report-schedule');
 Route::get('amazon/amazon-get-report-schedule-list', 'ReportController@GetReportScheduleList')->name('amazon-get-report-schedule-list');
+
+/**** Amazon Feed Routes *****/
+Route::get('amazon/amazon-get-feed-list', 'FeedController@GetFeedSubmissionList')->name('amazon-get-feed-list');
+Route::get('amazon/amazon-get-feed-result', 'FeedController@GetFeedSubmissionResult')->name('amazon-get-feed-result');
+Route::get('amazon/amazon-get-feed-submit', 'FeedController@SubmitFeed')->name('amazon-get-feed-submit');

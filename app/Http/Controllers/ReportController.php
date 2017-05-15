@@ -71,7 +71,7 @@ class ReportController extends Controller
         if (!empty($MaxCount)){
             $amz->setMaxCount($MaxCount);
         }
-        if (!empty($ReportTypeList)){ echo "string1";
+        if (!empty($ReportTypeList)){ 
             $amz->setReportTypes($ReportTypeList);
         }
         // Not necessary, scratchpad doesn't require, I changed it to only add if it's not null
@@ -81,7 +81,7 @@ class ReportController extends Controller
         if (!empty($AvailableFromDate) && !empty($AvailableToDate)){
             $amz->setTimeLimits($AvailableFromDate,$AvailableToDate );
         }
-        if (!empty($ReportRequestIdList)){echo "stringrw";
+        if (!empty($ReportRequestIdList)){
             $amz->setRequestIds($ReportRequestIdList);
         }
         $amz->fetchReportList();
