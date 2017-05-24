@@ -23,9 +23,9 @@ class CronController extends Controller
     	$list = $reportList->getList();
 
     	
-    	echo "<pre>";
+    	/*echo "<pre>";
     	print_r($list);
-    	echo "</pre>";
+    	echo "</pre>";*/
 
     	// Define the most recent ReportID
     	$latest = $list[0];
@@ -37,9 +37,19 @@ class CronController extends Controller
     	$report->setReportId($reportId);
     	$report->fetchReport();
     	$time = time();
-    	$reportName = "report-log.$time.xml";
-    	$report->saveReport($reportName);
-    	$this->handle_data($reportName);
+    	$reportName = "/var/www/proline-API/public/cronlogs/report-log.$time.xml";
+    	try {
+                $report->saveReport($reportName);
+                //If the exception is thrown, this text will not be shown
+                echo 'If you see this, it worked';
+            }
+
+            //catch exception
+            catch(Exception $e) {
+              echo 'Message: ' .$e->getMessage();
+            }
+
+    	//$this->handle_data($reportName);
 
     }
 

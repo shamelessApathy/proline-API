@@ -8,32 +8,32 @@
 <Message>
     <MessageID>1</MessageID>
     <OrderReport>
-        <AmazonOrderID>113-0040038-9610673</AmazonOrderID>
-        <AmazonSessionID>113-0040038-9610673</AmazonSessionID>
-        <OrderDate>2017-05-09T17:53:46-07:00</OrderDate>
-        <OrderPostedDate>2017-05-09T17:53:46-07:00</OrderPostedDate>
+        <AmazonOrderID>113-1577500-8118601</AmazonOrderID>
+        <AmazonSessionID>113-1577500-8118601</AmazonSessionID>
+        <OrderDate>2017-05-14T03:13:09-07:00</OrderDate>
+        <OrderPostedDate>2017-05-14T03:13:09-07:00</OrderPostedDate>
         <BillingData>
-            <BuyerEmailAddress>01p5tyhbzgx9s57@marketplace.amazon.com</BuyerEmailAddress>
-            <BuyerName>Denene Williams</BuyerName>
-            <BuyerPhoneNumber>516-455-2119</BuyerPhoneNumber>
+            <BuyerEmailAddress>nj2rtjpg3gp47qp@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>WEINA XING</BuyerName>
+            <BuyerPhoneNumber>480-907-9769</BuyerPhoneNumber>
         </BillingData>
         <FulfillmentData>
             <FulfillmentMethod>Ship</FulfillmentMethod>
             <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
             <Address>
-                <Name>Denene pink</Name>
-                <AddressFieldOne>12107 235TH ST</AddressFieldOne>
-                <City>ROSEDALE</City>
-                <StateOrRegion>NY</StateOrRegion>
-                <PostalCode>11422-1030</PostalCode>
+                <Name>weina</Name>
+                <AddressFieldOne>10718 POMERANE PL</AddressFieldOne>
+                <City>CHARLOTTE</City>
+                <StateOrRegion>NC</StateOrRegion>
+                <PostalCode>28277-1980</PostalCode>
                 <CountryCode>US</CountryCode>
-                <PhoneNumber>516-455-2119</PhoneNumber>
+                <PhoneNumber>4809079769</PhoneNumber>
             </Address>
         </FulfillmentData>
         <IsBusinessOrder>false</IsBusinessOrder>
         <IsPrime>false</IsPrime>
         <Item>
-            <AmazonOrderItemCode>00679603375954</AmazonOrderItemCode>
+            <AmazonOrderItemCode>38862886512722</AmazonOrderItemCode>
             <SKU>PLJW185.30</SKU>
             <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
             <Quantity>1</Quantity>
@@ -68,32 +68,32 @@
 <Message>
     <MessageID>2</MessageID>
     <OrderReport>
-        <AmazonOrderID>113-0166279-5187404</AmazonOrderID>
-        <AmazonSessionID>113-0166279-5187404</AmazonSessionID>
-        <OrderDate>2017-05-09T18:26:52-07:00</OrderDate>
-        <OrderPostedDate>2017-05-09T18:26:52-07:00</OrderPostedDate>
+        <AmazonOrderID>114-8501618-7927449</AmazonOrderID>
+        <AmazonSessionID>114-8501618-7927449</AmazonSessionID>
+        <OrderDate>2017-05-14T05:59:22-07:00</OrderDate>
+        <OrderPostedDate>2017-05-14T05:59:22-07:00</OrderPostedDate>
         <BillingData>
-            <BuyerEmailAddress>pj9ff2xz1g9m5nl@marketplace.amazon.com</BuyerEmailAddress>
-            <BuyerName>Teresa Carlson</BuyerName>
-            <BuyerPhoneNumber>715-556-6502</BuyerPhoneNumber>
+            <BuyerEmailAddress>67khtxn0tq5k6xj@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Mary Clarke</BuyerName>
+            <BuyerPhoneNumber>6176358169</BuyerPhoneNumber>
         </BillingData>
         <FulfillmentData>
             <FulfillmentMethod>Ship</FulfillmentMethod>
             <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
             <Address>
-                <Name>Rick Carlson</Name>
-                <AddressFieldOne>1224 NEWPORT DR</AddressFieldOne>
-                <City>OCONOMOWOC</City>
-                <StateOrRegion>WI</StateOrRegion>
-                <PostalCode>53066-4419</PostalCode>
+                <Name>Mary Clarke</Name>
+                <AddressFieldOne>143 SEAWALL RD</AddressFieldOne>
+                <City>SOUTHWEST HARBOR</City>
+                <StateOrRegion>ME</StateOrRegion>
+                <PostalCode>04679-4040</PostalCode>
                 <CountryCode>US</CountryCode>
-                <PhoneNumber>715-556-6502</PhoneNumber>
+                <PhoneNumber>207-460-4031</PhoneNumber>
             </Address>
         </FulfillmentData>
         <IsBusinessOrder>false</IsBusinessOrder>
         <IsPrime>false</IsPrime>
         <Item>
-            <AmazonOrderItemCode>15647167353322</AmazonOrderItemCode>
+            <AmazonOrderItemCode>61790927725290</AmazonOrderItemCode>
             <SKU>PLJW185.30</SKU>
             <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
             <Quantity>1</Quantity>
@@ -128,32 +128,32 @@
 <Message>
     <MessageID>3</MessageID>
     <OrderReport>
-        <AmazonOrderID>111-5548277-3791438</AmazonOrderID>
-        <AmazonSessionID>111-5548277-3791438</AmazonSessionID>
-        <OrderDate>2017-05-09T19:41:17-07:00</OrderDate>
-        <OrderPostedDate>2017-05-09T19:41:17-07:00</OrderPostedDate>
+        <AmazonOrderID>114-6716146-2031437</AmazonOrderID>
+        <AmazonSessionID>114-6716146-2031437</AmazonSessionID>
+        <OrderDate>2017-05-14T09:57:58-07:00</OrderDate>
+        <OrderPostedDate>2017-05-14T09:57:58-07:00</OrderPostedDate>
         <BillingData>
-            <BuyerEmailAddress>d6rbn5pvqb2r470@marketplace.amazon.com</BuyerEmailAddress>
-            <BuyerName>Charles LaPierre</BuyerName>
-            <BuyerPhoneNumber>408 979 9098</BuyerPhoneNumber>
+            <BuyerEmailAddress>kpp3r6j84g0w25b@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Gautam Shah</BuyerName>
+            <BuyerPhoneNumber>7327542691</BuyerPhoneNumber>
         </BillingData>
         <FulfillmentData>
             <FulfillmentMethod>Ship</FulfillmentMethod>
-            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
             <Address>
-                <Name>CHARLES M LAPIERRE</Name>
-                <AddressFieldOne>5037 TRENARY WAY</AddressFieldOne>
-                <City>SAN JOSE</City>
-                <StateOrRegion>CA</StateOrRegion>
-                <PostalCode>95118-2627</PostalCode>
+                <Name>Lata r shah</Name>
+                <AddressFieldOne>8 Sandra dr</AddressFieldOne>
+                <City>Edison</City>
+                <StateOrRegion>Nj</StateOrRegion>
+                <PostalCode>08820</PostalCode>
                 <CountryCode>US</CountryCode>
-                <PhoneNumber>408 979 9098</PhoneNumber>
+                <PhoneNumber>7327542691</PhoneNumber>
             </Address>
         </FulfillmentData>
         <IsBusinessOrder>false</IsBusinessOrder>
-        <IsPrime>true</IsPrime>
+        <IsPrime>false</IsPrime>
         <Item>
-            <AmazonOrderItemCode>15882154296962</AmazonOrderItemCode>
+            <AmazonOrderItemCode>68355828624994</AmazonOrderItemCode>
             <SKU>PLJW185.30</SKU>
             <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
             <Quantity>1</Quantity>
@@ -188,40 +188,40 @@
 <Message>
     <MessageID>4</MessageID>
     <OrderReport>
-        <AmazonOrderID>112-4926952-8209022</AmazonOrderID>
-        <AmazonSessionID>112-4926952-8209022</AmazonSessionID>
-        <OrderDate>2017-05-09T19:43:05-07:00</OrderDate>
-        <OrderPostedDate>2017-05-09T19:43:05-07:00</OrderPostedDate>
+        <AmazonOrderID>112-8241572-5757067</AmazonOrderID>
+        <AmazonSessionID>112-8241572-5757067</AmazonSessionID>
+        <OrderDate>2017-05-14T11:17:01-07:00</OrderDate>
+        <OrderPostedDate>2017-05-14T11:17:01-07:00</OrderPostedDate>
         <BillingData>
-            <BuyerEmailAddress>p25ll7qkmtb0yxx@marketplace.amazon.com</BuyerEmailAddress>
-            <BuyerName>Donna Minnich</BuyerName>
-            <BuyerPhoneNumber>423-748-4491</BuyerPhoneNumber>
+            <BuyerEmailAddress>7b9jqbfyxk9w1sy@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Thao Dang</BuyerName>
+            <BuyerPhoneNumber>2064349136</BuyerPhoneNumber>
         </BillingData>
         <FulfillmentData>
             <FulfillmentMethod>Ship</FulfillmentMethod>
-            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
             <Address>
-                <Name>Morgan Minnich</Name>
-                <AddressFieldOne>316 SILVER MAPLE LN</AddressFieldOne>
-                <City>KNOXVILLE</City>
-                <StateOrRegion>TN</StateOrRegion>
-                <PostalCode>37919-6865</PostalCode>
+                <Name>Thao Dang</Name>
+                <AddressFieldOne>12013 SE 269TH PL</AddressFieldOne>
+                <City>KENT</City>
+                <StateOrRegion>WA</StateOrRegion>
+                <PostalCode>98030-8786</PostalCode>
                 <CountryCode>US</CountryCode>
-                <PhoneNumber>423-748-4491</PhoneNumber>
+                <PhoneNumber>2064349136</PhoneNumber>
             </Address>
         </FulfillmentData>
         <IsBusinessOrder>false</IsBusinessOrder>
-        <IsPrime>false</IsPrime>
+        <IsPrime>true</IsPrime>
         <Item>
-            <AmazonOrderItemCode>64394993599578</AmazonOrderItemCode>
-            <SKU>PLJW185.30</SKU>
-            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <AmazonOrderItemCode>34130173384130</AmazonOrderItemCode>
+            <SKU>PLJW 113.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 113.30 900 CFM, 30&quot;</Title>
             <Quantity>1</Quantity>
             <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
             <ItemPrice>
                <Component>
                   <Type>Principal</Type>
-                  <Amount currency="USD">350.95</Amount>
+                  <Amount currency="USD">599.95</Amount>
                </Component>
                <Component>
                   <Type>Shipping</Type>
@@ -239,7 +239,7 @@
             <ItemFees>
                <Fee>
                   <Type>Commission</Type>
-                  <Amount currency="USD">-52.64</Amount>
+                  <Amount currency="USD">-89.99</Amount>
                </Fee>
             </ItemFees>
          </Item>
