@@ -92,3 +92,5 @@ Route::get('amazon/amazon-get-report-schedule-list', 'ReportController@GetReport
 Route::get('amazon/amazon-get-feed-list', 'FeedController@GetFeedSubmissionList')->name('amazon-get-feed-list');
 Route::get('amazon/amazon-get-feed-result', 'FeedController@GetFeedSubmissionResult')->name('amazon-get-feed-result');
 Route::get('amazon/amazon-get-feed-submit', 'FeedController@SubmitFeed')->name('amazon-get-feed-submit');
+
+Route::get('amazon/amazon-update-feed', 'FeedController@UpdateAmazonInventory')->name('amazon-update-feed');
