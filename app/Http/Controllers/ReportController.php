@@ -35,14 +35,30 @@ class ReportController extends Controller
         // echo "<br> lkvjl;sk";
         // echo "<pre>"; print_r($vals); echo "</pre>";
 
-        $ReportId   = $request['ReportId'];
+         $ReportId   = $request['ReportId'];
+      //  $ReportId   = '5151817708017303';
         $report = new \AmazonReport("PROLINE"); //store name matches the array key in the config file
         $report->setReportId($ReportId);
         $report->fetchReport();
         $list_report = $report->getRawReport();
-        
-        // echo "<pre>"; print_r($report);
-        // die();
+     //   $list_report = $report->saveReport('/var/www/html/magento-clients/Brian/files-2017/feb/22/proline-API/recport23.xml');
+      // echo "<pre>"; print_r($report);
+      //  echo $list_report['body'];
+      //  $xml=simplexml_load_string($list_report); 
+      //  echo "<pre>"; print_r($xml);
+        //die();
+        // $xmlfile = '/var/www/html/magento-clients/Brian/files-2017/feb/22/proline-API/recpeort.xml';
+        // $xmlparser = xml_parser_create();
+
+// open a file and read data
+// $fp = fopen($xmlfile, 'r');
+// $xmldata = fread($fp, 4096);
+
+// xml_parse_into_struct($xmlparser,$xmldata,$values);
+
+// xml_parser_free($xmlparser);
+
+     //  echo "<pre>"; print_r($values);
         $message ="";
         if(!empty($list_report)){
             $message = "Report details associated with order Id : ".$ReportId;
@@ -50,6 +66,7 @@ class ReportController extends Controller
         else{
             $message = "No details Found Matching to your request";
         }
+       // die();
         $list_report = $list_report;
         //die();
 

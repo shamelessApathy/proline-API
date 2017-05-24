@@ -198,6 +198,22 @@
         $(this).parents('.entry-fpsl:first').remove();
         return false;
     });
+      $(document).on('click', '.btn-add-aoi', function(e){
+        e.preventDefault();
+        var controlForm = $('#AmazonOrderId:first'),
+            currentEntry = $(this).parents('.entry-aoi:first'),
+            newEntry = $(currentEntry.clone()).appendTo(controlForm);
+        newEntry.find('input').val('');
+        controlForm.find('.entry-aoi:not(:last) .btn-add-aoi')
+            .removeClass('btn-add-aoi').addClass('btn-remove-aoi')
+            .removeClass('btn-success').addClass('btn-danger')
+            .html('<i class="fa fa-minus-circle" aria-hidden="true"></i>');
+    }).on('click', '.btn-remove-aoi', function(e){
+        e.preventDefault();
+        $(this).parents('.entry-aoi:first').remove();
+        return false;
+    });
+
 });
 </script>
 

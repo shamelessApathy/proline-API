@@ -76,12 +76,18 @@ class AmazonOrder extends AmazonOrderCore{
     public function setOrderId($id){
         if (is_string($id) || is_numeric($id)){
             $this->options['AmazonOrderId.Id.1'] = $id;
-        } else {
+        } else if (is_array($id)){
+           // $this->resetRequestIds();
+            $i = 1;
+            foreach ($id as $x){
+                $this->options['AmazonOrderId.Id.'.$i] = $x;
+                $i++;
+            }
+        }else {
             $this->log("Attempted to set AmazonOrderId to invalid value",'Warning');
             return false;
         }
     }
-    
     /**
      * Fetches the specified order from Amazon.
      * 

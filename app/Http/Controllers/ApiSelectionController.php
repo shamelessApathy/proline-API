@@ -141,12 +141,19 @@ class ApiSelectionController extends Controller
         }
         if($value=="GetOrder"){
             $result='<div class="row top-buffer">
-                        <div class="text_field clearfix">
-                            <span class="col-md-6 col-sm-12 lt_col">AmazonOrderId</span>
-                            <span class="col-md-6 col-sm-12 lt_col">
-                                <input name="AmazonOrderId" class="form-control" type="text" id="AmazonOrderId" required>
-                            </span>
+                        <div class="text_field clearfix repeat-in" id="AmazonOrderId">
+                            <div class="entry-aoi top-buffer text_field clearfix">
+                                <span class="col-md-6 col-sm-12 lt_col_text">AmazonOrderId.Id.1</span>
+                                <span class="col-md-6 col-sm-12 lt_col">
+                                    <input name="AmazonOrderId[]" class="form-control" type="text" id="AmazonOrderId">
+                                    <button type="button" class="btn btn-success btn-lg btn-add-aoi">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                    </button>
+                                </span>
+                            </div> 
                         </div>
+                         <h3 class="text-center btn btn-primary btn-block">Optional API Parameters</h3> 
+                        <div class="text_field top-buffer clearfix text-center"><p>No optional parameters</p></div> 
                     </div>';
         }
         if($value=="ListOrderItems"){
