@@ -109,9 +109,9 @@ class FeedController extends Controller
     public function UpdateAmazonInventory(Request $request)
     {
         $inventory = new \AmazonFeed("PROLINE");
-        $inventory->setFeedContent('- 60 min');
-        $inventory->loadFeedFile();
-        $inventory->setFeedType('_POST_INVENTORY_AVAILABILITY_DATA_');
+        $inventory->setFeedContent('XML');
+        $inventory->loadFeedFile(base_path().'/stock.csv');
+        $inventory->setFeedType('_POST_FLAT_FILE_LISTINGS_DATA_');
         $inventory->submitFeed();
         $data = $inventory->getResponse();
         echo "<pre>"; print_r($data);

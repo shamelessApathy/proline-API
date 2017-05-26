@@ -1768,3 +1768,13 @@ Stack trace:
 #48 /var/www/html/magento-clients/Brian/files-2017/feb/22/proline-API/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #49 /var/www/html/magento-clients/Brian/files-2017/feb/22/proline-API/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #50 {main}
+[Info][2017/05/26 12:32:20 guest@::1 AmazonFeed.php:255 sendRequest] Making request to Amazon: SubmitFeed
+[Info][2017/05/26 12:32:24 guest@::1 AmazonFeed.php:272 parseXML] Successfully submitted feed #50592017312 (_POST_FLAT_FILE_LISTINGS_DATA_)
+[Info][2017/05/26 12:33:09 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/26 12:33:32 guest@::1 AmazonFeedResult.php:102 sendRequest] Making request to Amazon: GetFeedSubmissionResult
+[Info][2017/05/26 12:36:56 guest@::1 AmazonFeed.php:255 sendRequest] Making request to Amazon: SubmitFeed
+[Info][2017/05/26 12:36:59 guest@::1 AmazonFeed.php:272 parseXML] Successfully submitted feed #50593017312 (_POST_FLAT_FILE_LISTINGS_DATA_)
+[Info][2017/05/26 12:43:26 guest@::1 AmazonFeed.php:255 sendRequest] Making request to Amazon: SubmitFeed
+[Info][2017/05/26 12:43:28 guest@::1 AmazonFeed.php:272 parseXML] Successfully submitted feed #50594017312 (_POST_FLAT_FILE_LISTINGS_DATA_)
+[Info][2017/05/26 12:49:29 guest@::1 AmazonFeed.php:255 sendRequest] Making request to Amazon: SubmitFeed
+[Info][2017/05/26 12:49:32 guest@::1 AmazonFeed.php:272 parseXML] Successfully submitted feed #50595017312 (_POST_FLAT_FILE_LISTINGS_DATA_)
