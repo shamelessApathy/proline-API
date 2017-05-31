@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-4620090-0524215</AmazonOrderID>
+        <AmazonSessionID>113-4620090-0524215</AmazonSessionID>
+        <OrderDate>2017-05-25T15:24:32-07:00</OrderDate>
+        <OrderPostedDate>2017-05-25T15:24:32-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>wbwh5xnv6rzfr3z@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>David M. Reff</BuyerName>
+            <BuyerPhoneNumber>818-905-3332</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>David M. Reff</Name>
+                <AddressFieldOne>4834 Mary Ellen Ave</AddressFieldOne>
+                <City>Sherman Oaks</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>91423</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>818-905-3332</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>30594700736602</AmazonOrderItemCode>
+            <SKU>PLJW120.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 120.36 900 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">625.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-93.89</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-1094570-8717067</AmazonOrderID>
+        <AmazonSessionID>111-1094570-8717067</AmazonSessionID>
+        <OrderDate>2017-05-25T17:00:00-07:00</OrderDate>
+        <OrderPostedDate>2017-05-25T17:00:00-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>17kjn72003cxzhg@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Stephen M. Machen</BuyerName>
+            <BuyerPhoneNumber>000-000-0000</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Stephen M. Machen</Name>
+                <AddressFieldOne>613 WEBBER ST</AddressFieldOne>
+                <City>SANTA FE</City>
+                <StateOrRegion>NM</StateOrRegion>
+                <PostalCode>87505-2655</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>5055770019</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>08617275077874</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

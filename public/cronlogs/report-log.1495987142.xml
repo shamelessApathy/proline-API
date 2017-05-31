@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-6466416-9431467</AmazonOrderID>
+        <AmazonSessionID>111-6466416-9431467</AmazonSessionID>
+        <OrderDate>2017-05-27T16:08:31-07:00</OrderDate>
+        <OrderPostedDate>2017-05-27T16:08:31-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>w3x96p0914ccln9@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Susan Rho</BuyerName>
+            <BuyerPhoneNumber>203-438-7374</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Susan Rho and Dean Meyer</Name>
+                <AddressFieldOne>233 MOUNTAIN RD</AddressFieldOne>
+                <City>RIDGEFIELD</City>
+                <StateOrRegion>CT</StateOrRegion>
+                <PostalCode>06877-1630</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>203-438-7374</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>38758666933250</AmazonOrderItemCode>
+            <SKU>PLJW 133.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 133.30 900 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">627.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-94.19</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-3854500-1553852</AmazonOrderID>
+        <AmazonSessionID>113-3854500-1553852</AmazonSessionID>
+        <OrderDate>2017-05-27T16:23:20-07:00</OrderDate>
+        <OrderPostedDate>2017-05-27T16:23:20-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>w9mkd108mwqcwm0@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>bernard rucinski</BuyerName>
+            <BuyerPhoneNumber>608-317-6788</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Bernard Rucinski</Name>
+                <AddressFieldOne>1815 BAINBRIDGE ST</AddressFieldOne>
+                <City>LA CROSSE</City>
+                <StateOrRegion>WI</StateOrRegion>
+                <PostalCode>54603-1460</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>608-317-6788</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>65151086878938</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

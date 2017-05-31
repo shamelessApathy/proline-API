@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-0404358-5302631</AmazonOrderID>
+        <AmazonSessionID>113-0404358-5302631</AmazonSessionID>
+        <OrderDate>2017-05-17T22:08:51-07:00</OrderDate>
+        <OrderPostedDate>2017-05-17T22:08:51-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>f4370xc7kxqt4by@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Glenn  A. Williams</BuyerName>
+            <BuyerPhoneNumber>(210) 315-4092</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Glenn Williams</Name>
+                <AddressFieldOne>75 PALO DURO CYN</AddressFieldOne>
+                <City>SAN ANTONIO</City>
+                <StateOrRegion>TX</StateOrRegion>
+                <PostalCode>78258-7337</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>(210) 315-4092</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>61319608073066</AmazonOrderItemCode>
+            <SKU>PLJW120.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 120.30 900 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">616.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-92.54</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-9684767-7685025</AmazonOrderID>
+        <AmazonSessionID>112-9684767-7685025</AmazonSessionID>
+        <OrderDate>2017-05-18T05:09:56-07:00</OrderDate>
+        <OrderPostedDate>2017-05-18T05:09:56-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>bly9hl1sw53wxkm@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Ed Evangelista</BuyerName>
+            <BuyerPhoneNumber>925 969-9144</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Edgar A Evangelista</Name>
+                <AddressFieldOne>850 CLAREWOOD CT</AddressFieldOne>
+                <City>CONCORD</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>94518-3414</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>925 969-9144</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>05136657765442</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

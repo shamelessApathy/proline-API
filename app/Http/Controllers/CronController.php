@@ -58,18 +58,23 @@ class CronController extends Controller
     * @param none
     * @return Data that is usable to be sent to either a display, or to an inventory_update function
     */
-    public function handle_data($reportName)
+    public function handle_data($reportName = null)
     {
+        $test_record = "/var/www/API/API/public/cronlogs/report-log.1496044742.xml";
+        $reportName = $test_record;
     	 $xml = simplexml_load_file($reportName);
 // Currently able to grab the SKU of every item thats been orders on the current sheet
  		$data = array();
  		foreach($xml->Message as $order)
  		{
- 			var_dump($order->OrderReport->Item->SKU);
- 			echo "<br>";
  			array_push($data, ['sku'=>(string)$order->OrderReport->Item->SKU, 'quantity'=>(int)$order->OrderReport->Item->Quantity]);
  		}
  		$this->update_inventory($data);
+        $time = time();
+        $today = date("F j, Y, g:i a");
+       $newFileName = '/var/www/proline-API/public/cronlogs/inventory-update/record'.$time.'.txt';
+        $data = "Inventory Records updated [time]: ". $today;
+        file_put_contents($newFileName, $data);
 
 	}
 	public function update_inventory($data)

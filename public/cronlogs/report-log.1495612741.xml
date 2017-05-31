@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-8467439-0361867</AmazonOrderID>
+        <AmazonSessionID>111-8467439-0361867</AmazonSessionID>
+        <OrderDate>2017-05-23T15:26:22-07:00</OrderDate>
+        <OrderPostedDate>2017-05-23T15:26:22-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>w9vn79q9tzjntvs@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Emro F. Krasovec</BuyerName>
+            <BuyerPhoneNumber>908-823-4510</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Emro F. Krasovec</Name>
+                <AddressFieldOne>33 PULASKI RD</AddressFieldOne>
+                <City>WHITEHOUSE STATION</City>
+                <StateOrRegion>NJ</StateOrRegion>
+                <PostalCode>08889-3516</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>908-823-4510</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>51487637400530</AmazonOrderItemCode>
+            <SKU>PLJW 180.30</SKU>
+            <Title>Proline Range Hoods PLJW 180.30 280 CFM Wall/Undercabinet Range Hood, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">199.99</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-30.00</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-2838343-2393834</AmazonOrderID>
+        <AmazonSessionID>114-2838343-2393834</AmazonSessionID>
+        <OrderDate>2017-05-23T16:56:11-07:00</OrderDate>
+        <OrderPostedDate>2017-05-23T16:56:11-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>z22mjf06c71zlxg@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Kim Linton</BuyerName>
+            <BuyerPhoneNumber>5617410466</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Kimberley Linton</Name>
+                <AddressFieldOne>13555 155th Place N</AddressFieldOne>
+                <City>JUPITER</City>
+                <StateOrRegion>FL</StateOrRegion>
+                <PostalCode>33478</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>561-351-9867</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>08413280089554</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>3</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-1506502-6849841</AmazonOrderID>
+        <AmazonSessionID>114-1506502-6849841</AmazonSessionID>
+        <OrderDate>2017-05-23T17:22:17-07:00</OrderDate>
+        <OrderPostedDate>2017-05-23T17:22:17-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>d9jvv0n0lv02rfg@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Dawn Marie Costa</BuyerName>
+            <BuyerPhoneNumber>7749910852</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Dawn Marie Costa</Name>
+                <AddressFieldOne>162 WALKER ST</AddressFieldOne>
+                <City>SEEKONK</City>
+                <StateOrRegion>MA</StateOrRegion>
+                <PostalCode>02771-2910</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>7749910852</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>29992949292546</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>4</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-6610129-6114666</AmazonOrderID>
+        <AmazonSessionID>114-6610129-6114666</AmazonSessionID>
+        <OrderDate>2017-05-23T18:39:17-07:00</OrderDate>
+        <OrderPostedDate>2017-05-23T18:39:17-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>0nx7b4npk5n6628@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Theodore Tousman</BuyerName>
+            <BuyerPhoneNumber>414-828-1287</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Carmel Sweet</Name>
+                <AddressFieldOne>2423 E BEVERLY RD</AddressFieldOne>
+                <City>MILWAUKEE</City>
+                <StateOrRegion>WI</StateOrRegion>
+                <PostalCode>53211-2427</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>414-828-1287</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>37651911116266</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>
