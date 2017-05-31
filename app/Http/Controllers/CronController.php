@@ -49,7 +49,7 @@ class CronController extends Controller
               echo 'Message: ' .$e->getMessage();
             }
 
-    	//$this->handle_data($reportName);
+    	$this->handle_data($reportName);
 
     }
 
@@ -60,7 +60,7 @@ class CronController extends Controller
     */
     public function handle_data($reportName = null)
     {
-        $test_record = "/var/www/API/API/public/cronlogs/report-log.1496044742.xml";
+        $test_record = "/var/www/proline-API/public/cronlogs/report-log.1496044742.xml";
         $reportName = $test_record;
     	 $xml = simplexml_load_file($reportName);
 // Currently able to grab the SKU of every item thats been orders on the current sheet
@@ -72,17 +72,21 @@ class CronController extends Controller
  		$this->update_inventory($data);
         $time = time();
         $today = date("F j, Y, g:i a");
-       $newFileName = '/var/www/proline-API/public/cronlogs/inventory-update/record'.$time.'.txt';
+       $newFileName = '/var/www/proline-API/public/cronlogs/inventory-records/'.$time.'.txt';
         $data = "Inventory Records updated [time]: ". $today;
         file_put_contents($newFileName, $data);
+        echo 'it finished!!!!! ()*__*()';
 
 	}
 	public function update_inventory($data)
 	{
 		foreach ($data as $order)
 		{
+			
 			$product = Product::where('sku', $order['sku'])->first();
-			$product->inventory = $product->inventory - $order['quantity'];
+			var_Dump($order['quantity']);
+			$newInventory = $product->inventory - $order['quantity'];
+			$product->inventory = $newInventory;
 			$product->save();
 		}
 	}
