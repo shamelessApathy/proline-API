@@ -60,9 +60,8 @@ class CronController extends Controller
     */
     public function handle_data($reportName = null)
     {
-        $test_record = "/var/www/proline-API/public/cronlogs/report-log.1496044742.xml";
-        $reportName = $test_record;
-    	 $xml = simplexml_load_file($reportName);
+        $reportName = $reportName;
+    	$xml = simplexml_load_file($reportName);
 // Currently able to grab the SKU of every item thats been orders on the current sheet
  		$data = array();
  		foreach($xml->Message as $order)
@@ -72,19 +71,22 @@ class CronController extends Controller
  		$this->update_inventory($data);
         $time = time();
         $today = date("F j, Y, g:i a");
-       $newFileName = '/var/www/proline-API/public/cronlogs/inventory-records/'.$time.'.txt';
+        // Everytime this function runs (due to the cronjob running it, it will make a notation with the date and time in a new file)
+        $newFileName = '/var/www/proline-API/public/cronlogs/inventory-records/'.$time.'.txt';
         $data = "Inventory Records updated [time]: ". $today;
         file_put_contents($newFileName, $data);
-        echo 'it finished!!!!! ()*__*()';
-
 	}
+	/**
+	*   Calling function is handle_data()
+	* @param $data is all the info that has been digested from the amazon _GET_ORDERS_REPORT_ 
+	* @return
+	*/
 	public function update_inventory($data)
 	{
 		foreach ($data as $order)
 		{
 			
 			$product = Product::where('sku', $order['sku'])->first();
-			var_Dump($order['quantity']);
 			$newInventory = $product->inventory - $order['quantity'];
 			$product->inventory = $newInventory;
 			$product->save();
