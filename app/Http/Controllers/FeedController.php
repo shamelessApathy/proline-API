@@ -72,8 +72,9 @@ class FeedController extends Controller
     public function GetFeedSubmissionResult(Request $request){
        
         $feed = new \AmazonFeedResult("PROLINE"); //store name matches the array key in the config file
-      //  echo "<pre>"; print_r($request->input()); echo "</pre>";
-        $feed->setFeedId('50540017296');
+       //echo "<pre>"; print_r($request->input()); echo "</pre>";
+        $FeedId   = $request['FeedSubmissionId'];
+        $feed->setFeedId($FeedId);
         $feed->fetchFeedResult();
         $feed_list = $feed->getRawFeed();
        // echo "<pre>"; print_r($feed_list); echo "</pre>"; //die();
@@ -109,9 +110,9 @@ class FeedController extends Controller
     public function UpdateAmazonInventory(Request $request)
     {
         $inventory = new \AmazonFeed("PROLINE");
-        $inventory->setFeedContent('XML');
+        $inventory->setFeedContent('csv');
         $inventory->loadFeedFile(base_path().'/stock.csv');
-        $inventory->setFeedType('_POST_FLAT_FILE_LISTINGS_DATA_');
+        $inventory->setFeedType('_POST_FLAT_FILE_INVLOADER_DATA_');
         $inventory->submitFeed();
         $data = $inventory->getResponse();
         echo "<pre>"; print_r($data);
