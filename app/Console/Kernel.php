@@ -25,8 +25,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+        $schedule->command('RunAmazonCron:RunAmazonCron')->cron('23 59 * * *');
+        $schedule->command('RunAmazonCron:RunAmazonCron')->cron('07 59 * * *');
+        $schedule->command('RunAmazonCron:RunAmazonCron')->cron('03 59 * * *');
     }
 
     /**

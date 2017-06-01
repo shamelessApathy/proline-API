@@ -1,0 +1,3 @@
+[Info][2017/05/31 23:28:33 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/05/31 23:28:33 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/05/31 23:28:33 guest@cli CronController.php:42 saveReport] Successfully saved report #5296327636017317 at /var/www/proline-API/public/cronlogs/report-log.1496273313.xml
