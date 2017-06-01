@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-6788635-1784216</AmazonOrderID>
+        <AmazonSessionID>111-6788635-1784216</AmazonSessionID>
+        <OrderDate>2017-05-26T06:20:23-07:00</OrderDate>
+        <OrderPostedDate>2017-05-26T06:20:23-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>vvykxvcnnwjcnn0@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Maxwell Watman</BuyerName>
+            <BuyerPhoneNumber>917.561.8597</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Maxwell Watman</Name>
+                <AddressFieldOne>3170 DUKE RD</AddressFieldOne>
+                <City>POWHATAN</City>
+                <StateOrRegion>VA</StateOrRegion>
+                <PostalCode>23139-4614</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>917.561.8597</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>41591244639274</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-0690841-8005065</AmazonOrderID>
+        <AmazonSessionID>112-0690841-8005065</AmazonSessionID>
+        <OrderDate>2017-05-26T08:43:04-07:00</OrderDate>
+        <OrderPostedDate>2017-05-26T08:43:04-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>v81yd26tsdg4td4@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>navid choudhury</BuyerName>
+            <BuyerPhoneNumber>202-549-4595</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Navid Choudhury</Name>
+                <AddressFieldOne>3605 PAUL ST</AddressFieldOne>
+                <City>ALEXANDRIA</City>
+                <StateOrRegion>VA</StateOrRegion>
+                <PostalCode>22311-3725</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>202-549-4595</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>41287032409650</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>3</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-3096767-9340242</AmazonOrderID>
+        <AmazonSessionID>112-3096767-9340242</AmazonSessionID>
+        <OrderDate>2017-05-26T09:31:02-07:00</OrderDate>
+        <OrderPostedDate>2017-05-26T09:31:02-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>j0mzrh6wl2wlqkv@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Stephen Durias</BuyerName>
+            <BuyerPhoneNumber>425-320-8847</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>S D</Name>
+                <AddressFieldOne>12618 SE 299TH PL</AddressFieldOne>
+                <City>AUBURN</City>
+                <StateOrRegion>WA</StateOrRegion>
+                <PostalCode>98092-2190</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>425-320-8847</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>27873950334034</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>4</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-1121075-2529848</AmazonOrderID>
+        <AmazonSessionID>113-1121075-2529848</AmazonSessionID>
+        <OrderDate>2017-05-26T10:13:11-07:00</OrderDate>
+        <OrderPostedDate>2017-05-26T10:13:11-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>qyspyf031mg3lq9@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Sandra J. Gonzalez</BuyerName>
+            <BuyerPhoneNumber>562.3434265</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Sandra J. Gonzalez</Name>
+                <AddressFieldOne>225 HARVARD LN</AddressFieldOne>
+                <City>SEAL BEACH</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>90740-2510</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>562.3434265</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>62387894453434</AmazonOrderItemCode>
+            <SKU>PLJW129.48</SKU>
+            <Title>48&quot; 1200 CFM Ducted Wall Mounted Range Hood</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">1099.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">69.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-114.59</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>5</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-5323965-9768269</AmazonOrderID>
+        <AmazonSessionID>112-5323965-9768269</AmazonSessionID>
+        <OrderDate>2017-05-26T11:26:17-07:00</OrderDate>
+        <OrderPostedDate>2017-05-26T11:26:17-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>9swjz72bbpzw5q3@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Angela L Jones</BuyerName>
+            <BuyerPhoneNumber>2143340749</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Angela &amp; Shane McDonald</Name>
+                <AddressFieldOne>1221 STOVER CT</AddressFieldOne>
+                <City>HOLIDAY</City>
+                <StateOrRegion>FL</StateOrRegion>
+                <PostalCode>34691-5214</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>2143340749</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>65685681550066</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>6</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-7088704-5863409</AmazonOrderID>
+        <AmazonSessionID>114-7088704-5863409</AmazonSessionID>
+        <OrderDate>2017-05-26T11:55:12-07:00</OrderDate>
+        <OrderPostedDate>2017-05-26T11:55:12-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>phyvcr1rbmj436h@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Joseph Wright</BuyerName>
+            <BuyerPhoneNumber>9099087266</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>William J Wright</Name>
+                <AddressFieldOne>10535 Ring Ave</AddressFieldOne>
+                <City>Alta Loma</City>
+                <StateOrRegion>ca</StateOrRegion>
+                <PostalCode>91737</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>9099087266</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>17554499868730</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>7</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-2195964-1784246</AmazonOrderID>
+        <AmazonSessionID>114-2195964-1784246</AmazonSessionID>
+        <OrderDate>2017-05-26T12:03:41-07:00</OrderDate>
+        <OrderPostedDate>2017-05-26T12:03:41-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>l3qcd44cmypl0sz@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>GERRY MEGHOO</BuyerName>
+            <BuyerPhoneNumber>6023234212</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Gerry Meghoo</Name>
+                <AddressFieldOne>17 E FOOTHILL DR</AddressFieldOne>
+                <City>PHOENIX</City>
+                <StateOrRegion>AZ</StateOrRegion>
+                <PostalCode>85020-1012</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>6023234212</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>39359264980946</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

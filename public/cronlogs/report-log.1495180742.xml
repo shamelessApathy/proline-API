@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-6437704-3553828</AmazonOrderID>
+        <AmazonSessionID>113-6437704-3553828</AmazonSessionID>
+        <OrderDate>2017-05-18T16:06:27-07:00</OrderDate>
+        <OrderPostedDate>2017-05-18T16:06:27-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>wr0x1s9fp27blkd@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Doug Seaver</BuyerName>
+            <BuyerPhoneNumber>816-719-8699</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Doug and Emily Seaver</Name>
+                <AddressFieldOne>1902 S DRUMM AVE</AddressFieldOne>
+                <City>INDEPENDENCE</City>
+                <StateOrRegion>MO</StateOrRegion>
+                <PostalCode>64055-1837</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>816-719-2945</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>20077201853626</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-2164439-8925834</AmazonOrderID>
+        <AmazonSessionID>112-2164439-8925834</AmazonSessionID>
+        <OrderDate>2017-05-18T21:23:09-07:00</OrderDate>
+        <OrderPostedDate>2017-05-18T21:23:09-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>158n4j8b1kcr79s@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Manuraj</BuyerName>
+            <BuyerPhoneNumber>4082969823</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>MANURAJ S RAJASEKHARAN</Name>
+                <AddressFieldOne>43968 ROSEMERE DR</AddressFieldOne>
+                <City>FREMONT</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>94539-5966</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>4082969823</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>66488155324050</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

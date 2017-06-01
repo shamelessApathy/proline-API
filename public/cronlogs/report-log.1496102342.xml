@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-2361650-3491429</AmazonOrderID>
+        <AmazonSessionID>111-2361650-3491429</AmazonSessionID>
+        <OrderDate>2017-05-29T12:02:53-07:00</OrderDate>
+        <OrderPostedDate>2017-05-29T12:02:53-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>sstvmkhrmxgp631@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Viraj Reddy</BuyerName>
+            <BuyerPhoneNumber>5103645243</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Viraj M Reddy</Name>
+                <AddressFieldOne>71 Castro Lane</AddressFieldOne>
+                <City>Fremont</City>
+                <StateOrRegion>California</StateOrRegion>
+                <PostalCode>94539</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>5103645243</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>14827016427810</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-7788095-1476207</AmazonOrderID>
+        <AmazonSessionID>113-7788095-1476207</AmazonSessionID>
+        <OrderDate>2017-05-29T12:04:20-07:00</OrderDate>
+        <OrderPostedDate>2017-05-29T12:04:20-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>n0xm84s7gp1mr5n@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Joseph J Scarfi</BuyerName>
+            <BuyerPhoneNumber>310-880-2778</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Joseph Scarfi</Name>
+                <AddressFieldOne>1854 S Beverly Glen Blvd Apt 205</AddressFieldOne>
+                <City>Los Angeles</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>90025-5095</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>310-880-2778</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>08630988594674</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

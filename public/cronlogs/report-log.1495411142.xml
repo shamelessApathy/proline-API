@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-0552299-3436243</AmazonOrderID>
+        <AmazonSessionID>114-0552299-3436243</AmazonSessionID>
+        <OrderDate>2017-05-20T21:03:56-07:00</OrderDate>
+        <OrderPostedDate>2017-05-20T21:03:56-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>wg203tdpqrjn9ks@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Eileen Eng</BuyerName>
+            <BuyerPhoneNumber>206-234-8952</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Van Huynh</Name>
+                <AddressFieldOne>15106 98TH CT NE</AddressFieldOne>
+                <City>BOTHELL</City>
+                <StateOrRegion>WA</StateOrRegion>
+                <PostalCode>98011-7257</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>2062348952</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>23764692397618</AmazonOrderItemCode>
+            <SKU>PLJW 133.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 133.30 900 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">627.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-94.19</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

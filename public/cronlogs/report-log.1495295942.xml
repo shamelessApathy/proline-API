@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-8955869-0317814</AmazonOrderID>
+        <AmazonSessionID>113-8955869-0317814</AmazonSessionID>
+        <OrderDate>2017-05-20T05:48:48-07:00</OrderDate>
+        <OrderPostedDate>2017-05-20T05:48:48-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>l41jyjtxnww1yk5@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>herb eddy</BuyerName>
+            <BuyerPhoneNumber>8022288272</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Herb Eddy</Name>
+                <AddressFieldOne>31 Twin Cove Drive</AddressFieldOne>
+                <AddressFieldTwo>Carpenters Point Road</AddressFieldTwo>
+                <City>Ludlow</City>
+                <StateOrRegion>VT</StateOrRegion>
+                <PostalCode>05149-9541</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>8022288272</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>13829735744322</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

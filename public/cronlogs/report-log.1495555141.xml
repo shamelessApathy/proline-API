@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-7384962-5798644</AmazonOrderID>
+        <AmazonSessionID>113-7384962-5798644</AmazonSessionID>
+        <OrderDate>2017-05-22T14:36:26-07:00</OrderDate>
+        <OrderPostedDate>2017-05-22T14:36:26-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>ghp2r3fn8p23j51@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Jessica Kenney</BuyerName>
+            <BuyerPhoneNumber>2522905714</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Jessica A. Kenney</Name>
+                <AddressFieldOne>7106 Taylor st</AddressFieldOne>
+                <AddressFieldTwo>P.o. Box 198</AddressFieldTwo>
+                <City>Saratoga</City>
+                <StateOrRegion>NC</StateOrRegion>
+                <PostalCode>27873</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>2522905714</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>04784129591546</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-1845054-2718669</AmazonOrderID>
+        <AmazonSessionID>114-1845054-2718669</AmazonSessionID>
+        <OrderDate>2017-05-22T15:16:53-07:00</OrderDate>
+        <OrderPostedDate>2017-05-22T15:16:53-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>0x79vgscd7sh13p@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Guy Nelson</BuyerName>
+            <BuyerPhoneNumber>202-250-6759</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Guy Nelson</Name>
+                <AddressFieldOne>4307 Ellicott Street NW</AddressFieldOne>
+                <City>Washington</City>
+                <StateOrRegion>DC</StateOrRegion>
+                <PostalCode>20016</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>202-250-6759</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>24459061233858</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>3</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-5622651-3100251</AmazonOrderID>
+        <AmazonSessionID>112-5622651-3100251</AmazonSessionID>
+        <OrderDate>2017-05-22T18:02:34-07:00</OrderDate>
+        <OrderPostedDate>2017-05-22T18:02:34-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>wxp2qfrk4z99g4b@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>carlos s. senos</BuyerName>
+            <BuyerPhoneNumber>916 2231382</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>carlos s. senos</Name>
+                <AddressFieldOne>8121 ENGLISH OAK WAY</AddressFieldOne>
+                <City>CITRUS HEIGHTS</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>95610-0616</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>916 2231382</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>22010359201538</AmazonOrderItemCode>
+            <SKU>PLJW129.30</SKU>
+            <Title>30&quot; 900 CFM Ducted Wall Mount Range Hood</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">581.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-67.56</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>
