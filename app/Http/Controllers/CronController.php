@@ -77,15 +77,24 @@ class CronController extends Controller
         file_put_contents($newFileName, $data);
 
 	}
-	public function update_inventory($data)
-	{
-		foreach ($data as $order)
-		{
-			$product = Product::where('sku', $order['sku'])->first();
-			$product->inventory = $product->inventory - $order['quantity'];
-			$product->save();
-		}
+	
+    public function update_inventory(){
+        try{
+            $inventory = new \AmazonFeed("PROLINE");
+            $inventory->setFeedContent('csv');
+            $inventory->loadFeedFile(base_path().'/stock.csv');
+            $inventory->setFeedType('_POST_FLAT_FILE_INVLOADER_DATA_');
+            $inventory->submitFeed();
+            $data = $inventory->getResponse();
+            if($data){
+                echo "Inventory Updated succesfully!! Here is Feed Submission Id : ".$data['FeedSubmissionId']."  ";
+            }
+        }
+        catch(Exception $e) {
+          echo 'Message: ' .$e->getMessage();
+        }
 	}
+
 	public function cron_test()
 	{
 		file_put_contents("crontestbae.txt",'IT should be woooorking');

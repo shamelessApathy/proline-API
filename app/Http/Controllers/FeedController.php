@@ -116,6 +116,9 @@ class FeedController extends Controller
         $inventory->submitFeed();
         $data = $inventory->getResponse();
         echo "<pre>"; print_r($data);
+        if($data){
+            echo $data['FeedSubmissionId'];
+        }
     }
     
 
