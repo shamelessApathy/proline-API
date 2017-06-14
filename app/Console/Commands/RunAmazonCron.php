@@ -37,6 +37,9 @@ class RunAmazonCron extends Command
      */
     public function handle()
     {
+        $time = time();
+        $filename = "/var/www/proline-API/public/cronlogs/handle_running".$time.'.txt';
+        file_put_contents($filename, 'running');
         $controller = new CronController();
         $controller->get_amazon_orders();
     }

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-5766288-6010627</AmazonOrderID>
+        <AmazonSessionID>112-5766288-6010627</AmazonSessionID>
+        <OrderDate>2017-06-06T16:30:29-07:00</OrderDate>
+        <OrderPostedDate>2017-06-06T16:30:29-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>g558yd83pdbfj2p@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>ALoce</BuyerName>
+            <BuyerPhoneNumber>5084147823</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Andi Loce</Name>
+                <AddressFieldOne>30 Gates Lane</AddressFieldOne>
+                <City>Worcester</City>
+                <StateOrRegion>MA</StateOrRegion>
+                <PostalCode>01603</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>5084147823</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>34595700360666</AmazonOrderItemCode>
+            <SKU>PLFW 129E.30</SKU>
+            <Title>Proline Range Hoods PLFW 129E.30 900 CFM Wall Range Hood, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">581.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-87.29</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-0817485-5972252</AmazonOrderID>
+        <AmazonSessionID>112-0817485-5972252</AmazonSessionID>
+        <OrderDate>2017-06-06T20:22:50-07:00</OrderDate>
+        <OrderPostedDate>2017-06-06T20:22:50-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>2vkp8tdsxx2q6dq@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>decuypere jer</BuyerName>
+            <BuyerPhoneNumber>4102522848</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>decuypere jeroen</Name>
+                <AddressFieldOne>202 HEADINGTON CT</AddressFieldOne>
+                <City>LUTHERVILLE TIMONIUM</City>
+                <StateOrRegion>MARYLAND</StateOrRegion>
+                <PostalCode>21093-2641</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>4102522848</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>15143437854730</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>
