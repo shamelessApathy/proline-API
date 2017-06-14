@@ -469,7 +469,7 @@ class ProductsTableSeeder extends Seeder
         ]);
          DB::table('products')->insert([
             'name'            => 'Proline Professional Wall Range Hood PLJW 129.36 900 CFM, 36"',
-            'sku'             => 'PLJW 129.36',
+            'sku'             => 'PLJW129.36',
             'walmartSKU'             => 'PLJW 129.36',
             'walmartID'             => '188395069',
             'asin'            => 'B015JT8YEA',

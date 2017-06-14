@@ -17,9 +17,11 @@ Route::get('/', function () {
 
 
 Auth::routes();
+Route::get('/cron/form_feed', 'CronController@form_feed');
 Route::get('/cron/handle_data', 'CronController@handle_data');
 Route::get('/cron/cron_test', 'CronController@cron_test');
 Route::get('/cron/amazon', 'CronController@get_amazon_orders');
+Route::get('/cron/update-inventory', 'CronController@update_inventory');
 Route::get('/cron/handle_data', 'CronController@handle_data');
 Route::get('/amazon', 'AmazonController@home');
 Route::get('/home', 'HomeController@index');

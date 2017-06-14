@@ -22,7 +22,7 @@ class CronController extends Controller
     	$reportList->fetchReportList();
     	$list = $reportList->getList();
 
-    	
+	
     	/*echo "<pre>";
     	print_r($list);
     	echo "</pre>";*/
@@ -68,7 +68,7 @@ class CronController extends Controller
  		{
  			array_push($data, ['sku'=>(string)$order->OrderReport->Item->SKU, 'quantity'=>(int)$order->OrderReport->Item->Quantity]);
  		}
- 		$this->update_inventory($data);
+ 		$this->update_inventory_local($data);
         $time = time();
         $today = date("F j, Y, g:i a");
         // Everytime this function runs (due to the cronjob running it, it will make a notation with the date and time in a new file)
@@ -76,22 +76,58 @@ class CronController extends Controller
         $data = "Inventory Records updated [time]: ". $today;
         file_put_contents($newFileName, $data);
 	}
+    /**
+    *
+    * @return Path to newly formed inventory feed file
+    * @param Nothing, called from update_inventory
+    */
+    public function form_feed()
+    {
+        $feed_string = "sku quantity\n";
+        $name = "inv_feed_" . time() . '.csv';
+        $path = "cronlogs/inventory-records/" . $name;
+        file_put_contents($path, $feed_string);
+        $products = Product::all();
+        foreach ($products as $product)
+        {
+            $string = "$product->sku $product->inventory\n";
+            file_put_contents($path, $string, FILE_APPEND);
+        }
+
+    }
+    public function update_inventory(){
+        $this->form_feed();
+        /*try{
+            $inventory = new \AmazonFeed("PROLINE");
+            $inventory->setFeedContent('csv');
+            $inventory->loadFeedFile(base_path().'/stock.csv');
+            $inventory->setFeedType('_POST_FLAT_FILE_INVLOADER_DATA_');
+            $inventory->submitFeed();
+            $data = $inventory->getResponse();
+            if($data){
+                echo "Inventory Updated succesfully!! Here is Feed Submission Id : ".$data['FeedSubmissionId']."  ";
+            }
+        }
+        catch(Exception $e) {
+          echo 'Message: ' .$e->getMessage();
+        }*/
+    }
 	/**
 	*   Calling function is handle_data()
 	* @param $data is all the info that has been digested from the amazon _GET_ORDERS_REPORT_ 
 	* @return
 	*/
-	public function update_inventory($data)
+	public function update_inventory_local($data)
 	{
 		foreach ($data as $order)
 		{
-			
 			$product = Product::where('sku', $order['sku'])->first();
 			$newInventory = $product->inventory - $order['quantity'];
 			$product->inventory = $newInventory;
 			$product->save();
 		}
 	}
+
 	public function cron_test()
 	{
 		file_put_contents("crontestbae.txt",'IT should be woooorking');

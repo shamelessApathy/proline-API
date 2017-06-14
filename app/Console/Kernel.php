@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\RunAmazonCron::class
+        Commands\RunAmazonCron::class,
+        Commands\UpdateInventory::class
         //
     ];
 
