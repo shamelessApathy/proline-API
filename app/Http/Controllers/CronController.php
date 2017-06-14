@@ -76,6 +76,25 @@ class CronController extends Controller
         $data = "Inventory Records updated [time]: ". $today;
         file_put_contents($newFileName, $data);
 	}
+    /**
+    *
+    * @return Path to newly formed inventory feed file
+    * @param Nothing, called from update_inventory
+    */
+    public function form_feed()
+    {
+        $feed_string = "sku quantity\n";
+        $name = "inv_feed_" . time() . '.csv';
+        $path = "cronlogs/inventory-records/" . $name;
+        file_put_contents($path, $feed_string);
+        $products = Product::all();
+        foreach ($products as $product)
+        {
+            $string = "$product->sku $product->inventory\n";
+            file_put_contents($path, $string, FILE_APPEND);
+        }
+
+    }
     public function update_inventory(){
         try{
             $inventory = new \AmazonFeed("PROLINE");
