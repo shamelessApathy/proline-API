@@ -96,7 +96,8 @@ class CronController extends Controller
 
     }
     public function update_inventory(){
-        try{
+        $this->form_feed();
+        /*try{
             $inventory = new \AmazonFeed("PROLINE");
             $inventory->setFeedContent('csv');
             $inventory->loadFeedFile(base_path().'/stock.csv');
@@ -109,7 +110,7 @@ class CronController extends Controller
         }
         catch(Exception $e) {
           echo 'Message: ' .$e->getMessage();
-        }
+        }*/
     }
 	/**
 	*   Calling function is handle_data()
