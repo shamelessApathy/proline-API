@@ -69,3 +69,21 @@
 [Info][2017/06/12 19:00:01 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
 [Info][2017/06/12 19:00:01 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
 [Info][2017/06/12 19:00:01 guest@cli CronController.php:42 saveReport] Successfully saved report #5410499977017329 at /var/www/proline-API/public/cronlogs/report-log.1497294001.xml
+[Info][2017/06/12 23:59:01 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/06/12 23:59:01 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/06/12 23:59:01 guest@cli CronController.php:42 saveReport] Successfully saved report #5416669180017329 at /var/www/proline-API/public/cronlogs/report-log.1497311941.xml
+[Info][2017/06/13 03:59:01 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/06/13 03:59:02 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/06/13 03:59:02 guest@cli CronController.php:42 saveReport] Successfully saved report #5416669180017329 at /var/www/proline-API/public/cronlogs/report-log.1497326342.xml
+[Info][2017/06/13 07:59:01 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/06/13 07:59:01 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/06/13 07:59:01 guest@cli CronController.php:42 saveReport] Successfully saved report #5418554362017330 at /var/www/proline-API/public/cronlogs/report-log.1497340741.xml
+[Info][2017/06/13 23:59:02 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/06/13 23:59:02 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/06/13 23:59:02 guest@cli CronController.php:42 saveReport] Successfully saved report #5426392929017330 at /var/www/proline-API/public/cronlogs/report-log.1497398342.xml
+[Info][2017/06/14 03:59:01 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/06/14 03:59:02 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/06/14 03:59:02 guest@cli CronController.php:42 saveReport] Successfully saved report #5426392929017330 at /var/www/proline-API/public/cronlogs/report-log.1497412742.xml
+[Info][2017/06/14 07:59:01 guest@cli AmazonReportList.php:256 sendRequest] Making request to Amazon: GetReportList
+[Info][2017/06/14 07:59:01 guest@cli AmazonReport.php:100 sendRequest] Making request to Amazon: GetReport
+[Info][2017/06/14 07:59:01 guest@cli CronController.php:42 saveReport] Successfully saved report #5434840927017331 at /var/www/proline-API/public/cronlogs/report-log.1497427141.xml

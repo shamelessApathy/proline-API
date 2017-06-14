@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-5757694-9752230</AmazonOrderID>
+        <AmazonSessionID>111-5757694-9752230</AmazonSessionID>
+        <OrderDate>2017-06-13T16:04:26-07:00</OrderDate>
+        <OrderPostedDate>2017-06-13T16:04:26-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>zmj6szwrnw958k2@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>patrick ging</BuyerName>
+            <BuyerPhoneNumber>5167906809</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Patrick  ging jr</Name>
+                <AddressFieldOne>6472 84TH PL MIDDLE VILLAGE</AddressFieldOne>
+                <City>MIDDLE VILLAGE</City>
+                <StateOrRegion>NY</StateOrRegion>
+                <PostalCode>11379-2440</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>5167906809</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>50696986248210</AmazonOrderItemCode>
+            <SKU>PLJW108.30</SKU>
+            <Title>Proline Range Hoods PLJW 108.30 Professional Range Hood 1000 CFM blower Professional Range Hood, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">692.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-103.94</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-8373299-8481843</AmazonOrderID>
+        <AmazonSessionID>114-8373299-8481843</AmazonSessionID>
+        <OrderDate>2017-06-13T16:05:12-07:00</OrderDate>
+        <OrderPostedDate>2017-06-13T16:05:12-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>jb09xhzz5lgy90x@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Darren</BuyerName>
+            <BuyerPhoneNumber>979-716-7120</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Darren Orsag</Name>
+                <AddressFieldOne>2972 FM 2440</AddressFieldOne>
+                <City>GIDDINGS</City>
+                <StateOrRegion>TX</StateOrRegion>
+                <PostalCode>78942-6400</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>979-716-7120</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>37889920353786</AmazonOrderItemCode>
+            <SKU>PLJW129.36</SKU>
+            <Title>Proline Professional Wall Range Hood PLJW 129.36 900 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">609.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-91.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>3</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-8834304-7115411</AmazonOrderID>
+        <AmazonSessionID>113-8834304-7115411</AmazonSessionID>
+        <OrderDate>2017-06-13T19:43:43-07:00</OrderDate>
+        <OrderPostedDate>2017-06-13T19:43:43-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>60ymnjf9n7f5j9z@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Donna Masters</BuyerName>
+            <BuyerPhoneNumber>6263901208</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Donna Masters Pacheco</Name>
+                <AddressFieldOne>1006 THORNWOOD ST</AddressFieldOne>
+                <City>GLENDALE</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>91206-4812</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>6264371404</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>24384573416754</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>

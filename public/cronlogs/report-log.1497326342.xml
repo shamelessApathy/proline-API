@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>113-5483925-7237000</AmazonOrderID>
+        <AmazonSessionID>113-5483925-7237000</AmazonSessionID>
+        <OrderDate>2017-06-12T08:12:36-07:00</OrderDate>
+        <OrderPostedDate>2017-06-12T08:12:36-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>c8gsfl5m1lqhttk@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Tyler Shaffer</BuyerName>
+            <BuyerPhoneNumber>000-000-0000</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Trademark Electric Inc.</Name>
+                <AddressFieldOne>700 DEWEY BLVD STE B</AddressFieldOne>
+                <City>BUTTE</City>
+                <StateOrRegion>MT</StateOrRegion>
+                <PostalCode>59701-0800</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>406-782-6698</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>true</IsBusinessOrder>
+        <PurchaseOrderNumber>2</PurchaseOrderNumber>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>33540096593610</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+            <PriceDesignation>Business Price</PriceDesignation>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>114-6937188-0653060</AmazonOrderID>
+        <AmazonSessionID>114-6937188-0653060</AmazonSessionID>
+        <OrderDate>2017-06-12T10:15:53-07:00</OrderDate>
+        <OrderPostedDate>2017-06-12T10:15:53-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>q6v9k354twn113v@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Lisa Yedowitz</BuyerName>
+            <BuyerPhoneNumber>860-354-3638</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Wainscot Solutions</Name>
+                <AddressFieldOne>48 ANDERSON AVE STE 5</AddressFieldOne>
+                <City>NEW MILFORD</City>
+                <StateOrRegion>CT</StateOrRegion>
+                <PostalCode>06776-3671</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>860-354-3638</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>true</IsBusinessOrder>
+        <PurchaseOrderNumber>shop</PurchaseOrderNumber>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>53073099410826</AmazonOrderItemCode>
+            <SKU>PLJW121.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 121.36 900 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">618.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-92.84</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>3</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-0394631-6884254</AmazonOrderID>
+        <AmazonSessionID>112-0394631-6884254</AmazonSessionID>
+        <OrderDate>2017-06-12T11:22:05-07:00</OrderDate>
+        <OrderPostedDate>2017-06-12T11:22:05-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>mm87ghhg4gw01p9@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Spa Escape Inc.</BuyerName>
+            <BuyerPhoneNumber>2154790146</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Donna vesci</Name>
+                <AddressFieldOne>229 PINETREE DR</AddressFieldOne>
+                <City>VILLAS</City>
+                <StateOrRegion>NJ</StateOrRegion>
+                <PostalCode>08251-2044</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>215-803-1705</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>24152501730930</AmazonOrderItemCode>
+            <SKU>PLJW129.36</SKU>
+            <Title>Proline Professional Wall Range Hood PLJW 129.36 900 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">609.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-91.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>4</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-1491867-5637845</AmazonOrderID>
+        <AmazonSessionID>111-1491867-5637845</AmazonSessionID>
+        <OrderDate>2017-06-12T11:49:22-07:00</OrderDate>
+        <OrderPostedDate>2017-06-12T11:49:22-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>74t1y2l61ck5qt2@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Art Yee</BuyerName>
+            <BuyerPhoneNumber>000-000-0000</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>SecondDay</FulfillmentServiceLevel>
+            <Address>
+                <Name>Art Yee</Name>
+                <AddressFieldOne>8738 BAINBRIDGE PL</AddressFieldOne>
+                <City>STOCKTON</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>95209-4811</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>209.952.2602</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>59630816501930</AmazonOrderItemCode>
+            <SKU>PLJW185.36</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.36 600 CFM, 36&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">369.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-55.49</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>5</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-2743331-2489822</AmazonOrderID>
+        <AmazonSessionID>111-2743331-2489822</AmazonSessionID>
+        <OrderDate>2017-06-12T12:30:54-07:00</OrderDate>
+        <OrderPostedDate>2017-06-12T12:30:54-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>60vx8y4dfcbkc1m@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Richard Hensolt</BuyerName>
+            <BuyerPhoneNumber>831 3363123</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Richard A Hensolt</Name>
+                <AddressFieldOne>10250 Riverside Dr</AddressFieldOne>
+                <City>Ben Lomond</City>
+                <StateOrRegion>CA</StateOrRegion>
+                <PostalCode>95005</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>831 3363123</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>true</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>44375245636194</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>
