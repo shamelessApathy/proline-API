@@ -75,6 +75,7 @@ class CronController extends Controller
         $newFileName = '/var/www/proline-API/public/cronlogs/inventory-records/'.$time.'.txt';
         $data = "Inventory Records updated [time]: ". $today;
         file_put_contents($newFileName, $data);
+        $this->update_inventory();
 	}
     /**
     *

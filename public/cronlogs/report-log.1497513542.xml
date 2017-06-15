@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+      <MerchantIdentifier>A4MXUMMLKCFTL</MerchantIdentifier>
+  </Header>
+  <MessageType>OrderReport</MessageType>
+<Message>
+    <MessageID>1</MessageID>
+    <OrderReport>
+        <AmazonOrderID>112-5064216-2831442</AmazonOrderID>
+        <AmazonSessionID>112-5064216-2831442</AmazonSessionID>
+        <OrderDate>2017-06-14T14:02:30-07:00</OrderDate>
+        <OrderPostedDate>2017-06-14T14:02:30-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>ksjrbgkrf35hrn0@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Jeremiah T. Bonde</BuyerName>
+            <BuyerPhoneNumber>678-357-3891</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Jeremiah T. Bonde</Name>
+                <AddressFieldOne>1600 Lake Louella Rd</AddressFieldOne>
+                <City>Suwanee</City>
+                <StateOrRegion>GA</StateOrRegion>
+                <PostalCode>30024-2035</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>678-357-3891</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>60630878555866</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+<Message>
+    <MessageID>2</MessageID>
+    <OrderReport>
+        <AmazonOrderID>111-0372192-3497830</AmazonOrderID>
+        <AmazonSessionID>111-0372192-3497830</AmazonSessionID>
+        <OrderDate>2017-06-14T20:24:31-07:00</OrderDate>
+        <OrderPostedDate>2017-06-14T20:24:31-07:00</OrderPostedDate>
+        <BillingData>
+            <BuyerEmailAddress>283n643b1220n8x@marketplace.amazon.com</BuyerEmailAddress>
+            <BuyerName>Anne Marie Bennett</BuyerName>
+            <BuyerPhoneNumber>816-564-6255</BuyerPhoneNumber>
+        </BillingData>
+        <FulfillmentData>
+            <FulfillmentMethod>Ship</FulfillmentMethod>
+            <FulfillmentServiceLevel>Standard</FulfillmentServiceLevel>
+            <Address>
+                <Name>Anne Restrepo</Name>
+                <AddressFieldOne>8105 NW WALNUT WAY</AddressFieldOne>
+                <City>PARKVILLE</City>
+                <StateOrRegion>MO</StateOrRegion>
+                <PostalCode>64152-6103</PostalCode>
+                <CountryCode>US</CountryCode>
+                <PhoneNumber>816-565-6255</PhoneNumber>
+            </Address>
+        </FulfillmentData>
+        <IsBusinessOrder>false</IsBusinessOrder>
+        <IsPrime>false</IsPrime>
+        <Item>
+            <AmazonOrderItemCode>07430176089170</AmazonOrderItemCode>
+            <SKU>PLJW185.30</SKU>
+            <Title>Proline Wall / Undercabinet Range Hood PLJW 185.30 600 CFM, 30&quot;</Title>
+            <Quantity>1</Quantity>
+            <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+            <ItemPrice>
+               <Component>
+                  <Type>Principal</Type>
+                  <Amount currency="USD">350.95</Amount>
+               </Component>
+               <Component>
+                  <Type>Shipping</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>Tax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+               <Component>
+                  <Type>ShippingTax</Type>
+                  <Amount currency="USD">0.00</Amount>
+               </Component>
+            </ItemPrice>
+            <ItemFees>
+               <Fee>
+                  <Type>Commission</Type>
+                  <Amount currency="USD">-52.64</Amount>
+               </Fee>
+            </ItemFees>
+         </Item>
+    </OrderReport>
+</Message>
+</AmazonEnvelope>
