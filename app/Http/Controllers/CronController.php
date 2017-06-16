@@ -123,9 +123,19 @@ class CronController extends Controller
 		foreach ($data as $order)
 		{
 			$product = Product::where('sku', $order['sku'])->first();
-			$newInventory = $product->inventory - $order['quantity'];
-			$product->inventory = $newInventory;
-			$product->save();
+            // Does the product match? If not record it so we can fix it!
+            if (!$product)
+            {
+                $string = "$product->sku  this had an error matching \n";
+                file_put_contents("/var/www/API/API/public/cronlogs/inventory-records/sku-errors.txt", $string, FILE_APPEND );
+            }
+            else
+            {
+    			$newInventory = $product->inventory - $order['quantity'];
+    			$product->inventory = $newInventory;
+                $product->save();
+            }
+
 		}
 	}
 

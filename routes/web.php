@@ -97,3 +97,9 @@ Route::get('amazon/amazon-get-feed-result', 'FeedController@GetFeedSubmissionRes
 Route::get('amazon/amazon-get-feed-submit', 'FeedController@SubmitFeed')->name('amazon-get-feed-submit');
 
 Route::get('amazon/amazon-update-feed', 'FeedController@UpdateAmazonInventory')->name('amazon-update-feed');
+
+
+// These routes are not going through Auth middleware since it's not really worthwhile anyway because oauth2 won't work with the older version of guzzle
+// API ROUTES
+//Route::post('api/test', 'ApiRemoteController@test');
+//Route::get('api/test', 'ApiRemoteController@test');
