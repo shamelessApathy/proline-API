@@ -19,4 +19,12 @@ class ApiRemoteController extends Controller
     {
     	echo 'getting here!';
     }
+    public function incoming()
+    {
+        echo "youre getting there!!";
+    }
+    public function token_gen()
+    {
+        return view('tokengen');
+    }
 }

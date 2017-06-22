@@ -248,6 +248,7 @@
          * Prepare the component (Vue 2.x).
          */
         mounted() {
+            console.log('mounted!');
             this.prepareComponent();
         },
 

@@ -14,13 +14,11 @@ require('./bootstrap');
  */
 
 
-Vue.component('add-product', require('./components/addProduct.vue'));
 
 
-Vue.component(
-    'passport-clients',
-    require('./components/passport/Clients.vue')
-);
+Vue.component('theexample', require('./components/Example.vue'));
+
+Vue.component('passport-clients', require('./components/passport/Clients.vue'));
 
 Vue.component(
     'passport-authorized-clients',
@@ -31,7 +29,6 @@ Vue.component(
     'passport-personal-access-tokens',
     require('./components/passport/PersonalAccessTokens.vue')
 );
-const add_product = new Vue({
-	name: 'add-product',
-    el: 'add-product'
+const app = new Vue({
+    el: '#app'
 });

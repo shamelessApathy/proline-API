@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 
 Auth::routes();
+Route::get('/remote/tokengen','ApiRemoteController@token_gen')->name('tokengen');
 Route::get('/cron/form_feed', 'CronController@form_feed');
 Route::get('/cron/handle_data', 'CronController@handle_data');
 Route::get('/cron/cron_test', 'CronController@cron_test');
@@ -98,7 +99,16 @@ Route::get('amazon/amazon-get-feed-submit', 'FeedController@SubmitFeed')->name('
 
 Route::get('amazon/amazon-update-feed', 'FeedController@UpdateAmazonInventory')->name('amazon-update-feed');
 
+/*Route::get('/redirect', function () {
+    $query = http_build_query([
+        'client_id' => 'client-id',
+        'redirect_uri' => '/remote/incoming',
+        'response_type' => 'code',
+        'scope' => '',
+    ]);
 
+    return redirect('/oauth/authorize?'.$query);
+});*/
 // These routes are not going through Auth middleware since it's not really worthwhile anyway because oauth2 won't work with the older version of guzzle
 // API ROUTES
 //Route::post('api/test', 'ApiRemoteController@test');

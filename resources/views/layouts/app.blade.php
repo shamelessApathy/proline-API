@@ -66,6 +66,9 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                <li>
+                                        <a href="{{ route('tokengen')}}">Token Gen</a>
+                                        </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -89,6 +92,6 @@
     </div>
 
     <!-- Scripts -->
-    <!-- <script src="{{ asset('js/app.js') }}"></script> -->
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
