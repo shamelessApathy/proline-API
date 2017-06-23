@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->group(function(){
 	Route::post('/test', 'ApiRemoteController@test');
-	Route::post('/remote/incoming', 'ApiRemoteController@incoming');
+	Route::post('/remote/incoming/{param}', 'ApiRemoteController@incoming');
 	
 });
 

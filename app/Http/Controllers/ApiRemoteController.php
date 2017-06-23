@@ -19,12 +19,37 @@ class ApiRemoteController extends Controller
     {
     	echo 'getting here!';
     }
-    public function incoming()
+    public function zencart_handler($input)
     {
-        echo "youre getting there!!";
+        echo "getting to the zencart handler!!!";
+    }
+    public function magento_handler($input)
+    {
+        echo "getting to the magento handler!";
+    }
+    public function incoming($framework)
+    {
+        //echo $framework;
+        switch($framework)
+        {
+            case "zencart": 
+                            $input = file_get_contents("php://input");
+                            $decoded = json_decode($input);
+                            $this->zencart_handler($input);
+                            break;
+            case "magento":
+                            $input = file_get_contents("php://input");
+                            $decoded = json_decode($input);
+                            $this->magento_handler($input);
+                            break;
+            default:
+                    echo "please specify the framework!";
+                    break;
+        }
     }
     public function token_gen()
     {
         return view('tokengen');
     }
 }
+ 
