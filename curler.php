@@ -3,6 +3,7 @@
 // A very simple PHP example that sends a HTTP POST to a remote site
 //
 $data = array(
+	'type' => 'outgoing',
 	'sku'=>'PLJW185.30', 
 	'quantity' => '1');
 $data_string = json_encode($data);
@@ -17,7 +18,7 @@ $header[] = "Authorization: Bearer $auth_token";
 // In PHP 7.0 you must set the array in CURLOPT_HTTPHEADER with seperate elements.
 curl_setopt($ch, CURLOPT_HTTPHEADER,array($header[0],$header[1],$header[2]));
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
-curl_setopt($ch, CURLOPT_URL,"http://api.dev/api/remote/incoming/magento");
+curl_setopt($ch, CURLOPT_URL,"http://api.dev/api/remote/incoming/zencart");
 curl_setopt($ch, CURLOPT_POST, 1);
 
 
