@@ -29,11 +29,13 @@ class ApiRemoteController extends Controller
     public function outgoing($input)
     {
         $sku = $input->sku;
-        $quantity = $input->quantity;
         $product = Product::where('sku', $sku)->first();
-        print_r($product);
-
+        print_r($product);  
+        $quantity = $product->inventory - $input->quantity;
+        $product->inventory = $quantity;
+        $product->save();
     }
+
     public function zencart_handler($input)
     {
         $input = $input;
@@ -49,7 +51,16 @@ class ApiRemoteController extends Controller
     }
     public function magento_handler($input)
     {
-        echo "getting to the magento handler!";
+        $input = $input;
+        $type = $input->type;
+        switch($type)
+        {
+            case 'outgoing': $this->outgoing($input);
+                            break;
+            case 'incoming' : $this->incoming($input);
+                            break;
+            default : break;
+        }
     }
     public function incoming($framework)
     {
